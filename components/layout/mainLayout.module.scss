@@ -1,0 +1,12 @@
+.mainlayout {
+	color: #000;
+	max-width: 1920px;
+	width: 100% !important;
+	overflow: hidden;
+	background-color: #ebedf4;
+    margin: 0 auto;
+	.children {
+		padding: 113px 0px 0px;
+		min-height: 100vh;
+	}
+}
