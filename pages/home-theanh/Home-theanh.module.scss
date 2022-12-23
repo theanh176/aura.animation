@@ -24,7 +24,7 @@
 			}
 		}
 	}
-	.hover_sun {
+	.hover_solar {
 		transition: 0.5s color ease;
 		cursor: pointer;
 		&:hover {
@@ -35,6 +35,24 @@
 				}
 				50% {
 					transform: scale(1.5);
+				}
+				100% {
+					transform: scale(1);
+				}
+			}
+		}
+	}
+	.hover_sun {
+		transition: 0.5s color ease;
+		cursor: pointer;
+		&:hover {
+			animation: sunAnimation 5s infinite;
+			@keyframes sunAnimation {
+				0% {
+					transform: scale(1);
+				}
+				50% {
+					transform: scale(1.1);
 				}
 				100% {
 					transform: scale(1);

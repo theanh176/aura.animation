@@ -2,6 +2,11 @@ import { useRouter } from "next/router";
 import React, { useState } from "react";
 import MainLayout from "../../components/layout/mainLayout";
 import styles from "./Home-theanh.module.scss";
+import Image from "next/image";
+import MoonImage from "../../public/images/moon.png";
+import MarsImage from "../../public/images/mars.png";
+import SolarImage from "../../public/images/solar.png";
+import MercuryImage from "../../public/images/mercury-planet.png";
 
 function HomeTheAnh() {
 	let timestamp_start = new Date("2019-01-01").getTime();
@@ -40,7 +45,7 @@ function HomeTheAnh() {
 				<div className="universe">
 					<h1 className="text_sun">SUN</h1>
 					<div className="solarsystem">
-						<div className={styles.hover_sun + " " + "sun"}>
+						<div className={styles.hover_solar + " " +"sun"}>
 							<div className="planet__structure planet__structure--1"></div>
 							<div className="planet__structure planet__structure--2"></div>
 							<div className="planet__structure planet__structure--3"></div>
@@ -72,7 +77,14 @@ function HomeTheAnh() {
 									<div className="orbit__shape orbit__shape--venus">
 										<div className="planet venus">
 											<div className="planet__structure planet__structure--1"></div>
-											<div className="planet__structure planet__structure--2"></div>
+											<div className="planet__structure planet__structure--2">
+												{/* <Image
+													src={MoonImage}
+													alt="Saturn Rings"
+													width={100}
+													height={100}
+												/> */}
+											</div>
 											<div className="planet__structure planet__structure--3"></div>
 											<div className="planet__structure planet__structure--4"></div>
 											<div className="planet__structure planet__structure--5"></div>
@@ -87,9 +99,22 @@ function HomeTheAnh() {
 								<div className="inclination inclination--earth">
 									<div className="orbit__visual"></div>
 									<div className="orbit__shape orbit__shape--earth">
-										<div className="planet earth">
+										<div
+											className={
+												styles.hover_solar +
+												" " +
+												"planet earth"
+											}
+										>
 											<div className="planet__structure planet__structure--1"></div>
-											<div className="planet__structure planet__structure--2"></div>
+											<div className="planet__structure planet__structure--2 size-solar-small position-solar-1">
+												<Image
+													src={MercuryImage}
+													alt="Saturn Rings"
+													width={100}
+													height={100}
+												/>
+											</div>
 											<div className="planet__structure planet__structure--3"></div>
 											<div className="planet__structure planet__structure--4"></div>
 											<div className="planet__structure planet__structure--5"></div>
@@ -104,9 +129,22 @@ function HomeTheAnh() {
 								<div className="inclination inclination--mars">
 									<div className="orbit__visual"></div>
 									<div className="orbit__shape orbit__shape--mars">
-										<div className="planet mars">
+										<div
+											className={
+												styles.hover_solar +
+												" " +
+												"planet mars"
+											}
+										>
 											<div className="planet__structure planet__structure--1"></div>
-											<div className="planet__structure planet__structure--2"></div>
+											<div className="planet__structure planet__structure--2 size-solar-big position-solar-2">
+												<Image
+													src={MarsImage}
+													alt="Saturn Rings"
+													width={100}
+													height={100}
+												/>
+											</div>
 											<div className="planet__structure planet__structure--3"></div>
 											<div className="planet__structure planet__structure--4"></div>
 											<div className="planet__structure planet__structure--5"></div>
@@ -121,9 +159,22 @@ function HomeTheAnh() {
 								<div className="inclination inclination--jupiter">
 									<div className="orbit__visual"></div>
 									<div className="orbit__shape orbit__shape--jupiter">
-										<div className="planet jupiter">
+										<div
+											className={
+												styles.hover_solar +
+												" " +
+												"planet jupiter"
+											}
+										>
 											<div className="planet__structure planet__structure--1"></div>
-											<div className="planet__structure planet__structure--2"></div>
+											<div className="planet__structure planet__structure--2 size-solar-big position-solar-3">
+												<Image
+													src={MercuryImage}
+													alt="Saturn Rings"
+													width={200}
+													height={200}
+												/>
+											</div>
 											<div className="planet__structure planet__structure--3"></div>
 											<div className="planet__structure planet__structure--4"></div>
 											<div className="planet__structure planet__structure--5"></div>
@@ -138,16 +189,31 @@ function HomeTheAnh() {
 								<div className="inclination inclination--saturn">
 									<div className="orbit__visual"></div>
 									<div className="orbit__shape orbit__shape--saturn">
-										<div className="planet saturn">
+										<div
+											className={
+												styles.hover_solar +
+												" " +
+												"planet saturn"
+											}
+										>
 											<div className="planet__structure planet__structure--1"></div>
-											<div className="planet__structure planet__structure--2"></div>
+											<div className="planet__structure planet__structure--2">
+												<Image
+													src={SolarImage}
+													alt="Saturn Rings"
+													width={100}
+													height={100}
+												/>
+											</div>
 											<div className="planet__structure planet__structure--3"></div>
 											<div className="planet__structure planet__structure--4"></div>
 											<div className="planet__structure planet__structure--5"></div>
 											<div className="planet__structure planet__structure--6"></div>
 										</div>
 										<div className="planet-orbit planet-orbit--saturn">
-											<div className="rings-of-saturn"></div>
+											{/* <div
+												className={"rings-of-saturn"}
+											></div> */}
 										</div>
 									</div>
 								</div>
@@ -158,9 +224,22 @@ function HomeTheAnh() {
 								<div className="inclination inclination--uranus">
 									<div className="orbit__visual"></div>
 									<div className="orbit__shape orbit__shape--uranus">
-										<div className="planet uranus">
+										<div
+											className={
+												styles.hover_solar +
+												" " +
+												"planet uranus"
+											}
+										>
 											<div className="planet__structure planet__structure--1"></div>
-											<div className="planet__structure planet__structure--2"></div>
+											<div className="planet__structure planet__structure--2 size-solar-small position-solar-5">
+												<Image
+													src={MarsImage}
+													alt="Saturn Rings"
+													width={100}
+													height={100}
+												/>
+											</div>
 											<div className="planet__structure planet__structure--3"></div>
 											<div className="planet__structure planet__structure--4"></div>
 											<div className="planet__structure planet__structure--5"></div>
@@ -175,9 +254,22 @@ function HomeTheAnh() {
 								<div className="inclination inclination--neptun">
 									<div className="orbit__visual"></div>
 									<div className="orbit__shape orbit__shape--neptun">
-										<div className="planet neptun">
+										<div
+											className={
+												styles.hover_solar +
+												" " +
+												"planet neptun"
+											}
+										>
 											<div className="planet__structure planet__structure--1"></div>
-											<div className="planet__structure planet__structure--2"></div>
+											<div className="planet__structure planet__structure--2 size-solar-big position-solar-6">
+												<Image
+													src={SolarImage}
+													alt="Saturn Rings"
+													width={130}
+													height={130}
+												/>
+											</div>
 											<div className="planet__structure planet__structure--3"></div>
 											<div className="planet__structure planet__structure--4"></div>
 											<div className="planet__structure planet__structure--5"></div>

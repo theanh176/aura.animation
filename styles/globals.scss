@@ -21,19 +21,19 @@ body {
 }
 
 #ideal-orbit-size ~ .universe {
-	--planet-size-factor: 0.01;
-	--sun-size-factor: 0.001;
+	--planet-size-factor: 0.16;
+	--sun-size-factor: 0.004;
 }
 @media (max-width: 649px) {
 	#ideal-orbit-size:checked ~ .universe {
-		--planet-size-factor: 0.075;
-		--sun-size-factor: 0.0175;
+		--planet-size-factor: 0.3;
+		--sun-size-factor: 0.07;
 	}
 }
 @media (min-width: 650px) {
 	#ideal-orbit-size:checked ~ .universe {
-		--planet-size-factor: 0.15;
-		--sun-size-factor: 0.025;
+		--planet-size-factor: 0.6;
+		--sun-size-factor: 0.1;
 	}
 }
 #real-time:checked ~ .universe {
@@ -97,10 +97,14 @@ body {
 	position: absolute;
 	width: calc(1391px * var(--sun-size-factor));
 	height: calc(1391px * var(--sun-size-factor));
-	background-color: #ffe493;
+	// background-color: #ffe493;
+	background-image: url("../public//images//moon.png");
+	background-size: cover;
+	background-position: center;
 	border-radius: 50%;
 	transform-style: preserve-3d;
 	transition: width 2s, height 2s;
+	z-index: 10;
 }
 .sun::before {
 	display: block;
@@ -193,8 +197,10 @@ body {
 }
 .jupiter-orbit {
 	position: absolute;
-	width: 17.25%;
-	height: 17.25%;
+	// width: 17.25%;
+	// height: 17.25%;
+	width: 57.25%;
+	height: 57.25%;
 	transform: rotateZ(-245deg);
 	transition-delay: 0.4s;
 	z-index: 5;
@@ -373,49 +379,49 @@ body {
 .mercury {
 	width: calc(4.87px * var(--planet-size-factor));
 	height: calc(4.87px * var(--planet-size-factor));
-	background-color: #68696d;
+	// background-color: #68696d;
 	top: calc(-2.435px * var(--planet-size-factor));
 }
 .venus {
 	width: calc(12.1px * var(--planet-size-factor));
 	height: calc(12.1px * var(--planet-size-factor));
-	background-color: #d3a567;
+	// background-color: #d3a567;
 	top: calc(-6.05px * var(--planet-size-factor));
 }
 .earth {
 	width: calc(12.7px * var(--planet-size-factor));
 	height: calc(12.7px * var(--planet-size-factor));
-	background-color: #00f;
+	// background-color: #00f;
 	top: calc(-6.35px * var(--planet-size-factor));
 }
 .mars {
 	width: calc(6.7px * var(--planet-size-factor));
 	height: calc(6.7px * var(--planet-size-factor));
-	background-color: #c1440e;
+	// background-color: #c1440e;
 	top: calc(-3.45px * var(--planet-size-factor));
 }
 .jupiter {
 	width: calc(139.822px * var(--planet-size-factor));
 	height: calc(139.822px * var(--planet-size-factor));
-	background-color: #d8ca9d;
+	// background-color: #d8ca9d;
 	top: calc(-69.911px * var(--planet-size-factor));
 }
 .saturn {
 	width: calc(116.464px * var(--planet-size-factor));
 	height: calc(116.464px * var(--planet-size-factor));
-	background-color: #d2c0a5;
+	// background-color: #d2c0a5;
 	top: calc(-58.232px * var(--planet-size-factor));
 }
 .uranus {
 	width: calc(50.724px * var(--planet-size-factor));
 	height: calc(50.724px * var(--planet-size-factor));
-	background-color: #d1e7e7;
+	// background-color: #d1e7e7;
 	top: calc(-25.362px * var(--planet-size-factor));
 }
 .neptun {
 	width: calc(49.244px * var(--planet-size-factor));
 	height: calc(49.244px * var(--planet-size-factor));
-	background-color: #3f54ba;
+	// background-color: #3f54ba;
 	top: calc(-24.622px * var(--planet-size-factor));
 }
 .planet-orbit {
@@ -595,4 +601,31 @@ body {
 	to {
 		transform: rotate(0deg);
 	}
+}
+
+// Size solar
+.size-solar-big{
+	width: 130px;
+	height: 130px;
+}
+.size-solar-small{
+	width: 70px;
+	height: 70px;
+}
+
+// position solar
+.position-solar-6{
+	top: -45px;
+}
+.position-solar-5{
+	top: -20px;
+}
+.position-solar-3{
+	top: -15px;
+}
+.position-solar-2{
+	top: -40px;
+}
+.position-solar-1{
+	top: -25px;
 }
