@@ -608,7 +608,7 @@ body {
 }
 .rotate_neptun-orbit {
 	transform: rotate(-265deg);
-	animation: rotate_neptun-orbit 115s linear infinite;
+	animation: rotate_neptun-orbit 114.5s linear infinite;
 }
 @keyframes rotate_neptun-orbit {
 	0% {
@@ -621,7 +621,7 @@ body {
 //Invention
 .rotate_jupiter-orbit {
 	transform: rotate(-345deg);
-	animation: rotate_jupiter-orbit 115s linear infinite;
+	animation: rotate_jupiter-orbit 114.5s linear infinite;
 }
 @keyframes rotate_jupiter-orbit {
 	0% {
@@ -634,7 +634,7 @@ body {
 //Dauntless
 .rotate_uranus-orbit {
 	transform: rotate(-80deg);
-	animation: rotate_uranus-orbit 115s linear infinite;
+	animation: rotate_uranus-orbit 114.5s linear infinite;
 }
 @keyframes rotate_uranus-orbit {
 	0% {
@@ -647,7 +647,7 @@ body {
 //Zen
 .rotate_saturn-orbit {
 	transform: rotate(-120deg);
-	animation: rotate_saturn-orbit 115s linear infinite;
+	animation: rotate_saturn-orbit 114.5s linear infinite;
 }
 @keyframes rotate_saturn-orbit {
 	0% {
@@ -659,15 +659,15 @@ body {
 }
 //Health
 .rotate_earth-orbit {
-	transform: rotate(-30deg);
-	animation: rotate_earth-orbit 115s linear infinite;
+	transform: rotate(-35deg);
+	animation: rotate_earth-orbit 114.5s linear infinite;
 }
 @keyframes rotate_earth-orbit {
 	0% {
-		transform: rotate(-30deg);
+		transform: rotate(-35deg);
 	}
 	100% {
-		transform: rotate(330deg);
+		transform: rotate(325deg);
 	}
 }
 // Center
