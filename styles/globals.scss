@@ -125,7 +125,7 @@ body {
 	width: calc(1391px * var(--sun-size-factor));
 	height: calc(1391px * var(--sun-size-factor));
 	// background-color: #ffe493;
-	background-image: url("../public//images//moon.png");
+	background-image: url("../public/images/uniconverse/center.png");
 	background-size: cover;
 	background-position: center;
 	border-radius: 50%;
@@ -283,6 +283,7 @@ body {
 	z-index: 7;
 	border: 0.5px dashed rgb(97, 97, 97);
 	animation: border_white_earth-orbit 4s;
+	transform: rotate(-10deg);
 }
 @keyframes border_white_earth-orbit {
 	0% {
@@ -355,6 +356,7 @@ body {
 	z-index: 5;
 	border: 0.5px dashed rgb(97, 97, 97);
 	animation: border_white_jupiter-orbit 4s;
+	transform: rotate(-60deg);
 }
 @keyframes border_white_jupiter-orbit {
 	0% {
@@ -413,6 +415,7 @@ body {
 	z-index: 3;
 	border: 0.5px dashed rgb(97, 97, 97);
 	animation: border_white_uranus-orbit 4s;
+	transform: rotate(35deg);
 }
 @keyframes border_white_uranus-orbit {
 	0% {
@@ -441,6 +444,42 @@ body {
 	z-index: 2;
 	border: 0.5px dashed rgb(97, 97, 97);
 	animation: border_white_neptun-orbit 4s;
+	transform: rotate(220deg);
+}
+.w_h_95 {
+	width: 93.5% !important;
+	height: 93.5% !important;
+	z-index: -1;
+}
+.w_h_uranus {
+	width: 81.5% !important;
+	height: 81.5% !important;
+	z-index: -1;
+}
+.w_h_saturn {
+	width: 69% !important;
+	height: 69% !important;
+	z-index: -1;
+}
+.w_h_jupiter {
+	width: 56.5% !important;
+	height: 56.5% !important;
+	z-index: -1;
+}
+.w_h_mars {
+	width: 44% !important;
+	height: 44% !important;
+	z-index: -1;
+}
+.w_h_earth {
+	width: 31.5% !important;
+	height: 31.5% !important;
+	z-index: -1;
+}
+.w_h_venus {
+	width: 19% !important;
+	height: 19% !important;
+	z-index: -1;
 }
 @keyframes border_white_neptun-orbit {
 	0% {
@@ -479,36 +518,50 @@ body {
 	transform-style: preserve-3d;
 }
 .orbit__shape--mercury {
-	-webkit-animation-duration: calc(7603200s / var(--speed-of-animation));
-	animation-duration: calc(7603200s / var(--speed-of-animation));
+	-webkit-animation-duration: calc(59356800s / var(--speed-of-animation));
+	animation-duration: calc(59356800s / var(--speed-of-animation));
 }
 .orbit__shape--venus {
-	-webkit-animation-duration: calc(19414166s / var(--speed-of-animation));
-	animation-duration: calc(19414166s / var(--speed-of-animation));
+	// -webkit-animation-duration: calc(19414166s / var(--speed-of-animation));
+	// animation-duration: calc(19414166s / var(--speed-of-animation));
+	-webkit-animation-duration: calc(59356800s / var(--speed-of-animation));
+	animation-duration: calc(59356800s / var(--speed-of-animation));
 }
 .orbit__shape--earth {
-	-webkit-animation-duration: calc(31553280s / var(--speed-of-animation));
-	animation-duration: calc(31553280s / var(--speed-of-animation));
+	// -webkit-animation-duration: calc(31553280s / var(--speed-of-animation));
+	// animation-duration: calc(31553280s / var(--speed-of-animation));
+	-webkit-animation-duration: calc(59356800s / var(--speed-of-animation));
+	animation-duration: calc(59356800s / var(--speed-of-animation));
 }
 .orbit__shape--mars {
+	// -webkit-animation-duration: calc(59356800s / var(--speed-of-animation));
+	// animation-duration: calc(59356800s / var(--speed-of-animation));
 	-webkit-animation-duration: calc(59356800s / var(--speed-of-animation));
 	animation-duration: calc(59356800s / var(--speed-of-animation));
 }
 .orbit__shape--jupiter {
-	-webkit-animation-duration: calc(374025600s / var(--speed-of-animation));
-	animation-duration: calc(374025600s / var(--speed-of-animation));
+	// -webkit-animation-duration: calc(374025600s / var(--speed-of-animation));
+	// animation-duration: calc(374025600s / var(--speed-of-animation));
+	-webkit-animation-duration: calc(59356800s / var(--speed-of-animation));
+	animation-duration: calc(59356800s / var(--speed-of-animation));
 }
 .orbit__shape--saturn {
-	-webkit-animation-duration: calc(928886400s / var(--speed-of-animation));
-	animation-duration: calc(928886400s / var(--speed-of-animation));
+	// -webkit-animation-duration: calc(928886400s / var(--speed-of-animation));
+	// animation-duration: calc(928886400s / var(--speed-of-animation));
+	-webkit-animation-duration: calc(59356800s / var(--speed-of-animation));
+	animation-duration: calc(59356800s / var(--speed-of-animation));
 }
 .orbit__shape--uranus {
-	-webkit-animation-duration: calc(2649369600s / var(--speed-of-animation));
-	animation-duration: calc(2649369600s / var(--speed-of-animation));
+	// -webkit-animation-duration: calc(2649369600s / var(--speed-of-animation));
+	// animation-duration: calc(2649369600s / var(--speed-of-animation));
+	-webkit-animation-duration: calc(59356800s / var(--speed-of-animation));
+	animation-duration: calc(59356800s / var(--speed-of-animation));
 }
 .orbit__shape--neptun {
-	-webkit-animation-duration: calc(5196787200s / var(--speed-of-animation));
-	animation-duration: calc(5196787200s / var(--speed-of-animation));
+	// -webkit-animation-duration: calc(5196787200s / var(--speed-of-animation));
+	// animation-duration: calc(5196787200s / var(--speed-of-animation));
+	-webkit-animation-duration: calc(59356800s / var(--speed-of-animation));
+	animation-duration: calc(59356800s / var(--speed-of-animation));
 }
 .planet {
 	position: relative;
@@ -550,7 +603,84 @@ body {
 	transform: rotateZ(30deg);
 }
 .planet__structure--2 {
-	transform: rotateZ(-30deg);
+	// transform: rotateZ(-30deg);
+	// transform: rotate(-135deg);
+}
+.rotate_neptun-orbit {
+	transform: rotate(-265deg);
+	animation: rotate_neptun-orbit 115s linear infinite;
+}
+@keyframes rotate_neptun-orbit {
+	0% {
+		transform: rotate(-265deg);
+	}
+	100% {
+		transform: rotate(95deg);
+	}
+}
+//Invention
+.rotate_jupiter-orbit {
+	transform: rotate(-345deg);
+	animation: rotate_jupiter-orbit 115s linear infinite;
+}
+@keyframes rotate_jupiter-orbit {
+	0% {
+		transform: rotate(-345deg);
+	}
+	100% {
+		transform: rotate(15deg);
+	}
+}
+//Dauntless
+.rotate_uranus-orbit {
+	transform: rotate(-80deg);
+	animation: rotate_uranus-orbit 115s linear infinite;
+}
+@keyframes rotate_uranus-orbit {
+	0% {
+		transform: rotate(-80deg);
+	}
+	100% {
+		transform: rotate(280deg);
+	}
+}
+//Zen
+.rotate_saturn-orbit {
+	transform: rotate(-120deg);
+	animation: rotate_saturn-orbit 115s linear infinite;
+}
+@keyframes rotate_saturn-orbit {
+	0% {
+		transform: rotate(-120deg);
+	}
+	100% {
+		transform: rotate(240deg);
+	}
+}
+//Health
+.rotate_earth-orbit {
+	transform: rotate(-30deg);
+	animation: rotate_earth-orbit 115s linear infinite;
+}
+@keyframes rotate_earth-orbit {
+	0% {
+		transform: rotate(-30deg);
+	}
+	100% {
+		transform: rotate(330deg);
+	}
+}
+// Center
+.rotate_sun {
+	animation: rotate_sun 20s linear infinite;
+}
+@keyframes rotate_sun {
+	0% {
+		transform: rotate(360deg);
+	}
+	100% {
+		transform: rotate(0);
+	}
 }
 .planet__structure--3 {
 	transform: rotateX(30deg) rotateY(90deg);
@@ -815,12 +945,20 @@ body {
 
 // Size solar
 .size-solar-big {
+	width: 150px;
+	height: 150px;
+}
+.size-solar-xl {
 	width: 130px;
 	height: 130px;
 }
 .size-solar-small {
-	width: 70px;
-	height: 70px;
+	width: 100px;
+	height: 100px;
+}
+.size-solar-uranus-orbit {
+	width: 150px;
+	height: 150px;
 }
 
 // position solar
