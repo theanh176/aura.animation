@@ -9,7 +9,7 @@ import SolarImage from "../../public/images/solar.png";
 import MercuryImage from "../../public/images/mercury-planet.png";
 import Link from "next/link";
 
-function HomeAura({href}) {
+function HomeAura({ href }) {
 	const router = useRouter();
 	let timestamp_start = new Date("2019-01-01").getTime();
 	let timestamp_now = new Date().getTime();
@@ -157,6 +157,9 @@ function HomeAura({href}) {
 														width={100}
 														height={100}
 													/>
+													<div
+													className="box_image"
+												></div>
 												</div>
 
 												<div className="planet__structure planet__structure--3"></div>
@@ -173,6 +176,7 @@ function HomeAura({href}) {
 							onClick={() => {
 								setIsShow(true);
 								setIsShowBackground(true);
+								handleClick();
 								setTimeout(() => {
 									setIsShow(false);
 								}, 3200);
@@ -198,6 +202,9 @@ function HomeAura({href}) {
 													width={100}
 													height={100}
 												/>
+												<div
+													className="box_image"
+												></div>
 											</div>
 											<div className="planet__structure planet__structure--3"></div>
 											<div className="planet__structure planet__structure--4"></div>
@@ -212,6 +219,7 @@ function HomeAura({href}) {
 							onClick={() => {
 								setIsShow(true);
 								setIsShowBackground(true);
+								handleClick();
 								setTimeout(() => {
 									setIsShow(false);
 								}, 3200);
@@ -237,6 +245,9 @@ function HomeAura({href}) {
 													width={200}
 													height={200}
 												/>
+												<div
+													className="box_image"
+												></div>
 											</div>
 											<div className="planet__structure planet__structure--3"></div>
 											<div className="planet__structure planet__structure--4"></div>
@@ -251,6 +262,7 @@ function HomeAura({href}) {
 							onClick={() => {
 								setIsShow(true);
 								setIsShowBackground(true);
+								handleClick();
 								setTimeout(() => {
 									setIsShow(false);
 								}, 3200);
@@ -276,6 +288,9 @@ function HomeAura({href}) {
 													width={100}
 													height={100}
 												/>
+												<div
+													className="box_image"
+												></div>
 											</div>
 											<div className="planet__structure planet__structure--3"></div>
 											<div className="planet__structure planet__structure--4"></div>
@@ -295,6 +310,7 @@ function HomeAura({href}) {
 							onClick={() => {
 								setIsShow(true);
 								setIsShowBackground(true);
+								handleClick();
 								setTimeout(() => {
 									setIsShow(false);
 								}, 3200);
@@ -320,6 +336,7 @@ function HomeAura({href}) {
 													width={100}
 													height={100}
 												/>
+												<div className="box_image"></div>
 											</div>
 											<div className="planet__structure planet__structure--3"></div>
 											<div className="planet__structure planet__structure--4"></div>
@@ -334,6 +351,7 @@ function HomeAura({href}) {
 							onClick={() => {
 								setIsShow(true);
 								setIsShowBackground(true);
+								handleClick();
 								setTimeout(() => {
 									setIsShow(false);
 								}, 3200);
@@ -359,6 +377,7 @@ function HomeAura({href}) {
 													width={130}
 													height={130}
 												/>
+												<div className="box_image"></div>
 											</div>
 											<div className="planet__structure planet__structure--3"></div>
 											<div className="planet__structure planet__structure--4"></div>

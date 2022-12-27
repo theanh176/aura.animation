@@ -86,6 +86,21 @@ body {
 	overflow: hidden;
 	perspective: var(--perspective);
 	transition: perspective 2s;
+	animation: universe-animation 3s ease-in-out;
+}
+@keyframes universe-animation {
+	0% {
+		transform: scale(0);
+		opacity: 0;
+	}
+	75% {
+		transform: scale(1.4);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
 }
 .solarsystem {
 	position: relative;
@@ -124,7 +139,7 @@ body {
 	height: 600%;
 	width: 600%;
 	background: radial-gradient(
-		rgba(255, 228, 147, 0.4),
+		rgba(255, 228, 147, 0.15),
 		rgba(255, 228, 147, 0.1) 40%,
 		rgba(255, 255, 255, 0) 70%
 	);
@@ -155,28 +170,81 @@ body {
 	transition: width 2s, height 2s;
 }
 .earth-orbit:hover {
-	border: 0.5px solid rgb(255, 255, 255);
+	&:hover {
+		border: 0.5px solid rgb(255, 255, 255);
+		.box_image {
+			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.8);
+		}
+	}
 }
 .venus-orbit:hover {
-	border: 0.5px solid rgb(255, 255, 255);
+	&:hover {
+		border: 0.5px solid rgb(255, 255, 255);
+		.box_image {
+			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.8);
+		}
+	}
 }
 .mercury-orbit:hover {
-	border: 0.5px solid rgb(255, 255, 255);
+	&:hover {
+		border: 0.5px solid rgb(255, 255, 255);
+		.box_image {
+			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.8);
+		}
+	}
 }
 .mars-orbit:hover {
-	border: 0.5px solid rgb(255, 255, 255);
+	&:hover {
+		border: 0.5px solid rgb(255, 255, 255);
+		.box_image {
+			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.8);
+		}
+	}
 }
 .jupiter-orbit:hover {
-	border: 0.5px solid rgb(255, 255, 255);
+	&:hover {
+		border: 0.5px solid rgb(255, 255, 255);
+		.box_image {
+			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.8);
+		}
+	}
 }
 .saturn-orbit:hover {
-	border: 0.5px solid rgb(255, 255, 255);
+	&:hover {
+		border: 0.5px solid rgb(255, 255, 255);
+		.box_image {
+			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.8);
+		}
+	}
 }
 .uranus-orbit:hover {
-	border: 0.5px solid rgb(255, 255, 255);
+	&:hover {
+		border: 0.5px solid rgb(255, 255, 255);
+		.box_image {
+			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.8);
+		}
+	}
 }
-.neptun-orbit:hover {
-	border: 0.5px solid rgb(255, 255, 255);
+.neptun-orbit {
+	&:hover {
+		border: 0.5px solid rgb(255, 255, 255);
+		.box_image {
+			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.8);
+		}
+	}
+}
+.box_image {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	width: 50%;
+	height: 50%;
+	z-index: -1;
+	box-shadow: none;
+	transition-delay: 0.3s;
+	transition-duration: 0.7s;
 }
 .mercury-orbit {
 	position: absolute;
