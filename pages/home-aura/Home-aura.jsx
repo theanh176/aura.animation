@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import MainLayout from "../../components/layout/mainLayout";
 import styles from "./Home-aura.module.scss";
 import Image from "next/image";
@@ -24,6 +24,12 @@ function HomeAura({ href }) {
 			router.push("/");
 		}, 3000);
 	};
+
+	// useEffect(() => {
+	// 	setTimeout(() => {
+	// 		alert("Hello");
+	// 	}, 3000);
+	// }, []);
 	return (
 		<React.Fragment>
 			<div className={styles.home_aura}>
@@ -157,9 +163,7 @@ function HomeAura({ href }) {
 														width={100}
 														height={100}
 													/>
-													<div
-													className="box_image"
-												></div>
+													<div className="box_image"></div>
 												</div>
 
 												<div className="planet__structure planet__structure--3"></div>
@@ -202,9 +206,7 @@ function HomeAura({ href }) {
 													width={100}
 													height={100}
 												/>
-												<div
-													className="box_image"
-												></div>
+												<div className="box_image"></div>
 											</div>
 											<div className="planet__structure planet__structure--3"></div>
 											<div className="planet__structure planet__structure--4"></div>
@@ -245,9 +247,7 @@ function HomeAura({ href }) {
 													width={200}
 													height={200}
 												/>
-												<div
-													className="box_image"
-												></div>
+												<div className="box_image"></div>
 											</div>
 											<div className="planet__structure planet__structure--3"></div>
 											<div className="planet__structure planet__structure--4"></div>
@@ -288,9 +288,7 @@ function HomeAura({ href }) {
 													width={100}
 													height={100}
 												/>
-												<div
-													className="box_image"
-												></div>
+												<div className="box_image"></div>
 											</div>
 											<div className="planet__structure planet__structure--3"></div>
 											<div className="planet__structure planet__structure--4"></div>
