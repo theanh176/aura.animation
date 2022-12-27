@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import styles from "./header.module.scss";
+import Link from "next/link";
 
 function Header() {
 	const router = useRouter();
@@ -18,7 +19,13 @@ function Header() {
 					"justify-content-between mx-auto text-left"
 				}
 			>
-				<h1>AURA</h1>
+				<Link href={"/home-aura"}><h1>AURA</h1></Link>
+				<div className={styles.box_hover_line}>
+					<div className={styles.hover_line}>
+						<span>HOVER</span>
+						{/* <div className={styles.line}></div> */}
+					</div>
+				</div>
 				<div className={styles.background}></div>
 			</div>
 		</Navbar>

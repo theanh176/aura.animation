@@ -43,7 +43,19 @@ body {
 	--speed-of-animation: 518400;
 }
 #one-year-per-second:checked ~ .universe {
-	--speed-of-animation: 31104000;
+	--speed-of-animation: 61104000;
+	animation: animation-opacity 3s;
+}
+@keyframes animation-opacity {
+	0% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 #topview ~ .universe {
 	--topview: -65deg;

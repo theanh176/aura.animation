@@ -1,11 +1,11 @@
 import React from "react";
-import HomeTheAnh from "./Home-theanh";
+import HomeAura from "./Home-aura";
 import { Navbar } from "react-bootstrap";
 
 export default function Index() {
 	return (
 		<Navbar fixed="top" className="p-0">
-			<HomeTheAnh />
+			<HomeAura />
 		</Navbar>
 	);
 }
