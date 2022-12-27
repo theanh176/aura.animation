@@ -29,7 +29,7 @@ export default function Seo(props) {
 			<meta property="twitter:description" content={description} />
 			<meta property="twitter:image" content={thumbnailUrl} /> */}
 
-			<title>AURA CAPITAL</title>
+			<title>UNICONVERSE</title>
 			<meta
 				name="description"
 				content="Step by step tutorials to build a full CRUD website using NextJS for beginners"
@@ -37,7 +37,7 @@ export default function Seo(props) {
 
 			<meta
 				itemprop="name"
-				content="AURA CAPITAL"
+				content="UNICONVERSE"
 			/>
 			<meta
 				itemprop="description"
@@ -55,7 +55,7 @@ export default function Seo(props) {
 			<meta property="og:type" content="website" />
 			<meta
 				property="og:title"
-				content="AURA CAPITAL"
+				content="UNICONVERSE"
 			/>
 			<meta
 				property="og:description"
@@ -69,7 +69,7 @@ export default function Seo(props) {
 			<meta name="twitter:card" content="summary_large_image" />
 			<meta
 				name="twitter:title"
-				content="AURA CAPITAL"
+				content="UNICONVERSE"
 			/>
 			<meta
 				name="twitter:description"

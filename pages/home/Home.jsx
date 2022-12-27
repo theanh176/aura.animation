@@ -22,7 +22,7 @@ function HomeAura({ href }) {
 	const [isHref, setIsHref] = useState("home-aura");
 	const handleClick = () => {
 		setTimeout(() => {
-			router.push("/home-aura");
+			router.push("/home-uniconverse");
 		}, 3000);
 	};
 
@@ -154,8 +154,9 @@ function HomeAura({ href }) {
 													" " +
 													"planet earth"
 												}
+												style={{color: "white"}}
 											>
-												<div className="planet__structure planet__structure--1"></div>
+												<div className="planet__structure planet__structure--1">111111</div>
 
 												<div className="planet__structure planet__structure--2 size-solar-small position-solar-1">
 													<Image
@@ -167,10 +168,10 @@ function HomeAura({ href }) {
 													<div className="box_image"></div>
 												</div>
 
-												<div className="planet__structure planet__structure--3"></div>
-												<div className="planet__structure planet__structure--4"></div>
-												<div className="planet__structure planet__structure--5"></div>
-												<div className="planet__structure planet__structure--6"></div>
+												<div className="planet__structure planet__structure--3">3333333</div>
+												<div className="planet__structure planet__structure--4">4444444</div>
+												<div className="planet__structure planet__structure--5">5555555</div>
+												<div className="planet__structure planet__structure--6">66666666</div>
 											</div>
 										</a>
 									</div>

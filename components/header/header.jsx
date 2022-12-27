@@ -19,7 +19,7 @@ function Header() {
 					"justify-content-between mx-auto text-left"
 				}
 			>
-				<Link href={"/"}><h1>AURA</h1></Link>
+				<Link href={"/"}><h1>UNICONVERSE</h1></Link>
 				<div className={styles.box_hover_line}>
 					<div className={styles.hover_line}>
 						<span>HOVER</span>
