@@ -2,11 +2,11 @@ import React from "react";
 import Head from "next/head";
 
 export default function Seo(props) {
-	const { title, description, url, thumbnailUrl } = props.data;
+  const { title, description, url, thumbnailUrl } = props.data;
 
-	return (
-		<Head>
-			{/* <title>{title}</title>
+  return (
+    <Head>
+      {/* <title>{title}</title>
 			<meta name="title" content={title} />
 			<meta name="description" content={description} />
 
@@ -29,56 +29,47 @@ export default function Seo(props) {
 			<meta property="twitter:description" content={description} />
 			<meta property="twitter:image" content={thumbnailUrl} /> */}
 
-			<title>UNICONVERSE</title>
-			<meta
-				name="description"
-				content="Step by step tutorials to build a full CRUD website using NextJS for beginners"
-			/>
+      <title>Unicornverse</title>
+      <meta
+        name="description"
+        content="Step by step tutorials to build a full CRUD website using NextJS for beginners"
+      />
 
-			<meta
-				itemprop="name"
-				content="UNICONVERSE"
-			/>
-			<meta
-				itemprop="description"
-				content="Step by step tutorials to build a full CRUD website using NextJS for beginners"
-			/>
-			<meta
-				itemprop="image"
-				content="https://cdn.getshifter.co/caa65008efb706a8bfc6f7e4045d6a018420c3df/uploads/2020/11/nextjs.png"
-			/>
+      <meta itemprop="name" content="UNICORNVERSE" />
+      <meta
+        itemprop="description"
+        content="Step by step tutorials to build a full CRUD website using NextJS for beginners"
+      />
+      <meta
+        itemprop="image"
+        content="https://cdn.getshifter.co/caa65008efb706a8bfc6f7e4045d6a018420c3df/uploads/2020/11/nextjs.png"
+      />
 
-			<meta
-				property="og:url"
-				content="https://templates-ecommerce-rust.vercel.app"
-			/>
-			<meta property="og:type" content="website" />
-			<meta
-				property="og:title"
-				content="UNICONVERSE"
-			/>
-			<meta
-				property="og:description"
-				content="Step by step tutorials to build a full CRUD website using NextJS for beginners"
-			/>
-			<meta
-				property="og:image"
-				content="https://cdn.getshifter.co/caa65008efb706a8bfc6f7e4045d6a018420c3df/uploads/2020/11/nextjs.png"
-			/>
+      <meta
+        property="og:url"
+        content="https://templates-ecommerce-rust.vercel.app"
+      />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="UNICORNVERSE" />
+      <meta
+        property="og:description"
+        content="Step by step tutorials to build a full CRUD website using NextJS for beginners"
+      />
+      <meta
+        property="og:image"
+        content="https://cdn.getshifter.co/caa65008efb706a8bfc6f7e4045d6a018420c3df/uploads/2020/11/nextjs.png"
+      />
 
-			<meta name="twitter:card" content="summary_large_image" />
-			<meta
-				name="twitter:title"
-				content="UNICONVERSE"
-			/>
-			<meta
-				name="twitter:description"
-				content="Step by step tutorials to build a full CRUD website using NextJS for beginners"
-			/>
-			<meta
-				name="twitter:image"
-				content="https://cdn.getshifter.co/caa65008efb706a8bfc6f7e4045d6a018420c3df/uploads/2020/11/nextjs.png"
-			/>
-		</Head>
-	);
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="UNICORNVERSE" />
+      <meta
+        name="twitter:description"
+        content="Step by step tutorials to build a full CRUD website using NextJS for beginners"
+      />
+      <meta
+        name="twitter:image"
+        content="https://cdn.getshifter.co/caa65008efb706a8bfc6f7e4045d6a018420c3df/uploads/2020/11/nextjs.png"
+      />
+    </Head>
+  );
 }

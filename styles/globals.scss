@@ -634,7 +634,7 @@ body {
 //Zen
 .rotate_saturn-orbit {
 	transform: rotate(-125deg);
-	animation: rotate_saturn-orbit 115s linear infinite;
+	animation: rotate_saturn-orbit 114.5s linear infinite;
 }
 @keyframes rotate_saturn-orbit {
 	0% {
@@ -647,7 +647,7 @@ body {
 //Health
 .rotate_earth-orbit {
 	transform: rotate(-35deg);
-	animation: rotate_earth-orbit 115s linear infinite;
+	animation: rotate_earth-orbit 114.5s linear infinite;
 }
 @keyframes rotate_earth-orbit {
 	0% {
