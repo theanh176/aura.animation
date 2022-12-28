@@ -47,41 +47,56 @@ function HomeContent() {
           src="/images/unicornverse/hinh-1.jpg"
           alt="1"
           width={1920}
-          height={700}
+          height={800}
         />
       </div>
 
-      <div className={styles.box + " " + "col-10 mx-auto d-flex flex-row"}>
-        <div className="col-4 d-flex flex-column p-5">
+      <div className={styles.box + " " + "col-10 mx-auto d-flex flex-wrap"}>
+        <div className="col-12 col-md-4 d-flex flex-column px-5 py-3 py-md-5">
           <p className={styles.box_title}>kết nối đầu tư</p>
 
           <div className={styles.box_decor}></div>
 
           <p className={styles.box_content}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
-            alias dolor, deleniti vitae unde aut quibusdam amet soluta,
+            Sân chơi của các doanh
+            <br />
+            nghiệp có khát vọng IPO, hỗ
+            <br />
+            trợ nhau trong vấn đề gọi vốn
+            <br />
+            rút ngắn thời gian
           </p>
         </div>
 
-        <div className="col-4 d-flex flex-column p-5">
+        <div className="col-12 col-md-4 d-flex flex-column px-5 py-3 py-md-5">
           <p className={styles.box_title}>phong cách sông mới</p>
 
           <div className={styles.box_decor}></div>
 
           <p className={styles.box_content}>
-            Sit amet consectetur adipisicing elit. Id dolorem earum consectetur
-            sunt quaerat cum inventore officia aperiam architecto.
+            Phong cách sống mới đầy trải
+            <br />
+            nghiệm đỉnh cao, trải nghiệm
+            <br />
+            "Giả lập" của 1 "Mafia" tài
+            <br />
+            chính
           </p>
         </div>
 
-        <div className="col-4 d-flex flex-column p-5">
+        <div className="col-12 col-md-4 d-flex flex-column px-5 py-3 py-md-5">
           <p className={styles.box_title}>mở rộng kênh phân phối</p>
 
           <div className={styles.box_decor}></div>
 
           <p className={styles.box_content}>
-            Oluptates inventore molestiae sit libero magnam dolore omnis,
-            nesciunt porro odio ex culpa autem aliquam quibusdam deleniti
+            Kết nỗi mở rộng kênh
+            <br />
+            phân phối đòn bẫy tốc độ
+            <br />
+            phát triển của các doanh
+            <br />
+            nghiệp
           </p>
         </div>
       </div>
