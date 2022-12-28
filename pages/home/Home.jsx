@@ -6,12 +6,12 @@ import Image from "next/image";
 import MarsImage from "../../public/images/mars.png";
 import SolarImage from "../../public/images/solar.png";
 import MercuryImage from "../../public/images/mercury-planet.png";
-import CenterImage from "../../public/images/uniconverse/center.png";
-import DauntlessImage from "../../public/images/uniconverse/dauntless.png";
-import HealthImage from "../../public/images/uniconverse/health.png";
-import InventionImage from "../../public/images/uniconverse/invention.png";
-import LegaxyImage from "../../public/images/uniconverse/legaxy.png";
-import ZenImage from "../../public/images/uniconverse/zen.png";
+import CenterImage from "../../public/images/unicornverse/center.png";
+import DauntlessImage from "../../public/images/unicornverse/dauntless.png";
+import HealthImage from "../../public/images/unicornverse/health.png";
+import InventionImage from "../../public/images/unicornverse/invention.png";
+import LegaxyImage from "../../public/images/unicornverse/legaxy.png";
+import ZenImage from "../../public/images/unicornverse/zen.png";
 import Link from "next/link";
 import { Navbar } from "react-bootstrap";
 
@@ -27,7 +27,7 @@ function HomeAura({ href }) {
 	const [isHref, setIsHref] = useState("home-aura");
 	const handleClick = () => {
 		setTimeout(() => {
-			router.push("/home-uniconverse");
+			router.push("/home-unicornverse");
 		}, 3000);
 	};
 
