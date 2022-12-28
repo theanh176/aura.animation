@@ -30,6 +30,7 @@ export default function Seo(props) {
 			<meta property="twitter:image" content={thumbnailUrl} /> */}
 
       <title>Unicornverse</title>
+      
       <meta
         name="description"
         content="Step by step tutorials to build a full CRUD website using NextJS for beginners"
