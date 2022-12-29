@@ -78,7 +78,7 @@ function HomeContent() {
             <br />
             nghiệm đỉnh cao, trải nghiệm
             <br />
-            "Giả lập" của 1 "Mafia" tài
+            &quot;Giả lập&quot; của 1 &quot;Mafia&quot; tài
             <br />
             chính
           </p>
