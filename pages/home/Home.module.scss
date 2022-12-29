@@ -2,49 +2,12 @@
 	background-color: #262626;
 	color: white;
 	text-align: center;
-	height: 120vh;
+	height: 100vh;
 	width: 100%;
 	max-width: 1920px;
 	margin: 0 auto;
-	.background {
-		width: 100%;
-		height: 120vh;
-		background-color: black;
-		background-size: cover;
-		// animation: backgroundAnimation 30s infinite;
-		// // animation cho background
-		// @keyframes backgroundAnimation {
-		// 	0% {
-		// 		transform: scale(1);
-		// 	}
-		// 	50% {
-		// 		transform: scale(1.1);
-		// 	}
-		// 	100% {
-		// 		transform: scale(1);
-		// 	}
-		// }
-	}
-	.background_speed {
-		width: 100%;
-		height: 100vh;
-		// background-image: url(../../public/images/background2.jpg);
-		background-color: black;
-		background-size: cover;
-		animation: backgroundAnimation_speed 3s ease-in-out;
-		// animation cho background
-		@keyframes backgroundAnimation_speed {
-			0% {
-				transform: scale(1);
-			}
-			45% {
-				transform: scale(1);
-			}
-			100% {
-				transform: scale(2.5);
-			}
-		}
-	}
+	background-color: black;
+	overflow-x: hidden !important; 
 	.hover_solar {
 		transition: 0.5s color ease;
 		cursor: pointer;

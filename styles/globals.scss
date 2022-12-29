@@ -2,7 +2,8 @@ html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans;
 }
 
 * {
@@ -43,18 +44,6 @@ body {
 }
 #one-year-per-second:checked ~ .universe {
 	--speed-of-animation: 61104000;
-	animation: animation-opacity 3s;
-}
-@keyframes animation-opacity {
-	0% {
-		opacity: 1;
-	}
-	80% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
 }
 #topview ~ .universe {
 	--topview: -65deg;
@@ -70,6 +59,21 @@ body {
 #isometric:checked ~ .universe {
 	--perspective: 10000px;
 }
+#translateLeft:checked ~ .universe {
+	animation: universe-translateLeft 3s ease-in-out;
+	transform: translateX(-45%);
+}
+@keyframes universe-translateLeft {
+	0% {
+		transform: scale(1) translateX(0);
+	}
+	20% {
+		transform: scale(0.6);
+	}
+	100% {
+		transform: scale(1) translateX(-45%);
+	}
+}
 .universe {
 	--orbit-size-factor: 1000000;
 	position: absolute;
@@ -82,7 +86,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	overflow: hidden;
+	overflow: hidden !important;
 	perspective: var(--perspective);
 	transition: perspective 2s;
 	animation: universe-animation 3s ease-in-out;
@@ -137,7 +141,11 @@ body {
 	content: "";
 	height: 600%;
 	width: 600%;
-	background: radial-gradient(rgba(255, 228, 147, 0.15), rgba(255, 228, 147, 0.1) 40%, rgba(255, 255, 255, 0) 70%);
+	background: radial-gradient(
+		rgba(255, 228, 147, 0.15),
+		rgba(255, 228, 147, 0.1) 40%,
+		rgba(255, 255, 255, 0) 70%
+	);
 	border-radius: 50%;
 	transform-origin: center center;
 	transform: translateY(-40%) translateX(-40%) rotateY(var(--angle-sun-glow));
@@ -433,8 +441,8 @@ body {
 }
 .neptun-orbit {
 	position: absolute;
-	width: 100%;
-	height: 100%;
+	width: 93.5%;
+	height: 93.5%;
 	transform: rotateZ(-347deg);
 	z-index: 2;
 	border: 0.5px dashed rgb(97, 97, 97);
@@ -442,8 +450,8 @@ body {
 	transform: rotate(220deg);
 }
 .w_h_95 {
-	width: 93.5% !important;
-	height: 93.5% !important;
+	width: 100% !important;
+	height: 100% !important;
 	z-index: -1;
 }
 .w_h_uranus {
@@ -504,8 +512,12 @@ body {
 	animation: orbit infinite;
 	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
-	-webkit-animation-delay: calc((var(--seconds-left) * -1) / var(--speed-of-animation));
-	animation-delay: calc((var(--seconds-left) * -1) / var(--speed-of-animation));
+	-webkit-animation-delay: calc(
+		(var(--seconds-left) * -1) / var(--speed-of-animation)
+	);
+	animation-delay: calc(
+		(var(--seconds-left) * -1) / var(--speed-of-animation)
+	);
 	transform-style: preserve-3d;
 }
 .orbit__shape--mercury {
@@ -572,7 +584,11 @@ body {
 	height: 500%;
 	transform: translateY(-100%);
 	width: 100%;
-	background: linear-gradient(to top, rgba(1, 2, 13, 0.8), rgba(1, 2, 13, 0) 100%);
+	background: linear-gradient(
+		to top,
+		rgba(1, 2, 13, 0.8),
+		rgba(1, 2, 13, 0) 100%
+	);
 	-webkit-clip-path: polygon(50% 0%, 100% 100%, 100% 100%, 0% 100%);
 	clip-path: polygon(50% 0%, 100% 100%, 100% 100%, 0% 100%);
 }
@@ -765,8 +781,12 @@ body {
 .planet-orbit--saturn {
 	-webkit-animation-duration: calc(933465600s / var(--speed-of-animation));
 	animation-duration: calc(933465600s / var(--speed-of-animation));
-	-webkit-animation-delay: calc(((var(--seconds-left) + 433366400) * -1) / var(--speed-of-animation));
-	animation-delay: calc(((var(--seconds-left) + 433366400) * -1) / var(--speed-of-animation));
+	-webkit-animation-delay: calc(
+		((var(--seconds-left) + 433366400) * -1) / var(--speed-of-animation)
+	);
+	animation-delay: calc(
+		((var(--seconds-left) + 433366400) * -1) / var(--speed-of-animation)
+	);
 }
 .rings-of-saturn {
 	transform: rotateX(0deg) rotateY(27deg);
@@ -946,7 +966,7 @@ body {
 
 // position solar
 .position-solar-6 {
-	top: -45px;
+	top: -30px;
 }
 .position-solar-5 {
 	top: -20px;
@@ -960,4 +980,3 @@ body {
 .position-solar-1 {
 	top: -25px;
 }
-
