@@ -171,7 +171,7 @@ function HomeContent() {
 				/>
 
 				<div className="col-8 mx-auto text-uppercase" style={{
-          fontSize: "22px",
+          fontSize: "20px",
         }}>
 					<p className="fw-bold">ông đậu minh nhật,</p>
 
@@ -232,7 +232,7 @@ function HomeContent() {
 				/>
 
 				<div className="col-8 mx-auto text-uppercase" style={{
-          fontSize: "22px",
+          fontSize: "20px",
         }}>
 
 					<p>
