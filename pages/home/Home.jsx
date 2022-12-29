@@ -113,6 +113,7 @@ function HomeAura({ href }) {
                   </div>
                 </div>
               </div>
+
               <div className="venus-orbit sun-orbit">
                 <div className="ascending-node ascending-node--venus">
                   <div className="inclination inclination--venus">
@@ -192,7 +193,7 @@ function HomeAura({ href }) {
                 }}
                 className="earth-orbit sun-orbit w_h_earth"
               >
-                <div className="ascending-node ascending-node--earth">
+                {/* <div className="ascending-node ascending-node--earth">
                   <div className="inclination inclination--earth">
                     <div className="orbit__visual"></div>
                     <div className="orbit__shape orbit__shape--earth">
@@ -206,7 +207,7 @@ function HomeAura({ href }) {
                       </a>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
 
               <div className="mars-orbit sun-orbit">
@@ -222,7 +223,7 @@ function HomeAura({ href }) {
                 </div>
               </div>
               <div className="mars-orbit sun-orbit w_h_mars">
-                <div className="ascending-node ascending-node--mars">
+                {/* <div className="ascending-node ascending-node--mars">
                   <div className="inclination inclination--mars">
                     <div className="orbit__visual"></div>
                     <div className="orbit__shape orbit__shape--mars">
@@ -231,7 +232,7 @@ function HomeAura({ href }) {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
 
               <div
@@ -280,7 +281,7 @@ function HomeAura({ href }) {
                 }}
                 className="jupiter-orbit sun-orbit w_h_jupiter"
               >
-                <div className="ascending-node ascending-node--jupiter">
+                {/* <div className="ascending-node ascending-node--jupiter">
                   <div className="inclination inclination--jupiter">
                     <div className="orbit__visual"></div>
                     <div className="orbit__shape orbit__shape--jupiter">
@@ -291,7 +292,7 @@ function HomeAura({ href }) {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
 
               <div
@@ -345,7 +346,7 @@ function HomeAura({ href }) {
                 }}
                 className="saturn-orbit sun-orbit w_h_saturn"
               >
-                <div className="ascending-node ascending-node--saturn">
+                {/* <div className="ascending-node ascending-node--saturn">
                   <div className="inclination inclination--saturn">
                     <div className="orbit__visual"></div>
                     <div className="orbit__shape orbit__shape--saturn">
@@ -354,14 +355,10 @@ function HomeAura({ href }) {
                       >
                         <div className="planet__structure planet__structure--2"></div>
                       </div>
-                      <div className="planet-orbit planet-orbit--saturn">
-                        {/* <div
-												className={"rings-of-saturn"}
-											></div> */}
-                      </div>
+                      <div className="planet-orbit planet-orbit--saturn"></div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
 
               <div
@@ -410,7 +407,7 @@ function HomeAura({ href }) {
                 }}
                 className="uranus-orbit sun-orbit w_h_uranus"
               >
-                <div className="ascending-node ascending-node--uranus">
+                {/* <div className="ascending-node ascending-node--uranus">
                   <div className="inclination inclination--uranus">
                     <div className="orbit__visual"></div>
                     <div className="orbit__shape orbit__shape--uranus">
@@ -421,7 +418,7 @@ function HomeAura({ href }) {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
 
               <div
@@ -470,7 +467,7 @@ function HomeAura({ href }) {
                 }}
                 className="neptun-orbit sun-orbit w_h_95"
               >
-                <div className="ascending-node ascending-node--neptun">
+                {/* <div className="ascending-node ascending-node--neptun">
                   <div className="inclination inclination--neptun">
                     <div className="orbit__visual"></div>
                     <div className="orbit__shape orbit__shape--neptun">
@@ -481,7 +478,7 @@ function HomeAura({ href }) {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
