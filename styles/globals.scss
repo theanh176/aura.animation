@@ -86,7 +86,6 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	overflow: hidden !important;
 	perspective: var(--perspective);
 	transition: perspective 2s;
 	animation: universe-animation 3s ease-in-out;
