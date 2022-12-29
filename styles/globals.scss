@@ -61,17 +61,17 @@ body {
 }
 #translateLeft:checked ~ .universe {
 	animation: universe-translateLeft 3s ease-in-out;
-	transform: translateX(-45%);
+	transform: translateX(-45%) scale(0.8);
 }
 @keyframes universe-translateLeft {
 	0% {
-		transform: scale(1) translateX(0);
+		transform: scale(0.8) translateX(0);
 	}
 	20% {
-		transform: scale(0.6);
+		transform: scale(0.5);
 	}
 	100% {
-		transform: scale(1) translateX(-45%);
+		transform: scale(0.8) translateX(-45%);
 	}
 }
 .universe {
@@ -90,6 +90,7 @@ body {
 	perspective: var(--perspective);
 	transition: perspective 2s;
 	animation: universe-animation 3s ease-in-out;
+	transform: scale(0.8);
 }
 @keyframes universe-animation {
 	0% {
@@ -97,11 +98,11 @@ body {
 		opacity: 0;
 	}
 	75% {
-		transform: scale(1.4);
+		transform: scale(1);
 		opacity: 1;
 	}
 	100% {
-		transform: scale(1);
+		transform: scale(0.8);
 		opacity: 1;
 	}
 }
