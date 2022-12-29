@@ -15,6 +15,7 @@ import ZenImage from "../../public/images/unicornverse/zen.png";
 import Link from "next/link";
 import { Navbar } from "react-bootstrap";
 import HomeContent from "../../components/content/HomeContent";
+import DetailPage from "../../components/content/DetailPage";
 
 function HomeAura({ href }) {
 	const router = useRouter();
@@ -36,7 +37,7 @@ function HomeAura({ href }) {
 	// };
 
 	return (
-		<div>
+		<div className={styles.unicornverse}>
 			<Navbar className="p-0">
 				<div className={styles.home_aura}>
 					{/* <div
@@ -583,6 +584,7 @@ function HomeAura({ href }) {
 						</div>
 					</div> */}
 				</div>
+				<div className={styles.detailpage_home}>{isTranslate && <DetailPage />}</div>
 			</Navbar>
 
 			<HomeContent />

@@ -1,0 +1,21 @@
+.detailpage {
+	width: 50%;
+	height: fit-content;
+	position: absolute;
+	top: 0;
+    right: 0;;
+	background-color: #3ab42f;
+	color: white;
+	animation: loadPage 3s ease-in-out;
+}
+@keyframes loadPage {
+	0% {
+		transform: translateX(100%);
+	}
+    33% {
+        transform: translateX(100%);
+    }
+	100% {
+		transform: translateX(0);
+	}
+}
