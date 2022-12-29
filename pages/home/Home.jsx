@@ -38,7 +38,7 @@ function HomeAura({ href }) {
 
 	return (
 		<div className={styles.unicornverse}>
-			<Navbar className="p-0">
+			<Navbar className="p-0" style={{backgroundColor:"black"}}>
 				<div className={styles.home_aura}>
 					{/* <div
 						className={
@@ -584,7 +584,7 @@ function HomeAura({ href }) {
 						</div>
 					</div> */}
 				</div>
-				<div className={styles.detailpage_home}>{isTranslate && <DetailPage />}</div>
+				{/* <div className={styles.detailpage_home}>{isTranslate && <DetailPage />}</div> */}
 			</Navbar>
 
 			<HomeContent />

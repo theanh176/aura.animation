@@ -3,14 +3,13 @@
 	height: fit-content;
 	// background-color: black;
 	.home_aura {
-		background-color: #262626;
+		background-color: #000000;
 		color: white;
 		text-align: center;
 		height: 100vh;
 		width: 100%;
 		max-width: 1920px;
 		margin: 0 auto;
-		background-color: black;
 		overflow-x: hidden !important;
 		.hover_solar {
 			transition: 0.5s color ease;
@@ -53,6 +52,6 @@
 		}
 	}
 	.detailpage_home{
-		background-color: aliceblue;
+		height: 1870px;
 	}
 }

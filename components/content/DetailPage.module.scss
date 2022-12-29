@@ -4,9 +4,10 @@
 	position: absolute;
 	top: 0;
     right: 0;;
-	background-color: #3ab42f;
+	background-color: #000000;
 	color: white;
 	animation: loadPage 3s ease-in-out;
+    text-align: right;
 }
 @keyframes loadPage {
 	0% {
