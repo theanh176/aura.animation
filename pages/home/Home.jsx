@@ -183,14 +183,6 @@ function HomeAura({ href }) {
                 </div>
               </div>
               <div
-                onClick={() => {
-                  setIsShow(2);
-                  setIsTranslate(!isTranslate);
-                  // handleClick();
-                  setTimeout(() => {
-                    isTranslate ? setIsShow(1) : setIsShow(0);
-                  }, 3200);
-                }}
                 className="earth-orbit sun-orbit w_h_earth"
               >
                 {/* <div className="ascending-node ascending-node--earth">
@@ -271,14 +263,6 @@ function HomeAura({ href }) {
                 </div>
               </div>
               <div
-                onClick={() => {
-                  setIsShow(2);
-                  setIsTranslate(!isTranslate);
-                  // handleClick();
-                  setTimeout(() => {
-                    isTranslate ? setIsShow(1) : setIsShow(0);
-                  }, 3200);
-                }}
                 className="jupiter-orbit sun-orbit w_h_jupiter"
               >
                 {/* <div className="ascending-node ascending-node--jupiter">
@@ -315,13 +299,13 @@ function HomeAura({ href }) {
                       >
                         <div
                           title="House of Zen"
-                          className="planet__structure planet__structure--2 size-solar-big rotate_saturn-orbit"
+                          className="planet__structure planet__structure--2 size-solar-big rotate_saturn-orbit position_zen"
                         >
                           <Image
                             src={ZenImage}
                             alt="Saturn Rings"
-                            width={150}
-                            height={150}
+                            width={200}
+                            height={200}
                           />
                           <div className="box_image"></div>
                         </div>
@@ -336,14 +320,6 @@ function HomeAura({ href }) {
                 </div>
               </div>
               <div
-                onClick={() => {
-                  setIsShow(2);
-                  setIsTranslate(!isTranslate);
-                  // handleClick();
-                  setTimeout(() => {
-                    isTranslate ? setIsShow(1) : setIsShow(0);
-                  }, 3200);
-                }}
                 className="saturn-orbit sun-orbit w_h_saturn"
               >
                 {/* <div className="ascending-node ascending-node--saturn">
@@ -397,14 +373,6 @@ function HomeAura({ href }) {
                 </div>
               </div>
               <div
-                onClick={() => {
-                  setIsShow(2);
-                  setIsTranslate(!isTranslate);
-                  // handleClick();
-                  setTimeout(() => {
-                    isTranslate ? setIsShow(1) : setIsShow(0);
-                  }, 3200);
-                }}
                 className="uranus-orbit sun-orbit w_h_uranus"
               >
                 {/* <div className="ascending-node ascending-node--uranus">
@@ -457,14 +425,6 @@ function HomeAura({ href }) {
                 </div>
               </div>
               <div
-                onClick={() => {
-                  setIsShow(2);
-                  setIsTranslate(!isTranslate);
-                  // handleClick();
-                  setTimeout(() => {
-                    isTranslate ? setIsShow(1) : setIsShow(0);
-                  }, 3200);
-                }}
                 className="neptun-orbit sun-orbit w_h_95"
               >
                 {/* <div className="ascending-node ascending-node--neptun">
