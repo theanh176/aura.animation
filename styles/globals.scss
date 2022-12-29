@@ -61,7 +61,7 @@ body {
 }
 #translateLeft:checked ~ .universe {
 	animation: universe-translateLeft 3s ease-in-out;
-	transform: translateX(-45%) scale(0.8);
+	transform: translateX(-45%);
 }
 @keyframes universe-translateLeft {
 	0% {
@@ -71,7 +71,7 @@ body {
 		transform: scale(0.5);
 	}
 	100% {
-		transform: scale(0.8) translateX(-45%);
+		transform: scale(1) translateX(-45%);
 	}
 }
 .universe {
