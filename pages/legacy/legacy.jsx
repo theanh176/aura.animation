@@ -1,22 +1,21 @@
 import React from "react";
-import styles from "./legaxy.module.scss";
+import styles from "./legacy.module.scss";
 import Link from "next/link";
 import Solar from "../../components/solar/solar";
 import Image from "next/image";
 import HomeContent from "../../components/content/HomeContent";
 
-const Legaxy = () => {
-  console.log("rendering Legaxy");
+const Legacy = () => {
   return (
-    <div className={styles.legaxy}>
+    <div className={styles.legacy}>
       <div className={styles.solar_load}>
         <Solar
           // eslint-disable-next-line react/no-children-prop
           children={
-            <div className={styles.legaxy_detail}>
+            <div className={styles.legacy_detail}>
               <Image
-                src="/images/demo/Health_demo.png"
-                alt="Health_demo"
+                src="/images/demo/Legacy_demo.png"
+                alt="Legaxy_demo"
                 width={862}
                 height={1870}
               />
@@ -30,4 +29,4 @@ const Legaxy = () => {
   );
 };
 
-export default Legaxy;
+export default Legacy;

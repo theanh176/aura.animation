@@ -1,5 +1,5 @@
 import React from "react";
-import Legaxy from "./legaxy";
+import Legaxy from "./legacy";
 
 const Index = () => {
 	return <Legaxy />;

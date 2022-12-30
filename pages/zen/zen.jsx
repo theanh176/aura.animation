@@ -14,8 +14,8 @@ const Zen = () => {
           children={
             <div className={styles.zen_detail}>
               <Image
-                src="/images/demo/Health_demo.png"
-                alt="Health_demo"
+                src="/images/demo/Zen_demo.png"
+                alt="Zen_demo"
                 width={862}
                 height={1870}
               />

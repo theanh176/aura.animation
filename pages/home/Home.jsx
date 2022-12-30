@@ -87,19 +87,18 @@ function HomeAura({ href }) {
           <input type="radio" id="threedee" name="perspective" />
 
           <div className="universe">
-            <h1 className="text_sun">SUN</h1>
             <div className="solarsystem">
               <div className="sun rotate_sun">
                 <div className="planet__structure planet__structure--2"></div>
               </div>
               <div
-                onClick={() => {
-                  setIsShow(2);
-                  setIsTranslate(!isTranslate);
-                  setTimeout(() => {
-                    isTranslate ? setIsShow(1) : setIsShow(0);
-                  }, 2000);
-                }}
+                // onClick={() => {
+                //   setIsShow(2);
+                //   setIsTranslate(!isTranslate);
+                //   setTimeout(() => {
+                //     isTranslate ? setIsShow(1) : setIsShow(0);
+                //   }, 2000);
+                // }}
                 className="mercury-orbit sun-orbit"
               >
                 <div className="ascending-node ascending-node--mercury">
@@ -145,9 +144,9 @@ function HomeAura({ href }) {
                   setIsTranslate(!isTranslate);
                   // handleClick();
                   setTimeout(() => {
-                    isTranslate ? setIsShow(1) : setIsShow(0);
+                    // isTranslate ? setIsShow(1) : setIsShow(0);
                     router.push("/health");
-                  }, 3200);
+                  }, 3000);
                 }}
                 className="earth-orbit sun-orbit"
               >
@@ -205,9 +204,9 @@ function HomeAura({ href }) {
                   setIsTranslate(!isTranslate);
                   // handleClick();
                   setTimeout(() => {
-                    isTranslate ? setIsShow(1) : setIsShow(0);
+                    // isTranslate ? setIsShow(1) : setIsShow(0);
                     router.push("/invention");
-                  }, 3200);
+                  }, 3000);
                 }}
                 className="jupiter-orbit sun-orbit"
               >
@@ -243,9 +242,9 @@ function HomeAura({ href }) {
                   setIsTranslate(!isTranslate);
                   // handleClick();
                   setTimeout(() => {
-                    isTranslate ? setIsShow(1) : setIsShow(0);
+                    // isTranslate ? setIsShow(1) : setIsShow(0);
                     router.push("/zen");
-                  }, 3200);
+                  }, 3000);
                 }}
                 className="saturn-orbit sun-orbit"
               >
@@ -282,9 +281,9 @@ function HomeAura({ href }) {
                   setIsTranslate(!isTranslate);
 
                   setTimeout(() => {
-                    isTranslate ? setIsShow(1) : setIsShow(0);
+                    // isTranslate ? setIsShow(1) : setIsShow(0);
                     router.push("/dauntless");
-                  }, 3200);
+                  }, 3000);
                 }}
                 className="uranus-orbit sun-orbit"
               >
@@ -320,9 +319,9 @@ function HomeAura({ href }) {
                   setIsTranslate(!isTranslate);
                   // handleClick();
                   setTimeout(() => {
-                    isTranslate ? setIsShow(1) : setIsShow(0);
-                    router.push("/legaxy");
-                  }, 3200);
+                    // isTranslate ? setIsShow(1) : setIsShow(0);
+                    router.push("/legacy");
+                  }, 3000);
                 }}
                 className="neptun-orbit sun-orbit"
               >
