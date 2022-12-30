@@ -62,18 +62,24 @@ body {
 	--perspective: 10000px;
 }
 #translateLeft:checked ~ .universe {
-	animation: universe-translateLeft 3s ease-in-out;
+	animation: universe-translateLeft 3.2s ease-in-out;
 	transform: translateX(-45%);
 }
 @keyframes universe-translateLeft {
 	0% {
 		transform: scale(0.8) translateX(0);
+		opacity: 1;
 	}
 	20% {
 		transform: scale(0.5);
 	}
+	90% {
+		opacity: 0.7;
+	}
+
 	100% {
 		transform: scale(1) translateX(-45%);
+		opacity: 0.1;
 	}
 }
 .universe {

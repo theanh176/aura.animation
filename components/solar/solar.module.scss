@@ -1,0 +1,65 @@
+.solar {
+	background-color: #000000;
+	color: white;
+	text-align: center;
+	height: 100vh;
+	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+	overflow-x: hidden !important;
+    // animation: autoload 2s ease-in-out;
+    .translate_left{
+        transform: translateX(-45%);
+        animation: none;
+    }
+	.hover_solar {
+		transition: 0.5s color ease;
+		cursor: pointer;
+		&:hover {
+			animation: sunAnimation 5s infinite;
+			@keyframes sunAnimation {
+				0% {
+					transform: scale(1);
+				}
+				50% {
+					transform: scale(1.5);
+				}
+				100% {
+					transform: scale(1);
+				}
+			}
+		}
+	}
+	.hover_sun {
+		transition: 0.5s color ease;
+		cursor: pointer;
+		&:hover {
+			animation: sunAnimation 5s infinite;
+			@keyframes sunAnimation {
+				0% {
+					transform: scale(1);
+				}
+				50% {
+					transform: scale(1.1);
+				}
+				100% {
+					transform: scale(1);
+				}
+			}
+		}
+	}
+	input {
+		opacity: 0;
+	}
+}
+@keyframes autoload {
+	0% {
+		opacity: 0;
+	}
+	15% {
+		opacity: 0.1;
+	}
+	100% {
+		opacity: 1;
+	}
+}

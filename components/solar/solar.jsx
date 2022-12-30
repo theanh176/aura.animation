@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import React, { useState, useEffect } from "react";
 import MainLayout from "../../components/layout/mainLayout";
-import styles from "./Home.module.scss";
+import styles from "./solar.module.scss";
 import Image from "next/image";
 import MarsImage from "../../public/images/mars.png";
 import SolarImage from "../../public/images/solar.png";
@@ -17,35 +17,21 @@ import { Navbar } from "react-bootstrap";
 import HomeContent from "../../components/content/HomeContent";
 import DetailPage from "../../components/content/DetailPage";
 
-function HomeAura({ href }) {
+const Solar = () => {
 	const router = useRouter();
 	let timestamp_start = new Date("2019-01-01").getTime();
 	let timestamp_now = new Date().getTime();
 	let secondsLeft = (timestamp_now - timestamp_start) / 1000;
 	let root = document.documentElement;
 	root.style.setProperty("--seconds-left", `${secondsLeft}s`);
-	const [isShow, setIsShow] = useState(2); // 0:stop 1:play 2:speed
+	const [isShow, setIsShow] = useState(1); // 0:stop 1:play 2:speed
 	const [isTranslate, setIsTranslate] = useState(false);
 	const [isShowBackground, setIsShowBackground] = useState(false);
 	const [isHref, setIsHref] = useState("home-aura");
-	// const handleClick = () => {
-	// 	setIsShow(2);
-	// 	setIsTranslate(!isTranslate);
-	// 	setTimeout(() => {
-	// 		setIsShow(1);
-	// 	}, 3000);
-	// };
-
-	useEffect(() => {
-		setTimeout(() => {
-			setIsShow(1);
-		}, 3000);
-	}, []);
-
 	return (
-		<div className={styles.unicornverse}>
+		<div>
 			<Navbar className="p-0" style={{ backgroundColor: "black" }}>
-				<div className={styles.home_aura}>
+				<div className={styles.solar}>
 					<input
 						type="radio"
 						id="correct-orbit-size"
@@ -73,7 +59,8 @@ function HomeAura({ href }) {
 						type="radio"
 						id="real-time"
 						name="velocity"
-						checked={isShow === 0 && "checked"}
+						// checked={isShow === 0 && "checked"}
+                        checked="checked"
 					/>
 					<input
 						type="radio"
@@ -90,7 +77,7 @@ function HomeAura({ href }) {
 					<input type="radio" id="isometric" name="perspective" />
 					<input type="radio" id="threedee" name="perspective" />
 
-					<div className="universe">
+					<div className={styles.translate_left + " " +"universe"}>
 						<h1 className="text_sun">SUN</h1>
 						<div className="solarsystem">
 							<div className="sun rotate_sun">
@@ -162,7 +149,6 @@ function HomeAura({ href }) {
 									<div className="inclination inclination--earth">
 										<div className="orbit__visual"></div>
 										<div className="orbit__shape orbit__shape--earth">
-											<a href={href}>
 												<div
 													className={
 														styles.hover_solar +
@@ -189,7 +175,6 @@ function HomeAura({ href }) {
 													<div className="planet__structure planet__structure--5"></div>
 													<div className="planet__structure planet__structure--6"></div>
 												</div>
-											</a>
 										</div>
 									</div>
 								</div>
@@ -389,9 +374,9 @@ function HomeAura({ href }) {
 				{/* <div className={styles.detailpage_home}>{isTranslate && <DetailPage />}</div> */}
 			</Navbar>
 
-			<HomeContent />
+            <HomeContent />
 		</div>
 	);
-}
+};
 
-export default HomeAura;
+export default Solar;
