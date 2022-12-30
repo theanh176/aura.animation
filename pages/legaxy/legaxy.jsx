@@ -11,6 +11,7 @@ const Legaxy = () => {
     <div className={styles.legaxy}>
       <div className={styles.solar_load}>
         <Solar
+          // eslint-disable-next-line react/no-children-prop
           children={
             <div className={styles.legaxy_detail}>
               <Image

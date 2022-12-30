@@ -97,15 +97,15 @@ function HomeAura({ href }) {
 								<div className="planet__structure planet__structure--2"></div>
 							</div>
 							<div
-								onClick={() => {
-									setIsShow(2);
-									setIsTranslate(!isTranslate);
-									setTimeout(() => {
-										isTranslate
-											? setIsShow(1)
-											: setIsShow(0);
-									}, 2000);
-								}}
+								// onClick={() => {
+								// 	setIsShow(2);
+								// 	setIsTranslate(!isTranslate);
+								// 	setTimeout(() => {
+								// 		isTranslate
+								// 			? setIsShow(1)
+								// 			: setIsShow(0);
+								// 	}, 2000);
+								// }}
 								className="mercury-orbit sun-orbit"
 							>
 								<div className="ascending-node ascending-node--mercury">
@@ -146,16 +146,16 @@ function HomeAura({ href }) {
 							</div>
 
 							<div
-								onClick={() => {
-									setIsShow(2);
-									setIsTranslate(!isTranslate);
-									// handleClick();
-									setTimeout(() => {
-										isTranslate
-											? setIsShow(1)
-											: setIsShow(0);
-									}, 3200);
-								}}
+								// onClick={() => {
+								// 	setIsShow(2);
+								// 	setIsTranslate(!isTranslate);
+								// 	// handleClick();
+								// 	setTimeout(() => {
+								// 		isTranslate
+								// 			? setIsShow(1)
+								// 			: setIsShow(0);
+								// 	}, 3200);
+								// }}
 								className="earth-orbit sun-orbit"
 							>
 								<div className="ascending-node ascending-node--earth">
@@ -211,16 +211,16 @@ function HomeAura({ href }) {
 							<div className="mars-orbit sun-orbit w_h_mars"></div>
 
 							<div
-								onClick={() => {
-									setIsShow(2);
-									setIsTranslate(!isTranslate);
-									// handleClick();
-									setTimeout(() => {
-										isTranslate
-											? setIsShow(1)
-											: setIsShow(0);
-									}, 3200);
-								}}
+								// onClick={() => {
+								// 	setIsShow(2);
+								// 	setIsTranslate(!isTranslate);
+								// 	// handleClick();
+								// 	setTimeout(() => {
+								// 		isTranslate
+								// 			? setIsShow(1)
+								// 			: setIsShow(0);
+								// 	}, 3200);
+								// }}
 								className="jupiter-orbit sun-orbit"
 							>
 								<div className="ascending-node ascending-node--jupiter">
@@ -254,16 +254,16 @@ function HomeAura({ href }) {
 							<div className="jupiter-orbit sun-orbit w_h_jupiter"></div>
 
 							<div
-								onClick={() => {
-									setIsShow(2);
-									setIsTranslate(!isTranslate);
-									// handleClick();
-									setTimeout(() => {
-										isTranslate
-											? setIsShow(1)
-											: setIsShow(0);
-									}, 3200);
-								}}
+								// onClick={() => {
+								// 	setIsShow(2);
+								// 	setIsTranslate(!isTranslate);
+								// 	// handleClick();
+								// 	setTimeout(() => {
+								// 		isTranslate
+								// 			? setIsShow(1)
+								// 			: setIsShow(0);
+								// 	}, 3200);
+								// }}
 								className="saturn-orbit sun-orbit"
 							>
 								<div className="ascending-node ascending-node--saturn">
@@ -298,16 +298,16 @@ function HomeAura({ href }) {
 							<div className="saturn-orbit sun-orbit w_h_saturn"></div>
 
 							<div
-								onClick={() => {
-									setIsShow(2);
-									setIsTranslate(!isTranslate);
+								// onClick={() => {
+								// 	setIsShow(2);
+								// 	setIsTranslate(!isTranslate);
 
-									setTimeout(() => {
-										isTranslate
-											? setIsShow(1)
-											: setIsShow(0);
-									}, 3200);
-								}}
+								// 	setTimeout(() => {
+								// 		isTranslate
+								// 			? setIsShow(1)
+								// 			: setIsShow(0);
+								// 	}, 3200);
+								// }}
 								className="uranus-orbit sun-orbit"
 							>
 								<div className="ascending-node ascending-node--uranus">
@@ -341,17 +341,17 @@ function HomeAura({ href }) {
 							<div className="uranus-orbit sun-orbit w_h_uranus"></div>
 
 							<div
-								onClick={() => {
-									setIsShow(2);
-									setIsTranslate(!isTranslate);
-									// handleClick();
-									setTimeout(() => {
-										isTranslate
-											? setIsShow(1)
-											: setIsShow(0);
-										router.push("/legaxy");
-									}, 3200);
-								}}
+								// onClick={() => {
+								// 	setIsShow(2);
+								// 	setIsTranslate(!isTranslate);
+								// 	// handleClick();
+								// 	setTimeout(() => {
+								// 		isTranslate
+								// 			? setIsShow(1)
+								// 			: setIsShow(0);
+								// 		router.push("/legaxy");
+								// 	}, 3200);
+								// }}
 								className="neptun-orbit sun-orbit"
 							>
 								<div className="ascending-node ascending-node--neptun">
