@@ -606,10 +606,10 @@ img {
 .planet__structure--1 {
 	transform: rotateZ(30deg);
 }
-.planet__structure--2 {
-	// transform: rotateZ(-30deg);
-	// transform: rotate(-135deg);
-}
+// .planet__structure--2 {
+// 	transform: rotateZ(-30deg);
+// 	transform: rotate(-135deg);
+// }
 .rotate_neptun-orbit {
 	transform: rotate(-265deg);
 	animation: rotate_neptun-orbit 114.5s linear infinite;
