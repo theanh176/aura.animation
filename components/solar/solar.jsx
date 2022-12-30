@@ -349,4 +349,4 @@ export default function Solar({ children }) {
 	);
 };
 
-export default Solar;
+
