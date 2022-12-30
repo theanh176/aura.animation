@@ -2,14 +2,16 @@ html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-		Ubuntu, Cantarell, Fira Sans, Droid Sans;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans;
 	/* width */
 	overflow-x: hidden;
 }
 
 * {
 	box-sizing: border-box;
+}
+img {
+	user-select: none;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -149,11 +151,7 @@ body {
 	content: "";
 	height: 600%;
 	width: 600%;
-	background: radial-gradient(
-		rgba(255, 228, 147, 0.15),
-		rgba(255, 228, 147, 0.1) 40%,
-		rgba(255, 255, 255, 0) 70%
-	);
+	background: radial-gradient(rgba(255, 228, 147, 0.15), rgba(255, 228, 147, 0.1) 40%, rgba(255, 255, 255, 0) 70%);
 	border-radius: 50%;
 	transform-origin: center center;
 	transform: translateY(-40%) translateX(-40%) rotateY(var(--angle-sun-glow));
@@ -520,12 +518,8 @@ body {
 	animation: orbit infinite;
 	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
-	-webkit-animation-delay: calc(
-		(var(--seconds-left) * -1) / var(--speed-of-animation)
-	);
-	animation-delay: calc(
-		(var(--seconds-left) * -1) / var(--speed-of-animation)
-	);
+	-webkit-animation-delay: calc((var(--seconds-left) * -1) / var(--speed-of-animation));
+	animation-delay: calc((var(--seconds-left) * -1) / var(--speed-of-animation));
 	transform-style: preserve-3d;
 }
 .orbit__shape--mercury {
@@ -592,11 +586,7 @@ body {
 	height: 500%;
 	transform: translateY(-100%);
 	width: 100%;
-	background: linear-gradient(
-		to top,
-		rgba(1, 2, 13, 0.8),
-		rgba(1, 2, 13, 0) 100%
-	);
+	background: linear-gradient(to top, rgba(1, 2, 13, 0.8), rgba(1, 2, 13, 0) 100%);
 	-webkit-clip-path: polygon(50% 0%, 100% 100%, 100% 100%, 0% 100%);
 	clip-path: polygon(50% 0%, 100% 100%, 100% 100%, 0% 100%);
 }
@@ -789,12 +779,8 @@ body {
 .planet-orbit--saturn {
 	-webkit-animation-duration: calc(933465600s / var(--speed-of-animation));
 	animation-duration: calc(933465600s / var(--speed-of-animation));
-	-webkit-animation-delay: calc(
-		((var(--seconds-left) + 433366400) * -1) / var(--speed-of-animation)
-	);
-	animation-delay: calc(
-		((var(--seconds-left) + 433366400) * -1) / var(--speed-of-animation)
-	);
+	-webkit-animation-delay: calc(((var(--seconds-left) + 433366400) * -1) / var(--speed-of-animation));
+	animation-delay: calc(((var(--seconds-left) + 433366400) * -1) / var(--speed-of-animation));
 }
 .rings-of-saturn {
 	transform: rotateX(0deg) rotateY(27deg);
