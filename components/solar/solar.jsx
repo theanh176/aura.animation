@@ -72,14 +72,14 @@ export default function Solar({ children }) {
                 <div className="planet__structure planet__structure--2"></div>
               </div>
               <div
-                onClick={() => {
-                  setIsShow(2);
-                  setIsTranslate(!isTranslate);
-                  setTimeout(() => {
-                    isTranslate ? setIsShow(1) : setIsShow(0);
-                  }, 2000);
-                }}
-                className="mercury-orbit sun-orbit"
+                // onClick={() => {
+                //   setIsShow(2);
+                //   setIsTranslate(!isTranslate);
+                //   setTimeout(() => {
+                //     isTranslate ? setIsShow(1) : setIsShow(0);
+                //   }, 2000);
+                // }}
+                // className="mercury-orbit sun-orbit"
               >
                 <div className="ascending-node ascending-node--mercury">
                   <div className="inclination inclination--mercury">
@@ -119,14 +119,14 @@ export default function Solar({ children }) {
               </div>
 
               <div
-                onClick={() => {
-                  setIsShow(2);
-                  setIsTranslate(!isTranslate);
-                  // handleClick();
-                  setTimeout(() => {
-                    isTranslate ? setIsShow(1) : setIsShow(0);
-                  }, 3200);
-                }}
+                // onClick={() => {
+                //   setIsShow(2);
+                //   setIsTranslate(!isTranslate);
+                //   // handleClick();
+                //   setTimeout(() => {
+                //     isTranslate ? setIsShow(1) : setIsShow(0);
+                //   }, 3200);
+                // }}
                 className="earth-orbit sun-orbit"
               >
                 <div className="ascending-node ascending-node--earth">
@@ -176,14 +176,14 @@ export default function Solar({ children }) {
               <div className="mars-orbit sun-orbit w_h_mars"></div>
 
               <div
-                onClick={() => {
-                  setIsShow(2);
-                  setIsTranslate(!isTranslate);
-                  // handleClick();
-                  setTimeout(() => {
-                    isTranslate ? setIsShow(1) : setIsShow(0);
-                  }, 3200);
-                }}
+                // onClick={() => {
+                //   setIsShow(2);
+                //   setIsTranslate(!isTranslate);
+                //   // handleClick();
+                //   setTimeout(() => {
+                //     isTranslate ? setIsShow(1) : setIsShow(0);
+                //   }, 3200);
+                // }}
                 className="jupiter-orbit sun-orbit"
               >
                 <div className="ascending-node ascending-node--jupiter">
@@ -213,14 +213,14 @@ export default function Solar({ children }) {
               <div className="jupiter-orbit sun-orbit w_h_jupiter"></div>
 
               <div
-                onClick={() => {
-                  setIsShow(2);
-                  setIsTranslate(!isTranslate);
-                  // handleClick();
-                  setTimeout(() => {
-                    isTranslate ? setIsShow(1) : setIsShow(0);
-                  }, 3200);
-                }}
+                // onClick={() => {
+                //   setIsShow(2);
+                //   setIsTranslate(!isTranslate);
+                //   // handleClick();
+                //   setTimeout(() => {
+                //     isTranslate ? setIsShow(1) : setIsShow(0);
+                //   }, 3200);
+                // }}
                 className="saturn-orbit sun-orbit"
               >
                 <div className="ascending-node ascending-node--saturn">
@@ -251,14 +251,14 @@ export default function Solar({ children }) {
               <div className="saturn-orbit sun-orbit w_h_saturn"></div>
 
               <div
-                onClick={() => {
-                  setIsShow(2);
-                  setIsTranslate(!isTranslate);
+                // onClick={() => {
+                //   setIsShow(2);
+                //   setIsTranslate(!isTranslate);
 
-                  setTimeout(() => {
-                    isTranslate ? setIsShow(1) : setIsShow(0);
-                  }, 3200);
-                }}
+                //   setTimeout(() => {
+                //     isTranslate ? setIsShow(1) : setIsShow(0);
+                //   }, 3200);
+                // }}
                 className="uranus-orbit sun-orbit"
               >
                 <div className="ascending-node ascending-node--uranus">
@@ -288,15 +288,15 @@ export default function Solar({ children }) {
               <div className="uranus-orbit sun-orbit w_h_uranus"></div>
 
               <div
-                onClick={() => {
-                  setIsShow(2);
-                  setIsTranslate(!isTranslate);
-                  // handleClick();
-                  setTimeout(() => {
-                    isTranslate ? setIsShow(1) : setIsShow(0);
-                    router.push("/legaxy");
-                  }, 3200);
-                }}
+                // onClick={() => {
+                //   setIsShow(2);
+                //   setIsTranslate(!isTranslate);
+                //   // handleClick();
+                //   setTimeout(() => {
+                //     isTranslate ? setIsShow(1) : setIsShow(0);
+                //     router.push("/legaxy");
+                //   }, 3200);
+                // }}
                 className="neptun-orbit sun-orbit"
               >
                 <div className="ascending-node ascending-node--neptun">
