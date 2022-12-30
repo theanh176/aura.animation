@@ -386,7 +386,6 @@ function HomeAura({ href }) {
 						</div>
 					</div>
 				</div>
-				{/* <div className={styles.detailpage_home}>{isTranslate && <DetailPage />}</div> */}
 			</Navbar>
 
 			<HomeContent />
