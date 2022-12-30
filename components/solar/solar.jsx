@@ -60,7 +60,7 @@ const Solar = () => {
 						id="real-time"
 						name="velocity"
 						// checked={isShow === 0 && "checked"}
-                        checked="checked"
+						checked="checked"
 					/>
 					<input
 						type="radio"
@@ -77,7 +77,7 @@ const Solar = () => {
 					<input type="radio" id="isometric" name="perspective" />
 					<input type="radio" id="threedee" name="perspective" />
 
-					<div className={styles.translate_left + " " +"universe"}>
+					<div className={styles.translate_left + " " + "universe"}>
 						<h1 className="text_sun">SUN</h1>
 						<div className="solarsystem">
 							<div className="sun rotate_sun">
@@ -149,32 +149,32 @@ const Solar = () => {
 									<div className="inclination inclination--earth">
 										<div className="orbit__visual"></div>
 										<div className="orbit__shape orbit__shape--earth">
+											<div
+												className={
+													styles.hover_solar +
+													" " +
+													"planet earth"
+												}
+												style={{ color: "white" }}
+											>
 												<div
-													className={
-														styles.hover_solar +
-														" " +
-														"planet earth"
-													}
-													style={{ color: "white" }}
+													title="House of Health"
+													className="planet__structure planet__structure--2 size-solar-xl position-solar-1 rotate_earth-orbit"
 												>
-													<div
-														title="House of Health"
-														className="planet__structure planet__structure--2 size-solar-xl position-solar-1 rotate_earth-orbit"
-													>
-														<Image
-															src={HealthImage}
-															alt="Saturn Rings"
-															width={130}
-															height={130}
-														/>
-														<div className="box_image"></div>
-													</div>
-
-													<div className="planet__structure planet__structure--3"></div>
-													<div className="planet__structure planet__structure--4"></div>
-													<div className="planet__structure planet__structure--5"></div>
-													<div className="planet__structure planet__structure--6"></div>
+													<Image
+														src={HealthImage}
+														alt="Saturn Rings"
+														width={130}
+														height={130}
+													/>
+													<div className="box_image"></div>
 												</div>
+
+												<div className="planet__structure planet__structure--3"></div>
+												<div className="planet__structure planet__structure--4"></div>
+												<div className="planet__structure planet__structure--5"></div>
+												<div className="planet__structure planet__structure--6"></div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -371,10 +371,7 @@ const Solar = () => {
 						</div>
 					</div>
 				</div>
-				{/* <div className={styles.detailpage_home}>{isTranslate && <DetailPage />}</div> */}
 			</Navbar>
-
-            <HomeContent />
 		</div>
 	);
 };
