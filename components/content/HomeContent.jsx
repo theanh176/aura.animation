@@ -265,7 +265,7 @@ function HomeContent() {
 				</div>
 
 				<Image
-					src="/images/unicornverse/hinh-9.jpg"
+					src="/images/unicornverse/Banner_home_2.jpg"
 					alt="1"
 					width={1175}
 					height={607}
