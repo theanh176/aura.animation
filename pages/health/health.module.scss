@@ -1,0 +1,27 @@
+.health {
+    background-color: #000;
+    height: 100vh;
+    color: #fff !important;
+
+    &_detail {
+        width: 60vw;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    .solar_load {
+        animation: autoload 2s ease-in-out;
+    }
+}
+@keyframes autoload {
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
