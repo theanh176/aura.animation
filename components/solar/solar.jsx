@@ -65,35 +65,33 @@ export default function Solar({ children }) {
           <input type="radio" id="isometric" name="perspective" />
           <input type="radio" id="threedee" name="perspective" />
 
-					<div className={styles.translate_left + " " +"universe"}>
-						<h1 className="text_sun">SUN</h1>
-						<div className="solarsystem">
-							<div className="sun rotate_sun">
-								<div className="planet__structure planet__structure--2"></div>
-							</div>
-							<div
-								onClick={() => {
-									setIsShow(2);
-									setIsTranslate(!isTranslate);
-									setTimeout(() => {
-										isTranslate
-											? setIsShow(1)
-											: setIsShow(0);
-									}, 2000);
-								}}
-								className="mercury-orbit sun-orbit"
-							>
-								<div className="ascending-node ascending-node--mercury">
-									<div className="inclination inclination--mercury">
-										<div className="orbit__visual"></div>
-										<div className="orbit__shape orbit__shape--mercury">
-											<div className="planet mercury">
-												<div className="planet__structure planet__structure--2"></div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+          <div className={styles.translate_left + " " + "universe"}>
+            <h1 className="text_sun">SUN</h1>
+            <div className="solarsystem">
+              <div className="sun rotate_sun">
+                <div className="planet__structure planet__structure--2"></div>
+              </div>
+              <div
+                onClick={() => {
+                  setIsShow(2);
+                  setIsTranslate(!isTranslate);
+                  setTimeout(() => {
+                    isTranslate ? setIsShow(1) : setIsShow(0);
+                  }, 2000);
+                }}
+                className="mercury-orbit sun-orbit"
+              >
+                <div className="ascending-node ascending-node--mercury">
+                  <div className="inclination inclination--mercury">
+                    <div className="orbit__visual"></div>
+                    <div className="orbit__shape orbit__shape--mercury">
+                      <div className="planet mercury">
+                        <div className="planet__structure planet__structure--2"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
               <div className="venus-orbit sun-orbit">
                 <div className="ascending-node ascending-node--venus">
@@ -120,54 +118,48 @@ export default function Solar({ children }) {
                 </div>
               </div>
 
-							<div
-								onClick={() => {
-									setIsShow(2);
-									setIsTranslate(!isTranslate);
-									// handleClick();
-									setTimeout(() => {
-										isTranslate
-											? setIsShow(1)
-											: setIsShow(0);
-									}, 3200);
-								}}
-								className="earth-orbit sun-orbit"
-							>
-								<div className="ascending-node ascending-node--earth">
-									<div className="inclination inclination--earth">
-										<div className="orbit__visual"></div>
-										<div className="orbit__shape orbit__shape--earth">
-												<div
-													className={
-														styles.hover_solar +
-														" " +
-														"planet earth"
-													}
-													style={{ color: "white" }}
-												>
-													<div
-														title="House of Health"
-														className="planet__structure planet__structure--2 size-solar-xl position-solar-1 rotate_earth-orbit"
-													>
-														<Image
-															src={HealthImage}
-															alt="Saturn Rings"
-															width={130}
-															height={130}
-														/>
-														<div className="box_image"></div>
-													</div>
+              <div
+                onClick={() => {
+                  setIsShow(2);
+                  setIsTranslate(!isTranslate);
+                  // handleClick();
+                  setTimeout(() => {
+                    isTranslate ? setIsShow(1) : setIsShow(0);
+                  }, 3200);
+                }}
+                className="earth-orbit sun-orbit"
+              >
+                <div className="ascending-node ascending-node--earth">
+                  <div className="inclination inclination--earth">
+                    <div className="orbit__visual"></div>
+                    <div className="orbit__shape orbit__shape--earth">
+                      <div
+                        className={styles.hover_solar + " " + "planet earth"}
+                        style={{ color: "white" }}
+                      >
+                        <div
+                          title="House of Health"
+                          className="planet__structure planet__structure--2 size-solar-xl position-solar-1 rotate_earth-orbit"
+                        >
+                          <Image
+                            src={HealthImage}
+                            alt="Saturn Rings"
+                            width={130}
+                            height={130}
+                          />
+                          <div className="box_image"></div>
+                        </div>
 
-													<div className="planet__structure planet__structure--3"></div>
-													<div className="planet__structure planet__structure--4"></div>
-													<div className="planet__structure planet__structure--5"></div>
-													<div className="planet__structure planet__structure--6"></div>
-												</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div className="earth-orbit sun-orbit w_h_earth"></div>
+                        <div className="planet__structure planet__structure--3"></div>
+                        <div className="planet__structure planet__structure--4"></div>
+                        <div className="planet__structure planet__structure--5"></div>
+                        <div className="planet__structure planet__structure--6"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="earth-orbit sun-orbit w_h_earth"></div>
 
               <div className="mars-orbit sun-orbit">
                 <div className="ascending-node ascending-node--mars">
@@ -295,58 +287,49 @@ export default function Solar({ children }) {
               </div>
               <div className="uranus-orbit sun-orbit w_h_uranus"></div>
 
-							<div
-								onClick={() => {
-									setIsShow(2);
-									setIsTranslate(!isTranslate);
-									// handleClick();
-									setTimeout(() => {
-										isTranslate
-											? setIsShow(1)
-											: setIsShow(0);
-										router.push("/legaxy");
-									}, 3200);
-								}}
-								className="neptun-orbit sun-orbit"
-							>
-								<div className="ascending-node ascending-node--neptun">
-									<div className="inclination inclination--neptun">
-										<div className="orbit__visual"></div>
-										<div className="orbit__shape orbit__shape--neptun">
-											<div
-												className={
-													styles.hover_solar +
-													" " +
-													"planet neptun"
-												}
-											>
-												<div
-													title="House of Legaxy"
-													className="planet__structure planet__structure--2 size-solar-big position-solar-6 rotate_neptun-orbit"
-												>
-													<Image
-														src={LegaxyImage}
-														alt="Saturn Rings"
-														width={200}
-														height={200}
-													/>
-													<div className="box_image"></div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div className="neptun-orbit sun-orbit w_h_95"></div>
-						</div>
-					</div>
-				</div>
-				{/* <div className={styles.detailpage_home}>{isTranslate && <DetailPage />}</div> */}
-			</Navbar>
+              <div
+                onClick={() => {
+                  setIsShow(2);
+                  setIsTranslate(!isTranslate);
+                  // handleClick();
+                  setTimeout(() => {
+                    isTranslate ? setIsShow(1) : setIsShow(0);
+                    router.push("/legaxy");
+                  }, 3200);
+                }}
+                className="neptun-orbit sun-orbit"
+              >
+                <div className="ascending-node ascending-node--neptun">
+                  <div className="inclination inclination--neptun">
+                    <div className="orbit__visual"></div>
+                    <div className="orbit__shape orbit__shape--neptun">
+                      <div
+                        className={styles.hover_solar + " " + "planet neptun"}
+                      >
+                        <div
+                          title="House of Legaxy"
+                          className="planet__structure planet__structure--2 size-solar-big position-solar-6 rotate_neptun-orbit"
+                        >
+                          <Image
+                            src={LegaxyImage}
+                            alt="Saturn Rings"
+                            width={200}
+                            height={200}
+                          />
+                          <div className="box_image"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="neptun-orbit sun-orbit w_h_95"></div>
+            </div>
+          </div>
+        </div>
 
-            <HomeContent />
-		</div>
-	);
-};
-
-
+        <div className={styles.detailpage_home}>{children}</div>
+      </Navbar>
+    </div>
+  );
+}
