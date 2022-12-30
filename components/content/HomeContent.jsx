@@ -44,10 +44,10 @@ function HomeContent() {
 
 			<div className="mt-5">
 				<Image
-					src="/images/unicornverse/hinh-1.jpg"
+					src="/images/unicornverse/Banner_home.jpg"
 					alt="1"
-					width={1920}
-					height={800}
+					width={3841}
+					height={1606}
 				/>
 			</div>
 
