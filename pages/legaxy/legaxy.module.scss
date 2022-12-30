@@ -1,8 +1,16 @@
 .legaxy {
-	background-color: #000;
-	height: 100vh;
-	color: #fff !important;
-    .solar_load{
+    background-color: #000;
+    height: 100vh;
+    color: #fff !important;
+
+    &_detail {
+        width: 60vw;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    .solar_load {
         animation: autoload 2s ease-in-out;
     }
 }
