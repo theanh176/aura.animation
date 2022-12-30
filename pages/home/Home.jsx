@@ -40,12 +40,6 @@ function HomeAura({ href }) {
     <div className={styles.unicornverse}>
       <Navbar className="p-0" style={{ backgroundColor: "black" }}>
         <div className={styles.home_aura}>
-          {/* <div
-						className={
-							  isShowBackground ? styles.background_speed :
-						}
-					></div> */}
-
           <input type="radio" id="correct-orbit-size" name="orbit-size" />
           <input
             type="radio"
@@ -182,25 +176,7 @@ function HomeAura({ href }) {
                   </div>
                 </div>
               </div>
-              <div
-                className="earth-orbit sun-orbit w_h_earth"
-              >
-                {/* <div className="ascending-node ascending-node--earth">
-                  <div className="inclination inclination--earth">
-                    <div className="orbit__visual"></div>
-                    <div className="orbit__shape orbit__shape--earth">
-                      <a href={href}>
-                        <div
-                          className={styles.hover_solar + " " + "planet earth"}
-                          style={{ color: "white" }}
-                        >
-                          <div className="planet__structure planet__structure--2 size-solar-small position-solar-1"></div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div> */}
-              </div>
+              <div className="earth-orbit sun-orbit w_h_earth"></div>
 
               <div className="mars-orbit sun-orbit">
                 <div className="ascending-node ascending-node--mars">
@@ -214,18 +190,7 @@ function HomeAura({ href }) {
                   </div>
                 </div>
               </div>
-              <div className="mars-orbit sun-orbit w_h_mars">
-                {/* <div className="ascending-node ascending-node--mars">
-                  <div className="inclination inclination--mars">
-                    <div className="orbit__visual"></div>
-                    <div className="orbit__shape orbit__shape--mars">
-                      <div className="planet mars">
-                        <div className="planet__structure planet__structure--2 size-solar-big position-solar-2"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
-              </div>
+              <div className="mars-orbit sun-orbit w_h_mars"></div>
 
               <div
                 onClick={() => {
@@ -262,22 +227,7 @@ function HomeAura({ href }) {
                   </div>
                 </div>
               </div>
-              <div
-                className="jupiter-orbit sun-orbit w_h_jupiter"
-              >
-                {/* <div className="ascending-node ascending-node--jupiter">
-                  <div className="inclination inclination--jupiter">
-                    <div className="orbit__visual"></div>
-                    <div className="orbit__shape orbit__shape--jupiter">
-                      <div
-                        className={styles.hover_solar + " " + "planet jupiter"}
-                      >
-                        <div className="planet__structure planet__structure--2 size-solar-big position-solar-3"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
-              </div>
+              <div className="jupiter-orbit sun-orbit w_h_jupiter"></div>
 
               <div
                 onClick={() => {
@@ -310,38 +260,18 @@ function HomeAura({ href }) {
                           <div className="box_image"></div>
                         </div>
                       </div>
-                      <div className="planet-orbit planet-orbit--saturn">
-                        {/* <div
-												className={"rings-of-saturn"}
-											></div> */}
-                      </div>
+                      <div className="planet-orbit planet-orbit--saturn"></div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div
-                className="saturn-orbit sun-orbit w_h_saturn"
-              >
-                {/* <div className="ascending-node ascending-node--saturn">
-                  <div className="inclination inclination--saturn">
-                    <div className="orbit__visual"></div>
-                    <div className="orbit__shape orbit__shape--saturn">
-                      <div
-                        className={styles.hover_solar + " " + "planet saturn"}
-                      >
-                        <div className="planet__structure planet__structure--2"></div>
-                      </div>
-                      <div className="planet-orbit planet-orbit--saturn"></div>
-                    </div>
-                  </div>
-                </div> */}
-              </div>
+              <div className="saturn-orbit sun-orbit w_h_saturn"></div>
 
               <div
                 onClick={() => {
                   setIsShow(2);
                   setIsTranslate(!isTranslate);
-                  // handleClick();
+
                   setTimeout(() => {
                     isTranslate ? setIsShow(1) : setIsShow(0);
                   }, 3200);
@@ -372,22 +302,7 @@ function HomeAura({ href }) {
                   </div>
                 </div>
               </div>
-              <div
-                className="uranus-orbit sun-orbit w_h_uranus"
-              >
-                {/* <div className="ascending-node ascending-node--uranus">
-                  <div className="inclination inclination--uranus">
-                    <div className="orbit__visual"></div>
-                    <div className="orbit__shape orbit__shape--uranus">
-                      <div
-                        className={styles.hover_solar + " " + "planet uranus"}
-                      >
-                        <div className="planet__structure planet__structure--2 size-solar-small position-solar-5"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
-              </div>
+              <div className="uranus-orbit sun-orbit w_h_uranus"></div>
 
               <div
                 onClick={() => {
@@ -424,71 +339,9 @@ function HomeAura({ href }) {
                   </div>
                 </div>
               </div>
-              <div
-                className="neptun-orbit sun-orbit w_h_95"
-              >
-                {/* <div className="ascending-node ascending-node--neptun">
-                  <div className="inclination inclination--neptun">
-                    <div className="orbit__visual"></div>
-                    <div className="orbit__shape orbit__shape--neptun">
-                      <div
-                        className={styles.hover_solar + " " + "planet neptun"}
-                      >
-                        <div className="planet__structure planet__structure--2 size-solar-big position-solar-6"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
-              </div>
+              <div className="neptun-orbit sun-orbit w_h_95"></div>
             </div>
           </div>
-          {/* <div class="content">
-						<h1>The Solar System</h1>
-						<div class="controls">
-							<div class="controls__group">
-								<span>Orbit Size:</span>
-								<label
-									class="button correct-size"
-									for="correct-orbit-size"
-								>
-									Correct
-								</label>
-								<label class="button ideal-size" for="ideal-orbit-size">
-									Idealized
-								</label>
-							</div>
-							<div class="controls__group">
-								<span>Velocity:</span>
-								<label class="button real-time" for="real-time">
-									Realtime
-								</label>
-								<label
-									class="button one-year-per-minute"
-									for="one-year-per-minute"
-								>
-									1 Year / Min
-								</label>
-								<label
-									class="button one-year-per-second"
-									for="one-year-per-second"
-								>
-									1 Year / Sec
-								</label>
-							</div>
-							<div class="controls__group">
-								<span>Perspective:</span>
-								<label class="button threedee" for="threedee">
-									3d
-								</label>
-								<label class="button topview" for="topview">
-									Top
-								</label>
-								<label class="button isometric" for="isometric">
-									Isometric
-								</label>
-							</div>
-						</div>
-					</div> */}
         </div>
         {/* <div className={styles.detailpage_home}>{isTranslate && <DetailPage />}</div> */}
       </Navbar>
