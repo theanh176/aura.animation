@@ -1,9 +1,8 @@
-import React from "react";
-import styles from "./health.module.scss";
-import Link from "next/link";
-import Solar from "../../components/solar/solar";
 import Image from "next/image";
+import React from "react";
 import HomeContent from "../../components/content/HomeContent";
+import Solar from "../../components/solar/solar";
+import styles from "./health.module.scss";
 
 const Health = () => {
   return (
