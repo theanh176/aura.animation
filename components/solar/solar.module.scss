@@ -8,11 +8,13 @@
 	max-width: 1920px;
 	margin: 0 auto;
 	overflow-x: hidden !important;
-    // animation: autoload 2s ease-in-out;
-    .translate_left{
-        transform: translateX(-45%);
-        animation: none;
-    }
+	// animation: autoload 2s ease-in-out;
+	.translate_left {
+		transform: translateX(-45%);
+		animation: none;
+		background: transparent;
+		z-index: 100;
+	}
 	.hover_solar {
 		transition: 0.5s color ease;
 		cursor: pointer;

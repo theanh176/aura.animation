@@ -42,8 +42,6 @@ img {
 }
 #real-time:checked ~ .universe {
 	--speed-of-animation: 1;
-	background: transparent;
-	z-index: 10000;
 }
 #one-year-per-minute:checked ~ .universe {
 	--speed-of-animation: 518400;
