@@ -170,9 +170,12 @@ function HomeContent() {
 					height={2062}
 				/>
 
-				<div className="col-8 mx-auto text-uppercase" style={{
-          fontSize: "20px",
-        }}>
+				<div
+					className="col-8 mx-auto text-uppercase"
+					style={{
+						fontSize: "20px",
+					}}
+				>
 					<p className="fw-bold">ông đậu minh nhật,</p>
 
 					<p>
@@ -231,10 +234,12 @@ function HomeContent() {
 					height={1766}
 				/>
 
-				<div className="col-8 mx-auto text-uppercase" style={{
-          fontSize: "20px",
-        }}>
-
+				<div
+					className="col-8 mx-auto text-uppercase"
+					style={{
+						fontSize: "20px",
+					}}
+				>
 					<p>
 						đây là nơi mà các doanh nhân kết nối đầu tư, thể hiện
 						phong cách sống chất với
