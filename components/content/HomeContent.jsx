@@ -42,7 +42,12 @@ function HomeContent() {
 				</div>
 			</div>
 
-			<div className="mt-5">
+			<div
+				className="mt-5"
+				data-aos="fade-up"
+				data-aos-easing="linear"
+				data-aos-duration="1500"
+			>
 				<Image
 					src="/images/unicornverse/Banner_home.jpg"
 					alt="1"
@@ -53,6 +58,9 @@ function HomeContent() {
 
 			<div
 				className={styles.box + " " + "col-10 mx-auto d-flex flex-wrap"}
+				data-aos="fade-up"
+				data-aos-easing="linear"
+				data-aos-duration="1500"
 			>
 				<div className="col-12 col-md-4 d-flex flex-column px-5 py-3 py-md-5">
 					<p className={styles.box_title}>kết nối đầu tư</p>
@@ -103,7 +111,11 @@ function HomeContent() {
 				</div>
 			</div>
 
-			<div className="text-center mt-5">
+			<div
+				className="text-center mt-5"
+				data-aos="fade-up"
+				data-aos-easing="linear"
+			>
 				<p
 					className="mb-0"
 					style={{ fontSize: "22px", fontWeight: 700 }}
@@ -125,7 +137,13 @@ function HomeContent() {
 			</div>
 
 			<div className="col-10 mx-auto d-flex flex-row">
-				<div className="col-4 p-3">
+				<div
+					className="col-4 p-3"
+					data-aos="fade-right"
+					data-aos-offset="300"
+					data-aos-easing="ease-in-sine"
+					data-aos-duration="2000"
+				>
 					<Image
 						src="/images/unicornverse/hinh-2.jpg"
 						alt="1"
@@ -134,7 +152,13 @@ function HomeContent() {
 					/>
 				</div>
 
-				<div className="col-4 p-3">
+				<div
+					className="col-4 p-3"
+					data-aos="fade-up"
+					data-aos-offset="300"
+					data-aos-easing="ease-in-sine"
+					data-aos-duration="2000"
+				>
 					<Image
 						src="/images/unicornverse/hinh-3.jpg"
 						alt="1"
@@ -143,7 +167,13 @@ function HomeContent() {
 					/>
 				</div>
 
-				<div className="col-4 p-3">
+				<div
+					className="col-4 p-3"
+					data-aos="fade-left"
+					data-aos-offset="300"
+					data-aos-easing="ease-in-sine"
+					data-aos-duration="2000"
+				>
 					<Image
 						src="/images/unicornverse/hinh-4.jpg"
 						alt="1"
@@ -153,7 +183,13 @@ function HomeContent() {
 				</div>
 			</div>
 
-			<div className="text-center mt-5">
+			<div
+				className="text-center mt-5"
+				data-aos="fade-up"
+				data-aos-offset="300"
+				data-aos-easing="ease-in-sine"
+				data-aos-duration="2000"
+			>
 				<Image
 					src="/images/unicornverse/Home-quyen-loi.jpg"
 					alt="1"
@@ -163,18 +199,29 @@ function HomeContent() {
 			</div>
 
 			<div className="text-center mt-4">
-				<Image
-					src="/images/unicornverse/Home-nha-sang-lap.jpg"
-					alt="1"
-					width={3841}
-					height={2062}
-				/>
+				<div
+					data-aos="fade-down"
+					data-aos-offset="300"
+					data-aos-easing="ease-in-sine"
+					data-aos-duration="2000"
+				>
+					<Image
+						src="/images/unicornverse/Home-nha-sang-lap.jpg"
+						alt="1"
+						width={3841}
+						height={2062}
+					/>
+				</div>
 
 				<div
 					className="col-8 mx-auto text-uppercase"
 					style={{
 						fontSize: "20px",
 					}}
+					data-aos="fade-up"
+					data-aos-offset="300"
+					data-aos-easing="ease-in-sine"
+					data-aos-duration="2000"
 				>
 					<p className="fw-bold">ông đậu minh nhật,</p>
 
@@ -220,21 +267,39 @@ function HomeContent() {
 			</div>
 
 			<div className="text-center mt-5">
-				<Image
-					src="/images/unicornverse/Home-vision.jpg"
-					alt="1"
-					width={3841}
-					height={4309}
-				/>
-
-				<Image
-					src="/images/unicornverse/Home_what-we-do.jpg"
-					alt="1"
-					width={3840}
-					height={1766}
-				/>
+				<div
+					data-aos="fade-up"
+					data-aos-offset="300"
+					data-aos-easing="ease-in-sine"
+					data-aos-duration="2000"
+				>
+					<Image
+						src="/images/unicornverse/Home-vision.jpg"
+						alt="1"
+						width={3841}
+						height={4309}
+					/>
+				</div>
 
 				<div
+					data-aos="fade-down"
+					data-aos-offset="300"
+					data-aos-easing="ease-in-sine"
+					data-aos-duration="2000"
+				>
+					<Image
+						src="/images/unicornverse/Home_what-we-do.jpg"
+						alt="1"
+						width={3840}
+						height={1766}
+					/>
+				</div>
+
+				<div
+					data-aos="fade-up"
+					data-aos-offset="300"
+					data-aos-easing="ease-in-sine"
+					data-aos-duration="2000"
 					className="col-8 mx-auto text-uppercase"
 					style={{
 						fontSize: "20px",
@@ -269,12 +334,19 @@ function HomeContent() {
 					</p>
 				</div>
 
-				<Image
-					src="/images/unicornverse/Banner_home_2.jpg"
-					alt="1"
-					width={3841}
-					height={1900}
-				/>
+				<div
+					data-aos="fade-up"
+					data-aos-offset="300"
+					data-aos-easing="ease-in-sine"
+					data-aos-duration="2000"
+				>
+					<Image
+						src="/images/unicornverse/Banner_home_2.jpg"
+						alt="1"
+						width={3841}
+						height={1900}
+					/>
+				</div>
 			</div>
 		</div>
 	);
