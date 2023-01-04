@@ -2,7 +2,8 @@ html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans;
 	/* width */
 	overflow-x: hidden;
 }
@@ -154,7 +155,11 @@ img {
 	content: "";
 	height: 600%;
 	width: 600%;
-	background: radial-gradient(rgba(255, 228, 147, 0.15), rgba(255, 228, 147, 0.1) 40%, rgba(255, 255, 255, 0) 70%);
+	background: radial-gradient(
+		rgba(255, 228, 147, 0.15),
+		rgba(255, 228, 147, 0.1) 40%,
+		rgba(255, 255, 255, 0) 70%
+	);
 	border-radius: 50%;
 	transform-origin: center center;
 	transform: translateY(-40%) translateX(-40%) rotateY(var(--angle-sun-glow));
@@ -185,7 +190,10 @@ img {
 	&:hover {
 		border: 0.5px solid rgb(255, 255, 255);
 		.box_image {
-			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.8);
+			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.7);
+		}
+		.box_opacity_image {
+			opacity: 1;
 		}
 	}
 }
@@ -193,7 +201,10 @@ img {
 	&:hover {
 		border: 0.5px solid rgb(255, 255, 255);
 		.box_image {
-			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.8);
+			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.7);
+		}
+		.box_opacity_image {
+			opacity: 1;
 		}
 	}
 }
@@ -201,7 +212,10 @@ img {
 	&:hover {
 		border: 0.5px solid rgb(255, 255, 255);
 		.box_image {
-			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.8);
+			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.7);
+		}
+		.box_opacity_image {
+			opacity: 1;
 		}
 	}
 }
@@ -209,7 +223,10 @@ img {
 	&:hover {
 		border: 0.5px solid rgb(255, 255, 255);
 		.box_image {
-			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.8);
+			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.7);
+		}
+		.box_opacity_image {
+			opacity: 1;
 		}
 	}
 }
@@ -217,7 +234,10 @@ img {
 	&:hover {
 		border: 0.5px solid rgb(255, 255, 255);
 		.box_image {
-			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.8);
+			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.7);
+		}
+		.box_opacity_image {
+			opacity: 1;
 		}
 	}
 }
@@ -225,7 +245,10 @@ img {
 	&:hover {
 		border: 0.5px solid rgb(255, 255, 255);
 		.box_image {
-			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.8);
+			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.7);
+		}
+		.box_opacity_image {
+			opacity: 1;
 		}
 	}
 }
@@ -233,7 +256,10 @@ img {
 	&:hover {
 		border: 0.5px solid rgb(255, 255, 255);
 		.box_image {
-			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.8);
+			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.7);
+		}
+		.box_opacity_image {
+			opacity: 1;
 		}
 	}
 }
@@ -241,7 +267,10 @@ img {
 	&:hover {
 		border: 0.5px solid rgb(255, 255, 255);
 		.box_image {
-			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.8);
+			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.7);
+		}
+		.box_opacity_image {
+			opacity: 1;
 		}
 	}
 }
@@ -257,6 +286,91 @@ img {
 	box-shadow: none;
 	transition-delay: 0.3s;
 	transition-duration: 0.7s;
+}
+// .box_opacity_image_health {
+// 	animation: health 5s linear;
+// }
+// @keyframes health {
+// 	0% {
+// 		opacity: 0;
+// 	}
+// 	60% {
+// 		opacity: 0;
+// 	}
+// 	70% {
+// 		opacity: 1;
+// 	}
+// 	100% {
+// 		opacity: 0.8;
+// 	}
+// }
+// .box_opacity_image_invention {
+// 	animation: invention 5s linear;
+// }
+// @keyframes invention {
+// 	0% {
+// 		opacity: 0;
+// 	}
+// 	70% {
+// 		opacity: 0;
+// 	}
+// 	75% {
+// 		opacity: 1;
+// 	}
+// 	100% {
+// 		opacity: 0.8;
+// 	}
+// }
+// .box_opacity_image_zen {
+// 	animation: zen 5s linear;
+// }
+// @keyframes zen {
+// 	0% {
+// 		opacity: 0;
+// 	}
+// 	75% {
+// 		opacity: 0;
+// 	}
+// 	80% {
+// 		opacity: 1;
+// 	}
+// 	100% {
+// 		opacity: 0.8;
+// 	}
+// }
+// .box_opacity_image_dauntless {
+// 	animation: dauntless 5s linear;
+// }
+// @keyframes dauntless {
+// 	0% {
+// 		opacity: 0;
+// 	}
+// 	85% {
+// 		opacity: 0;
+// 	}
+// 	90% {
+// 		opacity: 1;
+// 	}
+// 	100% {
+// 		opacity: 0.8;
+// 	}
+// }
+// .box_opacity_image_legaxy {
+// 	animation: legaxy 5s linear;
+// }
+// @keyframes legaxy {
+// 	0% {
+// 		opacity: 0;
+// 	}
+// 	95% {
+// 		opacity: 0;
+// 	}
+// 	100% {
+// 		opacity: 0.8;
+// 	}
+// }
+.box_opacity_image {
+	opacity: 0.8;
 }
 .mercury-orbit {
 	position: absolute;
@@ -457,6 +571,7 @@ img {
 	border: 0.5px dashed rgb(97, 97, 97);
 	animation: border_white_neptun-orbit 4s;
 	transform: rotate(220deg);
+	// background-color: red;
 }
 .w_h_95 {
 	width: 100% !important;
@@ -521,8 +636,12 @@ img {
 	animation: orbit infinite;
 	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
-	-webkit-animation-delay: calc((var(--seconds-left) * -1) / var(--speed-of-animation));
-	animation-delay: calc((var(--seconds-left) * -1) / var(--speed-of-animation));
+	-webkit-animation-delay: calc(
+		(var(--seconds-left) * -1) / var(--speed-of-animation)
+	);
+	animation-delay: calc(
+		(var(--seconds-left) * -1) / var(--speed-of-animation)
+	);
 	transform-style: preserve-3d;
 }
 .orbit__shape--mercury {
@@ -589,7 +708,11 @@ img {
 	height: 500%;
 	transform: translateY(-100%);
 	width: 100%;
-	background: linear-gradient(to top, rgba(1, 2, 13, 0.8), rgba(1, 2, 13, 0) 100%);
+	background: linear-gradient(
+		to top,
+		rgba(1, 2, 13, 0.8),
+		rgba(1, 2, 13, 0) 100%
+	);
 	-webkit-clip-path: polygon(50% 0%, 100% 100%, 100% 100%, 0% 100%);
 	clip-path: polygon(50% 0%, 100% 100%, 100% 100%, 0% 100%);
 }
@@ -782,8 +905,12 @@ img {
 .planet-orbit--saturn {
 	-webkit-animation-duration: calc(933465600s / var(--speed-of-animation));
 	animation-duration: calc(933465600s / var(--speed-of-animation));
-	-webkit-animation-delay: calc(((var(--seconds-left) + 433366400) * -1) / var(--speed-of-animation));
-	animation-delay: calc(((var(--seconds-left) + 433366400) * -1) / var(--speed-of-animation));
+	-webkit-animation-delay: calc(
+		((var(--seconds-left) + 433366400) * -1) / var(--speed-of-animation)
+	);
+	animation-delay: calc(
+		((var(--seconds-left) + 433366400) * -1) / var(--speed-of-animation)
+	);
 }
 .rings-of-saturn {
 	transform: rotateX(0deg) rotateY(27deg);
