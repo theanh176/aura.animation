@@ -1,8 +1,45 @@
 import Image from "next/image";
 import React from "react";
 import styles from "./HomeContent.module.scss";
+import Slider from "react-slick";
 
 function HomeContent() {
+	const ArrowNext = ({ currentSlide, slideCount, ...props }) => (
+		<button {...props} className={styles.btn_next}>
+			<i class="fal fa-chevron-right	"></i>
+		</button>
+	);
+
+	const ArrowPrev = ({ currentSlide, slideCount, ...props }) => (
+		<button {...props} className={styles.btn_prev}>
+			<i class="fal fa-chevron-left"></i>
+		</button>
+	);
+	const settings = {
+		nextArrow: <ArrowNext />,
+		prevArrow: <ArrowPrev />,
+		customPaging: function (i) {
+			return (
+				<a>
+					<Image
+						alt="image"
+						src={`/images/slide/solar0${i + 1}.png`}
+						width={160}
+						height={160}
+					/>
+				</a>
+			);
+		},
+		dots: true,
+		dotsClass: "slick-dots slick-thumb",
+		infinite: true,
+		// autoplay: true,
+		speed: 500,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrow: true,
+		pauseOnHover: true,
+	};
 	return (
 		<div className={styles.home_content}>
 			<div
@@ -266,6 +303,54 @@ function HomeContent() {
 				</div>
 			</div>
 
+			<div className="mt-5" data-aos="fade-down"
+					data-aos-offset="300"
+					data-aos-easing="ease-in-sine"
+					data-aos-duration="2000">
+				<Slider {...settings}>
+					<div className="text-center">
+						<Image
+							alt="image"
+							src={"/images/slide/slide1.jpg"}
+							width={900}
+							height={700}
+						/>
+					</div>
+					<div className="text-center">
+						<Image
+							alt="image"
+							src={"/images/slide/slide2.jpg"}
+							width={900}
+							height={700}
+						/>
+					</div>
+					<div className="text-center">
+						<Image
+							alt="image"
+							src={"/images/slide/slide3.jpg"}
+							width={900}
+							height={700}
+						/>
+					</div>
+					<div className="text-center">
+						<Image
+							alt="image"
+							src={"/images/slide/slide4.jpg"}
+							width={900}
+							height={700}
+						/>
+					</div>
+					<div className="text-center">
+						<Image
+							alt="image"
+							src={"/images/slide/slide5.jpg"}
+							width={900}
+							height={700}
+						/>
+					</div>
+				</Slider>
+			</div>
+
 			<div className="text-center mt-5">
 				<div
 					data-aos="fade-up"
@@ -274,10 +359,10 @@ function HomeContent() {
 					data-aos-duration="2000"
 				>
 					<Image
-						src="/images/unicornverse/Home-vision.jpg"
+						src="/images/unicornverse/Home-vision-2.jpg"
 						alt="1"
 						width={3841}
-						height={4309}
+						height={1961}
 					/>
 				</div>
 
