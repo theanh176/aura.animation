@@ -1107,3 +1107,63 @@ img {
 .position-solar-1 {
 	top: -50px;
 }
+
+// custom slide
+.slick-next,
+.slick-prev {
+	z-index: 99;
+	top: 25% !important;
+}
+
+.slick-dots {
+	position: unset;
+	margin:60px 0 80px;
+	li {
+		width: 160px;
+		height: 160px;
+		border-radius: 50%;
+		margin: 0 60px;
+		&:after {
+			content: "---------";
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 105%;
+			width: 70px;
+			color: #a6826c !important;
+		}
+		span {
+			border-radius: 50%;
+		}
+		&:last-child {
+			&:after {
+				content: "";
+			}
+		}
+	}
+	.slick-active {
+		&:before {
+			content: "";
+			position: absolute;
+			top: 130%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background-color: #a6826c;
+		}
+		&:after {
+			content: "---------";
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 125%;
+			width: 70px;
+			color: #a6826c !important;
+		}
+		span {
+			transform: scale(1.4);
+		}
+	}
+}

@@ -1,100 +1,136 @@
 .home_content {
-    background-color: black;
-    max-width: 1920px;
-    margin: 0 auto;
-    font-family: "Montserrat", sans-serif;
-    padding: 40px 0;
-    color: #fff;
-    user-select: none;
+	background-color: black;
+	max-width: 1920px;
+	margin: 0 auto;
+	font-family: "Montserrat", sans-serif;
+	padding: 40px 0;
+	color: #fff;
+	user-select: none;
 
-    .link {
-        color: #fff;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-size: 12px;
-        font-weight: 500;
+	.link {
+		color: #fff;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 12px;
+		font-weight: 500;
 
-        &:hover {
-            color: #a6826c;
-        }
-    }
+		&:hover {
+			color: #a6826c;
+		}
+	}
 
-    .btn_login {
-        padding: 6px 20px;
-        color: #fff;
-        background-color: transparent;
-        border-radius: 50px;
-        border: none;
-        text-transform: uppercase;
-        font-size: 10px;
-        font-weight: 400;
-        cursor: pointer;
+	.btn_login {
+		padding: 6px 20px;
+		color: #fff;
+		background-color: transparent;
+		border-radius: 50px;
+		border: none;
+		text-transform: uppercase;
+		font-size: 10px;
+		font-weight: 400;
+		cursor: pointer;
 
-        &:hover {
-            background-color: #fff;
-            color: #000;
-        }
-    }
+		&:hover {
+			background-color: #fff;
+			color: #000;
+		}
+	}
 
-    .btn_join {
-        padding: 6px 28px;
-        color: #ccc;
-        background-color: transparent;
-        border-radius: 50px;
-        border: 1px solid #ccc;
-        text-transform: uppercase;
-        font-size: 10px;
-        font-weight: 400;
-        cursor: pointer;
+	.btn_join {
+		padding: 6px 28px;
+		color: #ccc;
+		background-color: transparent;
+		border-radius: 50px;
+		border: 1px solid #ccc;
+		text-transform: uppercase;
+		font-size: 10px;
+		font-weight: 400;
+		cursor: pointer;
 
-        &:hover {
-            background-color: #fff;
-            color: #000;
-        }
-    }
+		&:hover {
+			background-color: #fff;
+			color: #000;
+		}
+	}
 
-    .line {
-        position: relative;
+	.line {
+		position: relative;
 
-        &::after {
-            content: "";
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 94%;
-            height: 3px;
-            margin: 0 auto;
-            background-color: #ddd;
-        }
-    }
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: -10px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 94%;
+			height: 3px;
+			margin: 0 auto;
+			background-color: #ddd;
+		}
+	}
 
-    .box {
-        color: #fff;
-        background-color: #a2775c;
-        border-radius: 50px 50px 0px 0px;
-        border: none;
-        text-align: center;
-        font-weight: 500;
+	.box {
+		color: #fff;
+		background-color: #a2775c;
+		border-radius: 50px 50px 0px 0px;
+		border: none;
+		text-align: center;
+		font-weight: 500;
 
-        &_title {
-            text-transform: uppercase;
-            font-size: 16px;
-            font-weight: 700;
-            margin-bottom: 5px;
-            letter-spacing: 3px;
-        }
+		&_title {
+			text-transform: uppercase;
+			font-size: 16px;
+			font-weight: 700;
+			margin-bottom: 5px;
+			letter-spacing: 3px;
+		}
 
-        &_decor {
-            width: 1px;
-            height: 40px;
-            background-color: #fff;
-            margin: 0 auto;
-        }
+		&_decor {
+			width: 1px;
+			height: 40px;
+			background-color: #fff;
+			margin: 0 auto;
+		}
 
-        &_content {
-            font-size: 16px;
-            margin-bottom: 5px;
-        }
-    }
+		&_content {
+			font-size: 16px;
+			margin-bottom: 5px;
+		}
+	}
+	.btn_next,
+	.btn_prev {
+		font-size: 0;
+		line-height: 0;
+		position: absolute;
+		top: 30%;
+		display: block;
+		width: 20px;
+		height: 20px;
+		padding: 0;
+		transform: translate(0, -50%);
+		cursor: pointer;
+		color: transparent;
+		border: none;
+		outline: none;
+		background: transparent;
+		z-index: 99;
+		opacity: 0.8;
+		i {
+			font-size: 60px;
+			font-weight: 100;
+			color: #a2775c;
+		}
+	}
+	.btn_next {
+		right: 20% !important;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	.btn_prev {
+		left: 20% !important;
+		&:hover {
+			opacity: 1;
+		}
+	}
 }
