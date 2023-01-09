@@ -2,10 +2,12 @@ html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-		Ubuntu, Cantarell, Fira Sans, Droid Sans;
+	// font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+	// 	Ubuntu, Cantarell, Fira Sans, Droid Sans;
+	font-family: "Barlow Semi Condensed", sans-serif !important;
 	/* width */
 	// overflow-x: hidden;
+	background-color: black;
 }
 
 * {
@@ -21,7 +23,7 @@ img {
 	}
 	body {
 		color: white;
-		background: black;
+		background-color: #0d0d0d;
 	}
 }
 
@@ -38,7 +40,7 @@ img {
 @media (min-width: 650px) {
 	#ideal-orbit-size:checked ~ .universe {
 		--planet-size-factor: 0.6;
-		--sun-size-factor: 0.1;
+		--sun-size-factor: 0.15;
 	}
 }
 #real-time:checked ~ .universe {
@@ -70,22 +72,9 @@ img {
 @keyframes universe-translateLeft {
 	0% {
 		transform: scale(0.8) translateX(0);
-		opacity: 1;
-	}
-	15% {
-		transform: scale(0.5);
-	}
-	65% {
-		opacity: 0.7;
-	}
-
-	75% {
-		transform: scale(1) translateX(-45%);
-		opacity: 0;
 	}
 	100% {
 		transform: scale(1) translateX(-45%);
-		opacity: 0;
 	}
 }
 .universe {
@@ -96,7 +85,7 @@ img {
 	right: 0;
 	// bottom: 0;
 	// background: radial-gradient(#020311 0%, #000 100%);
-	background: rgb(0, 0, 0);
+	background-color: black;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -107,15 +96,11 @@ img {
 }
 @keyframes universe-animation {
 	0% {
-		transform: scale(0);
+		transform: translateX(-100%) scale(0.8);
 		opacity: 0;
 	}
-	75% {
-		transform: scale(1);
-		opacity: 1;
-	}
 	100% {
-		transform: scale(0.8);
+		transform: translateX(0) scale(0.8);
 		opacity: 1;
 	}
 }
@@ -189,9 +174,9 @@ img {
 .earth-orbit:hover {
 	&:hover {
 		border: 0.5px solid rgb(255, 255, 255);
-		.box_image {
-			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.7);
-		}
+		// .box_image {
+		// 	box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.7);
+		// }
 		.box_opacity_image {
 			opacity: 1;
 		}
@@ -200,9 +185,9 @@ img {
 .venus-orbit:hover {
 	&:hover {
 		border: 0.5px solid rgb(255, 255, 255);
-		.box_image {
-			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.7);
-		}
+		// .box_image {
+		// 	box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.7);
+		// }
 		.box_opacity_image {
 			opacity: 1;
 		}
@@ -211,9 +196,9 @@ img {
 .mercury-orbit:hover {
 	&:hover {
 		border: 0.5px solid rgb(255, 255, 255);
-		.box_image {
-			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.7);
-		}
+		// .box_image {
+		// 	box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.7);
+		// }
 		.box_opacity_image {
 			opacity: 1;
 		}
@@ -222,9 +207,9 @@ img {
 .mars-orbit:hover {
 	&:hover {
 		border: 0.5px solid rgb(255, 255, 255);
-		.box_image {
-			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.7);
-		}
+		// .box_image {
+		// 	box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.7);
+		// }
 		.box_opacity_image {
 			opacity: 1;
 		}
@@ -233,9 +218,9 @@ img {
 .jupiter-orbit:hover {
 	&:hover {
 		border: 0.5px solid rgb(255, 255, 255);
-		.box_image {
-			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.7);
-		}
+		// .box_image {
+		// 	box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.7);
+		// }
 		.box_opacity_image {
 			opacity: 1;
 		}
@@ -244,9 +229,9 @@ img {
 .saturn-orbit:hover {
 	&:hover {
 		border: 0.5px solid rgb(255, 255, 255);
-		.box_image {
-			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.7);
-		}
+		// .box_image {
+		// 	box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.7);
+		// }
 		.box_opacity_image {
 			opacity: 1;
 		}
@@ -255,9 +240,9 @@ img {
 .uranus-orbit:hover {
 	&:hover {
 		border: 0.5px solid rgb(255, 255, 255);
-		.box_image {
-			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.7);
-		}
+		// .box_image {
+		// 	box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.7);
+		// }
 		.box_opacity_image {
 			opacity: 1;
 		}
@@ -266,9 +251,9 @@ img {
 .neptun-orbit {
 	&:hover {
 		border: 0.5px solid rgb(255, 255, 255);
-		.box_image {
-			box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.7);
-		}
+		// .box_image {
+		// 	box-shadow: 0px 0px 150px 100px rgba(138, 118, 9, 0.7);
+		// }
 		.box_opacity_image {
 			opacity: 1;
 		}
@@ -287,88 +272,88 @@ img {
 	transition-delay: 0.3s;
 	transition-duration: 0.7s;
 }
-// .box_opacity_image_health {
-// 	animation: health 5s linear;
-// }
-// @keyframes health {
-// 	0% {
-// 		opacity: 0;
-// 	}
-// 	60% {
-// 		opacity: 0;
-// 	}
-// 	70% {
-// 		opacity: 1;
-// 	}
-// 	100% {
-// 		opacity: 0.8;
-// 	}
-// }
-// .box_opacity_image_invention {
-// 	animation: invention 5s linear;
-// }
-// @keyframes invention {
-// 	0% {
-// 		opacity: 0;
-// 	}
-// 	70% {
-// 		opacity: 0;
-// 	}
-// 	75% {
-// 		opacity: 1;
-// 	}
-// 	100% {
-// 		opacity: 0.8;
-// 	}
-// }
-// .box_opacity_image_zen {
-// 	animation: zen 5s linear;
-// }
-// @keyframes zen {
-// 	0% {
-// 		opacity: 0;
-// 	}
-// 	75% {
-// 		opacity: 0;
-// 	}
-// 	80% {
-// 		opacity: 1;
-// 	}
-// 	100% {
-// 		opacity: 0.8;
-// 	}
-// }
-// .box_opacity_image_dauntless {
-// 	animation: dauntless 5s linear;
-// }
-// @keyframes dauntless {
-// 	0% {
-// 		opacity: 0;
-// 	}
-// 	85% {
-// 		opacity: 0;
-// 	}
-// 	90% {
-// 		opacity: 1;
-// 	}
-// 	100% {
-// 		opacity: 0.8;
-// 	}
-// }
-// .box_opacity_image_legaxy {
-// 	animation: legaxy 5s linear;
-// }
-// @keyframes legaxy {
-// 	0% {
-// 		opacity: 0;
-// 	}
-// 	95% {
-// 		opacity: 0;
-// 	}
-// 	100% {
-// 		opacity: 0.8;
-// 	}
-// }
+.box_opacity_image_health {
+	animation: health 4s linear;
+}
+@keyframes health {
+	0% {
+		opacity: 0;
+	}
+	60% {
+		opacity: 0;
+	}
+	70% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.8;
+	}
+}
+.box_opacity_image_invention {
+	animation: invention 4s linear;
+}
+@keyframes invention {
+	0% {
+		opacity: 0;
+	}
+	70% {
+		opacity: 0;
+	}
+	75% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.8;
+	}
+}
+.box_opacity_image_zen {
+	animation: zen 4s linear;
+}
+@keyframes zen {
+	0% {
+		opacity: 0;
+	}
+	75% {
+		opacity: 0;
+	}
+	80% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.8;
+	}
+}
+.box_opacity_image_dauntless {
+	animation: dauntless 4s linear;
+}
+@keyframes dauntless {
+	0% {
+		opacity: 0;
+	}
+	85% {
+		opacity: 0;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.8;
+	}
+}
+.box_opacity_image_legaxy {
+	animation: legaxy 4s linear;
+}
+@keyframes legaxy {
+	0% {
+		opacity: 0;
+	}
+	95% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.8;
+	}
+}
 .box_opacity_image {
 	opacity: 0.8;
 }
@@ -379,7 +364,7 @@ img {
 	transform: rotateZ(-224deg);
 	transition-delay: 0s;
 	z-index: 9;
-	border: 0.5px dashed rgb(97, 97, 97);
+	border: 0.5px solid rgb(97, 97, 97);
 }
 #ideal-orbit-size:checked ~ .universe .mercury-orbit {
 	width: 12.5%;
@@ -393,7 +378,7 @@ img {
 	transform: rotateZ(-144deg);
 	transition-delay: 0.1s;
 	z-index: 8;
-	border: 0.5px dashed rgb(97, 97, 97);
+	border: 0.5px solid rgb(97, 97, 97);
 }
 #ideal-orbit-size:checked ~ .universe .venus-orbit {
 	width: 25%;
@@ -407,28 +392,28 @@ img {
 	transform: rotateZ(-101deg);
 	transition-delay: 0.2s;
 	z-index: 7;
-	border: 0.5px dashed rgb(97, 97, 97);
+	border: 0.5px solid rgb(97, 97, 97);
 	animation: border_white_earth-orbit 4s;
 	transform: rotate(-10deg);
 }
 @keyframes border_white_earth-orbit {
 	0% {
-		border: 0.5px dashed rgb(97, 97, 97);
+		border: 0.5px solid rgb(97, 97, 97);
 	}
 	65% {
-		border: 0.5px dashed rgb(97, 97, 97);
+		border: 0.5px solid rgb(97, 97, 97);
 	}
 	75% {
-		border: 0.5px dashed rgb(255, 255, 255);
+		border: 0.5px solid rgb(255, 255, 255);
 	}
 	85% {
-		border: 0.5px dashed rgb(97, 97, 97);
+		border: 0.5px solid rgb(97, 97, 97);
 	}
 	95% {
-		border: 0.5px dashed rgb(255, 255, 255);
+		border: 0.5px solid rgb(255, 255, 255);
 	}
 	100% {
-		border: 0.5px dashed rgb(97, 97, 97);
+		border: 0.5px solid rgb(97, 97, 97);
 	}
 }
 #ideal-orbit-size:checked ~ .universe .earth-orbit {
@@ -443,27 +428,27 @@ img {
 	transform: rotateZ(-39deg);
 	transition-delay: 0.3s;
 	z-index: 6;
-	border: 0.5px dashed rgb(97, 97, 97);
+	border: 0.5px solid rgb(97, 97, 97);
 	animation: border_white_mars-orbit 4s;
 }
 @keyframes border_white_mars-orbit {
 	0% {
-		border: 0.5px dashed rgb(97, 97, 97);
+		border: 0.5px solid rgb(97, 97, 97);
 	}
 	75% {
-		border: 0.5px dashed rgb(97, 97, 97);
+		border: 0.5px solid rgb(97, 97, 97);
 	}
 	80% {
-		border: 0.5px dashed rgb(255, 255, 255);
+		border: 0.5px solid rgb(255, 255, 255);
 	}
 	85% {
-		border: 0.5px dashed rgb(97, 97, 97);
+		border: 0.5px solid rgb(97, 97, 97);
 	}
 	95% {
-		border: 0.5px dashed rgb(255, 255, 255);
+		border: 0.5px solid rgb(255, 255, 255);
 	}
 	100% {
-		border: 0.5px dashed rgb(97, 97, 97);
+		border: 0.5px solid rgb(97, 97, 97);
 	}
 }
 #ideal-orbit-size:checked ~ .universe .mars-orbit {
@@ -480,22 +465,22 @@ img {
 	transform: rotateZ(-245deg);
 	transition-delay: 0.4s;
 	z-index: 5;
-	border: 0.5px dashed rgb(97, 97, 97);
+	border: 0.5px solid rgb(97, 97, 97);
 	animation: border_white_jupiter-orbit 4s;
 	transform: rotate(-60deg);
 }
 @keyframes border_white_jupiter-orbit {
 	0% {
-		border: 0.5px dashed rgb(97, 97, 97);
+		border: 0.5px solid rgb(97, 97, 97);
 	}
 	80% {
-		border: 0.5px dashed rgb(97, 97, 97);
+		border: 0.5px solid rgb(97, 97, 97);
 	}
 	85% {
-		border: 0.5px dashed rgb(255, 255, 255);
+		border: 0.5px solid rgb(255, 255, 255);
 	}
 	100% {
-		border: 0.5px dashed rgb(97, 97, 97);
+		border: 0.5px solid rgb(97, 97, 97);
 	}
 }
 #ideal-orbit-size:checked ~ .universe .jupiter-orbit {
@@ -510,21 +495,21 @@ img {
 	transform: rotateZ(-282deg);
 	transition-delay: 0.5s;
 	z-index: 4;
-	border: 0.5px dashed rgb(97, 97, 97);
+	border: 0.5px solid rgb(97, 97, 97);
 	animation: border_white_saturn-orbit 4s;
 }
 @keyframes border_white_saturn-orbit {
 	0% {
-		border: 0.5px dashed rgb(97, 97, 97);
+		border: 0.5px solid rgb(97, 97, 97);
 	}
 	85% {
-		border: 0.5px dashed rgb(97, 97, 97);
+		border: 0.5px solid rgb(97, 97, 97);
 	}
 	90% {
-		border: 0.5px dashed rgb(255, 255, 255);
+		border: 0.5px solid rgb(255, 255, 255);
 	}
 	100% {
-		border: 0.5px dashed rgb(97, 97, 97);
+		border: 0.5px solid rgb(97, 97, 97);
 	}
 }
 #ideal-orbit-size:checked ~ .universe .saturn-orbit {
@@ -539,22 +524,22 @@ img {
 	transform: rotateZ(-29deg);
 	transition-delay: 0.6s;
 	z-index: 3;
-	border: 0.5px dashed rgb(97, 97, 97);
+	border: 0.5px solid rgb(97, 97, 97);
 	animation: border_white_uranus-orbit 4s;
 	transform: rotate(35deg);
 }
 @keyframes border_white_uranus-orbit {
 	0% {
-		border: 0.5px dashed rgb(97, 97, 97);
+		border: 0.5px solid rgb(97, 97, 97);
 	}
 	90% {
-		border: 0.5px dashed rgb(97, 97, 97);
+		border: 0.5px solid rgb(97, 97, 97);
 	}
 	95% {
-		border: 0.5px dashed rgb(255, 255, 255);
+		border: 0.5px solid rgb(255, 255, 255);
 	}
 	100% {
-		border: 0.5px dashed rgb(97, 97, 97);
+		border: 0.5px solid rgb(97, 97, 97);
 	}
 }
 #ideal-orbit-size:checked ~ .universe .uranus-orbit {
@@ -568,7 +553,7 @@ img {
 	height: 93.5%;
 	transform: rotateZ(-347deg);
 	z-index: 2;
-	border: 0.5px dashed rgb(97, 97, 97);
+	border: 0.5px solid rgb(97, 97, 97);
 	animation: border_white_neptun-orbit 4s;
 	transform: rotate(220deg);
 	// background-color: red;
@@ -610,13 +595,13 @@ img {
 }
 @keyframes border_white_neptun-orbit {
 	0% {
-		border: 0.5px dashed rgb(97, 97, 97);
+		border: 0.5px solid rgb(97, 97, 97);
 	}
 	95% {
-		border: 0.5px dashed rgb(97, 97, 97);
+		border: 0.5px solid rgb(97, 97, 97);
 	}
 	100% {
-		border: 0.5px dashed rgb(255, 255, 255);
+		border: 0.5px solid rgb(255, 255, 255);
 	}
 }
 .orbit__visual {
@@ -1084,8 +1069,8 @@ img {
 	height: 100px;
 }
 .size-solar-uranus-orbit {
-	width: 150px;
-	height: 150px;
+	width: 200px;
+	height: 200px;
 }
 
 // position solar
@@ -1117,7 +1102,7 @@ img {
 
 .slick-dots {
 	position: unset;
-	margin:60px 0 80px;
+	margin: 60px 0 80px;
 	li {
 		width: 160px;
 		height: 160px;

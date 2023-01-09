@@ -220,33 +220,174 @@ function HomeContent() {
 				</div>
 			</div>
 
-			<div
-				className="text-center mt-5"
-				data-aos="fade-up"
-				data-aos-offset="300"
-				data-aos-easing="ease-in-sine"
-				data-aos-duration="2000"
-			>
-				<Image
-					src="/images/unicornverse/Home-quyen-loi.jpg"
-					alt="1"
-					width={3841}
-					height={3005}
+			<div className={styles.session_4 + " " + "text-center mt-5"}>
+				<h1
+					data-aos="fade-up"
+				>
+					QUYỀN LỜI HỘI VIÊN
+				</h1>
+				<hr
+					data-aos="fade-up"
 				/>
+				<div className="col-10 mx-auto d-flex flex-row justify-content-between my-5">
+					<div
+						className="col-2"
+						data-aos="flip-left"
+						data-aos-offset="300"
+						data-aos-easing="ease-in-sine"
+						data-aos-duration="2000"
+					>
+						<p>1</p>
+						<span>
+							Thu thập 30% trên phí thu về của unicornverse/ năm.
+						</span>
+					</div>
+					<div
+						className="col-2"
+						data-aos="flip-right"
+						data-aos-offset="300"
+						data-aos-easing="ease-in-sine"
+						data-aos-duration="2000"
+					>
+						<p>2</p>
+						<span>Là một giám đốc quỹ đầu tư.</span>
+					</div>
+					<div
+						className="col-2"
+						data-aos="flip-left"
+						data-aos-offset="300"
+						data-aos-easing="ease-in-sine"
+						data-aos-duration="2000"
+					>
+						<p>3</p>
+						<span>
+							có thể viết quy chế vận hành quỹ và thu hoa hồng
+							quản lý từ lợi nhuận của quỹ.
+						</span>
+					</div>
+					<div
+						className="col-2"
+						data-aos="flip-right"
+						data-aos-offset="300"
+						data-aos-easing="ease-in-sine"
+						data-aos-duration="2000"
+					>
+						<p>4</p>
+						<span>được làm thương hiệu cá nhân mạnh.</span>
+					</div>
+				</div>
+				<hr data-aos="fade-up" />
+				<div className="col-10 mx-auto d-flex flex-row justify-content-between my-5">
+					<div
+						className="col-2"
+						data-aos="flip-left"
+						data-aos-offset="300"
+						data-aos-easing="ease-in-sine"
+						data-aos-duration="2000"
+					>
+						<p>5</p>
+						<span>có cộng đồng.</span>
+					</div>
+					<div
+						className="col-2"
+						data-aos="flip-right"
+						data-aos-offset="300"
+						data-aos-easing="ease-in-sine"
+						data-aos-duration="2000"
+					>
+						<p>6</p>
+						<span>
+							hoa hồng nếu thành viên đi học cơ chế vốn của aura
+							capital tổ chức.
+						</span>
+					</div>
+					<div
+						className="col-2"
+						data-aos="flip-left"
+						data-aos-offset="300"
+						data-aos-easing="ease-in-sine"
+						data-aos-duration="2000"
+					>
+						<p>7</p>
+						<span>
+							hoa hồng từ hợp đồng tư vấn từ aura capital.
+						</span>
+					</div>
+					<div
+						className="col-2"
+						data-aos="flip-right"
+						data-aos-offset="300"
+						data-aos-easing="ease-in-sine"
+						data-aos-duration="2000"
+					>
+						<p>8</p>
+						<span>
+							có hoa hồng và cổ phiếu thưởng từ việc kết nối các
+							nhà đầu tư cho các dự án.
+						</span>
+					</div>
+				</div>
+				<hr data-aos="fade-up" />
+				<div className="col-10 mx-auto d-flex flex-row justify-content-between my-5">
+					<div className="col-3"></div>
+					<div
+						className="col-6"
+						data-aos="flip-left"
+						data-aos-offset="300"
+						data-aos-easing="ease-in-sine"
+						data-aos-duration="2000"
+					>
+						<p>9</p>
+						<span>
+							nếu có thành viên của house đủ tư cách mở house, chủ
+							house hỗ trợ kết nối thành lập sẽ nhận 10% hoa hồng
+							từ chi phí thành lập house
+						</span>
+					</div>
+					<div className="col-3"></div>
+				</div>
+				<hr data-aos="fade-up" />
 			</div>
 
-			<div className="text-center mt-4">
+			<div className={styles.session_5 + " " + "text-center"}>
 				<div
-					data-aos="fade-down"
+					data-aos="fade-up"
+					data-aos-offset="300"
+					data-aos-easing="ease-in-sine"
+					data-aos-duration="2000"
+					className="col-10 mx-auto d-flex flex-row justify-content-center"
+				>
+					<div className={styles.box_icon + " " + "col-2"}>
+						<Image
+							src="/images/icon_left.jpg"
+							alt="1"
+							width={472}
+							height={84}
+						/>
+					</div>
+					<h1>NHÀ SÁNG LẬP</h1>
+					<div className={styles.box_icon + " " + "col-2"}>
+						<Image
+							src="/images/icon_right.jpg"
+							alt="1"
+							width={472}
+							height={84}
+						/>
+					</div>
+				</div>
+
+				<div
+					className={styles.image_ceo}
+					data-aos="fade-up"
 					data-aos-offset="300"
 					data-aos-easing="ease-in-sine"
 					data-aos-duration="2000"
 				>
 					<Image
-						src="/images/unicornverse/Home-nha-sang-lap.jpg"
+						src="/images/dauminhnhat.jpg"
 						alt="1"
-						width={3841}
-						height={2062}
+						width={3627}
+						height={1808}
 					/>
 				</div>
 
@@ -303,10 +444,13 @@ function HomeContent() {
 				</div>
 			</div>
 
-			<div className="mt-5" data-aos="fade-down"
-					data-aos-offset="300"
-					data-aos-easing="ease-in-sine"
-					data-aos-duration="2000">
+			<div
+				className="mt-5"
+				data-aos="fade-down"
+				data-aos-offset="300"
+				data-aos-easing="ease-in-sine"
+				data-aos-duration="2000"
+			>
 				<Slider {...settings}>
 					<div className="text-center">
 						<Image
@@ -351,19 +495,29 @@ function HomeContent() {
 				</Slider>
 			</div>
 
-			<div className="text-center mt-5">
+			<div className={styles.session_6 + " " + "text-center mt-5"}>
 				<div
 					data-aos="fade-up"
 					data-aos-offset="300"
 					data-aos-easing="ease-in-sine"
 					data-aos-duration="2000"
 				>
-					<Image
-						src="/images/unicornverse/Home-vision-2.jpg"
-						alt="1"
-						width={3841}
-						height={1961}
-					/>
+					<h1>VISION AND MISSION</h1>
+
+					<div
+						className={
+							styles.vision_mission +
+							" " +
+							"mx-auto d-flex flex-row"
+						}
+					>
+						<Image
+							src="/images/3_6_9.jpg"
+							alt="1"
+							width={3840}
+							height={1860}
+						/>
+					</div>
 				</div>
 
 				<div
@@ -372,12 +526,19 @@ function HomeContent() {
 					data-aos-easing="ease-in-sine"
 					data-aos-duration="2000"
 				>
-					<Image
-						src="/images/unicornverse/Home_what-we-do.jpg"
-						alt="1"
-						width={3840}
-						height={1766}
-					/>
+					<h1>WHAT WE DO</h1>
+					<div
+						className={
+							styles.box_image_wwd + " " + "col-10 mx-auto my-5"
+						}
+					>
+						<Image
+							src="/images/what_we_do.jpg"
+							alt="1"
+							width={3024}
+							height={1475}
+						/>
+					</div>
 				</div>
 
 				<div

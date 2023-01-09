@@ -4,7 +4,7 @@
     color: #fff !important;
 
     &_detail {
-        width: 60vw;
+        width: 40vw;
         position: relative;
         top: 0;
         right: 0;
@@ -13,6 +13,26 @@
     .solar_load {
         animation: autoload 2s ease-in-out;
     }
+
+    .box_header {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+        h1, h2, h5 {
+            color: white;
+        }
+		.title_header {
+			font-family: "Barlow Semi Condensed", sans-serif !important;
+			h1 {
+				font-size: 65px;
+				font-weight: 700;
+				letter-spacing: 15px;
+			}
+		}
+		.content_header {
+            height: 60vh;
+		}
+	}
 }
 @keyframes autoload {
     0% {

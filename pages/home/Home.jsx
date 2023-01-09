@@ -24,12 +24,12 @@ function HomeAura({ href }) {
 	let secondsLeft = (timestamp_now - timestamp_start) / 1000;
 	let root = document.documentElement;
 	root.style.setProperty("--seconds-left", `${secondsLeft}s`);
-	const [isShow, setIsShow] = useState(2); // 0:stop 1:play 2:speed
+	const [isShow, setIsShow] = useState(1); // 0:stop 1:play 2:speed
 	const [isTranslate, setIsTranslate] = useState(false);
 	const [isShowBackground, setIsShowBackground] = useState(false);
 	const [isHref, setIsHref] = useState("home-aura");
 	// const handleClick = () => {
-	// 	setIsShow(2);
+	// setIsShow(2);
 	// 	setIsTranslate(!isTranslate);
 	// 	setTimeout(() => {
 	// 		setIsShow(1);
@@ -93,11 +93,17 @@ function HomeAura({ href }) {
 					<div className="universe">
 						<div className="solarsystem">
 							<div className="sun rotate_sun">
-								<div className="planet__structure planet__structure--2"></div>
+								<div
+									className="planet__structure planet__structure--2"
+									onClick={() => {
+										location.reload();
+									}}
+									style={{
+										cursor: "pointer",
+									}}
+								></div>
 							</div>
-							<div
-								className="mercury-orbit sun-orbit"
-							>
+							<div className="mercury-orbit sun-orbit">
 								<div className="ascending-node ascending-node--mercury">
 									<div className="inclination inclination--mercury">
 										<div className="orbit__visual"></div>
@@ -137,7 +143,7 @@ function HomeAura({ href }) {
 
 							<div
 								onClick={() => {
-									setIsShow(2);
+									// setIsShow(2);
 									setIsTranslate(!isTranslate);
 									// handleClick();
 									setTimeout(() => {
@@ -164,9 +170,7 @@ function HomeAura({ href }) {
 														title="House of Health"
 														className="planet__structure planet__structure--2 size-solar-xl position-solar-1 rotate_earth-orbit"
 													>
-														<div
-															className="box_opacity_image box_opacity_image_health"
-														>
+														<div className="box_opacity_image box_opacity_image_health">
 															<Image
 																src={
 																	HealthImage
@@ -202,7 +206,7 @@ function HomeAura({ href }) {
 
 							<div
 								onClick={() => {
-									setIsShow(2);
+									// setIsShow(2);
 									setIsTranslate(!isTranslate);
 									// handleClick();
 									setTimeout(() => {
@@ -227,9 +231,7 @@ function HomeAura({ href }) {
 													title="House of Invention"
 													className="planet__structure planet__structure--2 size-solar-big position-solar-3 rotate_jupiter-orbit"
 												>
-													<div
-														className="box_opacity_image box_opacity_image_invention"
-													>
+													<div className="box_opacity_image box_opacity_image_invention">
 														<Image
 															src={InventionImage}
 															alt="Saturn Rings"
@@ -248,7 +250,7 @@ function HomeAura({ href }) {
 
 							<div
 								onClick={() => {
-									setIsShow(2);
+									// setIsShow(2);
 									setIsTranslate(!isTranslate);
 									// handleClick();
 									setTimeout(() => {
@@ -273,9 +275,7 @@ function HomeAura({ href }) {
 													title="House of Zen"
 													className="planet__structure planet__structure--2 size-solar-big rotate_saturn-orbit position_zen"
 												>
-													<div
-														className="box_opacity_image box_opacity_image_zen"
-													>
+													<div className="box_opacity_image box_opacity_image_zen">
 														<Image
 															src={ZenImage}
 															alt="Saturn Rings"
@@ -295,7 +295,7 @@ function HomeAura({ href }) {
 
 							<div
 								onClick={() => {
-									setIsShow(2);
+									// setIsShow(2);
 									setIsTranslate(!isTranslate);
 									setTimeout(() => {
 										// isTranslate ? setIsShow(1) : setIsShow(0);
@@ -319,9 +319,7 @@ function HomeAura({ href }) {
 													title="House of Dauntless"
 													className="planet__structure planet__structure--2 size-solar-uranus-orbit position-solar-5 rotate_uranus-orbit"
 												>
-													<div
-														className="box_opacity_image box_opacity_image_dauntless"
-													>
+													<div className="box_opacity_image box_opacity_image_dauntless">
 														<Image
 															src={DauntlessImage}
 															alt="Saturn Rings"
@@ -340,7 +338,7 @@ function HomeAura({ href }) {
 
 							<div
 								onClick={() => {
-									setIsShow(2);
+									// setIsShow(2);
 									setIsTranslate(!isTranslate);
 									setTimeout(() => {
 										router.push("/legacy");
