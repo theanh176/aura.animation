@@ -13,12 +13,22 @@ const Dauntless = () => {
           // eslint-disable-next-line react/no-children-prop
           children={
             <div className={styles.dauntless_detail}>
-              <Image
+              {/* <Image
                 src="/images/demo/Dauntless_demo.png"
                 alt="Dauntless_demo"
                 width={862}
                 height={1557}
-              />
+              /> */}
+              <div className={styles.box_header}>
+                <div className={styles.title_header}>
+                  <h1>HOUSE <br/> OF <br/> DAUNTLESS</h1>
+                  <h5>VƯƠN TẦM</h5>
+                  <h2>GIÁ TRỊ DOANH NGHIỆP</h2>
+                </div>
+                <div className={styles.content_header}>
+                  
+                </div>
+              </div>
             </div>
           }
         />

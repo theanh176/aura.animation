@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { Navbar } from "react-bootstrap";
-import DauntlessImage from "../../public/images/unicornverse/dauntless.png";
+import DauntlessImage from "../../public/images/slide/solar01.png";
 import HealthImage from "../../public/images/unicornverse/health.png";
 import InventionImage from "../../public/images/unicornverse/invention.png";
 import LegaxyImage from "../../public/images/unicornverse/legaxy.png";
@@ -21,8 +21,11 @@ export default function Solar({ children }) {
 	const [isShowBackground, setIsShowBackground] = useState(false);
 	const [isHref, setIsHref] = useState("home-aura");
 	return (
-		<div>
-			<Navbar className="p-0" style={{ backgroundColor: "black" }}>
+		<div className={styles.home_solar}>
+			<Navbar
+				className="p-0"
+				style={{ backgroundColor: "black", overflow: "hidden" }}
+			>
 				<div className={styles.solar}>
 					<input
 						type="radio"
@@ -73,7 +76,9 @@ export default function Solar({ children }) {
 						<div className="solarsystem">
 							<div
 								style={{ cursor: "pointer" }}
-								className="sun rotate_sun"
+								className={
+									styles.sun_solar + " " + "sun rotate_sun"
+								}
 								onClick={() => {
 									router.push("/");
 								}}
@@ -294,8 +299,8 @@ export default function Solar({ children }) {
 													<Image
 														src={DauntlessImage}
 														alt="Saturn Rings"
-														width={150}
-														height={150}
+														width={350}
+														height={350}
 													/>
 													<div className="box_image"></div>
 												</div>

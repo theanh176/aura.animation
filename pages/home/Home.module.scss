@@ -1,14 +1,15 @@
 .unicornverse {
 	overflow: hidden !important;
 	height: fit-content;
+	max-width: 1440px;
+	margin: 0 auto;
 	// background-color: black;
 	.home_aura {
-		background-color: #000000;
+		background-color: black;
 		color: white;
 		text-align: center;
-		height: 100vh;
+		height: 90vh;
 		width: 100%;
-		max-width: 1920px;
 		margin: 0 auto;
 		overflow-x: hidden !important;
 		.hover_solar {

@@ -1,60 +1,70 @@
-.solar {
-	background-color: #000000;
-	color: white;
-	text-align: center;
-	height: fit-content;
-	min-height: 100vh;
-	width: 100%;
-	max-width: 1920px;
+.home_solar {
+	background-color: aliceblue;
+	max-width: 1440px;
 	margin: 0 auto;
-	overflow-x: hidden !important;
-	// animation: autoload 2s ease-in-out;
-	.translate_left {
-		transform: translateX(-45%);
-		animation: none;
-		background: transparent;
-		z-index: 100;
-	}
-	.hover_solar {
-		transition: 0.5s color ease;
-		cursor: pointer;
-		&:hover {
-			animation: sunAnimation 5s infinite;
-			@keyframes sunAnimation {
-				0% {
-					transform: scale(1);
-				}
-				50% {
-					transform: scale(1.5);
-				}
-				100% {
-					transform: scale(1);
+	.solar {
+		background-color: #000000;
+		color: white;
+		text-align: center;
+		height: fit-content;
+		min-height: 100vh;
+		overflow-x: hidden !important;
+		width: 60vw;
+		// animation: autoload 2s ease-in-out;
+		.translate_left {
+			transform: translateX(-55%);
+			animation: none;
+			background: transparent;
+			z-index: 100;
+			display: flex;
+			justify-content: flex-end;
+		}
+		.hover_solar {
+			transition: 0.5s color ease;
+			cursor: pointer;
+			&:hover {
+				animation: sunAnimation 5s infinite;
+				@keyframes sunAnimation {
+					0% {
+						transform: scale(1);
+					}
+					50% {
+						transform: scale(1.5);
+					}
+					100% {
+						transform: scale(1);
+					}
 				}
 			}
 		}
-	}
-	.hover_sun {
-		transition: 0.5s color ease;
-		cursor: pointer;
-		&:hover {
-			animation: sunAnimation 5s infinite;
-			@keyframes sunAnimation {
-				0% {
-					transform: scale(1);
-				}
-				50% {
-					transform: scale(1.1);
-				}
-				100% {
-					transform: scale(1);
+		.hover_sun {
+			transition: 0.5s color ease;
+			cursor: pointer;
+			&:hover {
+				animation: sunAnimation 5s infinite;
+				@keyframes sunAnimation {
+					0% {
+						transform: scale(1);
+					}
+					50% {
+						transform: scale(1.1);
+					}
+					100% {
+						transform: scale(1);
+					}
 				}
 			}
 		}
+		input {
+			opacity: 0;
+		}
 	}
-	input {
-		opacity: 0;
+	.sun_solar {
+		width: calc(1391px * 1.2 * var(--sun-size-factor)) !important;
+		height: calc(1391px * 1.2 * var(--sun-size-factor)) !important;
 	}
 }
+
 @keyframes autoload {
 	0% {
 		opacity: 0;

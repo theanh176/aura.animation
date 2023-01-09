@@ -1,9 +1,9 @@
 .home_content {
 	background-color: black;
-	max-width: 1920px;
+	max-width: 1440px;
 	margin: 0 auto;
 	font-family: "Montserrat", sans-serif;
-	padding: 40px 0;
+	padding: 40px 0 0;
 	color: #fff;
 	user-select: none;
 
@@ -55,7 +55,8 @@
 
 	.line {
 		position: relative;
-
+		animation: line_show 2s linear;
+		transition: 0.5s color ease;
 		&::after {
 			content: "";
 			position: absolute;
@@ -66,6 +67,20 @@
 			height: 3px;
 			margin: 0 auto;
 			background-color: #ddd;
+		}
+	}
+
+	@keyframes line_show {
+		0% {
+			transform: translateY(100%);
+			opacity: 0;
+		}
+		70% {
+			transform: translateY(-20%);
+			opacity: 1;
+		}
+		100% {
+			transform: translateY(0%);
 		}
 	}
 
@@ -131,6 +146,72 @@
 		left: 20% !important;
 		&:hover {
 			opacity: 1;
+		}
+	}
+	.session_4 {
+		font-family: "Barlow Semi Condensed", sans-serif !important;
+		h1 {
+			color: white;
+			font-size: 55px;
+			font-weight: 700;
+			letter-spacing: 15px;
+			margin: 40px 0;
+		}
+		p {
+			color: #aa9b88;
+			font-weight: 700;
+		}
+		span {
+			color: white;
+			font-size: 26px;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+		hr {
+			border: none;
+			background: linear-gradient(
+				90deg,
+				transparent 0%,
+				rgba(255, 255, 255, 1) 40%,
+				rgba(255, 255, 255, 1) 60%,
+				transparent 100%
+			);
+		}
+	}
+	.session_5 {
+		margin-top: 40px;
+		font-family: "Barlow Semi Condensed", sans-serif !important;
+		h1 {
+			color: white;
+			font-size: 55px;
+			font-weight: 700;
+			letter-spacing: 15px;
+			text-align: center;
+			padding: 0 10px 0 20px;
+		}
+		.box_icon {
+			display: flex;
+			align-items: center;
+		}
+		.image_ceo {
+			margin: 30px 20px;
+		}
+	}
+	.session_6 {
+		margin: 40px 0 0;
+		font-family: "Barlow Semi Condensed", sans-serif !important;
+		// background: linear-gradient(180deg, rgb(36, 36, 36) 10%, rgba(0,0,0,1) 90%);
+		h1 {
+			color: white;
+			font-size: 55px;
+			font-weight: 700;
+			letter-spacing: 15px;
+			text-align: center;
+			margin: 0 !important;
+		}
+		.vision_mission {
+		}
+		.box_image_wwd {
 		}
 	}
 }
