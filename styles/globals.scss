@@ -91,7 +91,7 @@ img {
 	align-items: center;
 	perspective: var(--perspective);
 	transition: perspective 2s;
-	animation: universe-animation 3s ease-in-out;
+	animation: universe-animation 5s ease-in-out;
 	transform: scale(0.8);
 }
 @keyframes universe-animation {
@@ -99,8 +99,11 @@ img {
 		transform: translateX(-100%) scale(0.8);
 		opacity: 0;
 	}
-	100% {
+	70% {
 		transform: translateX(0) scale(0.8);
+		opacity: 0.4;
+	}
+	100% {
 		opacity: 1;
 	}
 }
@@ -273,7 +276,7 @@ img {
 	transition-duration: 0.7s;
 }
 .box_opacity_image_health {
-	animation: health 4s linear;
+	animation: health 6s linear;
 }
 @keyframes health {
 	0% {
@@ -290,7 +293,7 @@ img {
 	}
 }
 .box_opacity_image_invention {
-	animation: invention 4s linear;
+	animation: invention 6s linear;
 }
 @keyframes invention {
 	0% {
@@ -307,7 +310,7 @@ img {
 	}
 }
 .box_opacity_image_zen {
-	animation: zen 4s linear;
+	animation: zen 6s linear;
 }
 @keyframes zen {
 	0% {
@@ -324,7 +327,7 @@ img {
 	}
 }
 .box_opacity_image_dauntless {
-	animation: dauntless 4s linear;
+	animation: dauntless 6s linear;
 }
 @keyframes dauntless {
 	0% {
@@ -341,7 +344,7 @@ img {
 	}
 }
 .box_opacity_image_legaxy {
-	animation: legaxy 4s linear;
+	animation: legaxy 6s linear;
 }
 @keyframes legaxy {
 	0% {
@@ -402,8 +405,10 @@ img {
 	}
 	65% {
 		border: 0.5px solid rgb(97, 97, 97);
+		opacity: 0;
 	}
 	75% {
+		opacity: 1;
 		border: 0.5px solid rgb(255, 255, 255);
 	}
 	85% {
@@ -437,8 +442,10 @@ img {
 	}
 	75% {
 		border: 0.5px solid rgb(97, 97, 97);
+		opacity: 0;
 	}
 	80% {
+		opacity: 1;
 		border: 0.5px solid rgb(255, 255, 255);
 	}
 	85% {
@@ -475,8 +482,10 @@ img {
 	}
 	80% {
 		border: 0.5px solid rgb(97, 97, 97);
+		opacity: 0;
 	}
 	85% {
+		opacity: 1;
 		border: 0.5px solid rgb(255, 255, 255);
 	}
 	100% {
@@ -503,9 +512,11 @@ img {
 		border: 0.5px solid rgb(97, 97, 97);
 	}
 	85% {
+		opacity: 0;
 		border: 0.5px solid rgb(97, 97, 97);
 	}
 	90% {
+		opacity: 1;
 		border: 0.5px solid rgb(255, 255, 255);
 	}
 	100% {
@@ -533,9 +544,11 @@ img {
 		border: 0.5px solid rgb(97, 97, 97);
 	}
 	90% {
+		opacity: 0;
 		border: 0.5px solid rgb(97, 97, 97);
 	}
 	95% {
+		opacity: 1;
 		border: 0.5px solid rgb(255, 255, 255);
 	}
 	100% {
@@ -598,9 +611,11 @@ img {
 		border: 0.5px solid rgb(97, 97, 97);
 	}
 	95% {
+		opacity: 0;
 		border: 0.5px solid rgb(97, 97, 97);
 	}
 	100% {
+		opacity: 1;
 		border: 0.5px solid rgb(255, 255, 255);
 	}
 }
