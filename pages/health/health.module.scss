@@ -1,47 +1,70 @@
 .health {
-    background-color: #000;
-    height: 100vh;
-    color: #fff !important;
+	background-color: #000;
+	height: 100vh;
+	color: #fff !important;
 
-    &_detail {
-        width: 40vw;
-        position: relative;
-        top: 0;
-        right: 0;
-    }
+	&_detail {
+		width: 40vw;
+		position: relative;
+		top: 0;
+		width: 50vw;
+	}
+	@media (min-width: 1440px) {
+		&_detail {
+			width: 40vw;
+		}
+	}
 
-    .solar_load {
-        animation: autoload 2s ease-in-out;
-    }
+	.solar_load {
+		animation: autoload 2s ease-in-out;
+	}
 
-    .box_header {
+	.box_header {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-        h1, h2, h5 {
-            color: white;
-        }
+		h1,
+		h2,
+		h5 {
+			color: white;
+		}
 		.title_header {
+			margin-left: 40px;
 			font-family: "Barlow Semi Condensed", sans-serif !important;
 			h1 {
 				font-size: 65px;
 				font-weight: 700;
 				letter-spacing: 15px;
 			}
+			h2 {
+				font-size: 25px;
+				font-weight: 700;
+			}
 		}
 		.content_header {
-            height: 60vh;
+			.ml_40 {
+				margin-left: 40px;
+			}
+			.pl_40 {
+				padding-left: 40px !important;
+			}
+			p {
+				font-size: 20px;
+				font-weight: 400;
+				letter-spacing: 2px;
+				text-align: justify;
+			}
 		}
 	}
 }
 @keyframes autoload {
-    0% {
-        opacity: 0;
-    }
-    15% {
-        opacity: 0.1;
-    }
-    100% {
-        opacity: 1;
-    }
+	0% {
+		opacity: 0;
+	}
+	15% {
+		opacity: 0.1;
+	}
+	100% {
+		opacity: 1;
+	}
 }

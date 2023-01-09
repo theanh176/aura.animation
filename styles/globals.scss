@@ -140,11 +140,11 @@ img {
 	content: "";
 	height: 600%;
 	width: 600%;
-	background: radial-gradient(
-		rgba(255, 228, 147, 0.15),
-		rgba(255, 228, 147, 0.1) 40%,
-		rgba(255, 255, 255, 0) 70%
-	);
+	// background: radial-gradient(
+	// 	rgba(255, 228, 147, 0.15),
+	// 	rgba(255, 228, 147, 0.1) 40%,
+	// 	rgba(255, 255, 255, 0) 70%
+	// );
 	border-radius: 50%;
 	transform-origin: center center;
 	transform: translateY(-40%) translateX(-40%) rotateY(var(--angle-sun-glow));
