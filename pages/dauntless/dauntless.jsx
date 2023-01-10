@@ -27,7 +27,7 @@ const Dauntless = () => {
 									}
 								>
 									<div className="col-6 pe-3 d-flex flex-column justify-content-between">
-										<p className={styles.ml_40}>
+										<p className={styles.ml_95}>
 											Người dẫn dắt “House of Dauntless”
 											là ông Đỗ Tuấn Bình. Sở hữu trình độ
 											chuyên môn dày dặn trong lĩnh vực
