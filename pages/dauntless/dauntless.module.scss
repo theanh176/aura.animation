@@ -8,11 +8,11 @@
 		right: 0;
 		width: 50vw;
 	}
-    @media (min-width: 1440px) {
-        &_detail {
-            width: 40vw;
-        }
-    }
+	@media (min-width: 1440px) {
+		&_detail {
+			width: 40vw;
+		}
+	}
 
 	.solar_load {
 		animation: autoload 2s ease-in-out;
@@ -28,8 +28,8 @@
 			color: white;
 		}
 		.title_header {
-			margin-left: 40px;
-			font-family: "Barlow Semi Condensed", sans-serif !important;
+			margin-left: 95px;
+			font-family: "Space Grotesk", sans-serif !important;
 			h1 {
 				font-size: 65px;
 				font-weight: 700;
@@ -41,18 +41,19 @@
 			}
 		}
 		.content_header {
-			.ml_40 {
-				margin-left: 40px;
+			.ml_95 {
+				margin-left: 95px;
 			}
-            .pl_40{
-                padding-left: 40px !important;
-            }
-            p {
-                font-size: 20px;
-                font-weight: 400;
-                letter-spacing: 2px;
-                text-align: justify;
-            }
+			.pl_40 {
+				padding-left: 40px !important;
+				padding-right: 40px !important;
+			}
+			p {
+				font-size: 20px;
+				font-weight: 400;
+				letter-spacing: 2px;
+				text-align: justify;
+			}
 		}
 	}
 }
