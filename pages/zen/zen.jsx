@@ -16,10 +16,14 @@ const Zen = () => {
 							<div className={styles.box_header}>
 								<div className={styles.title_header}>
 									<h1>
-										HOUSE <br /> OF <br /> DAUNTLESS
+										HOUSE <br /> OF <br /> ZEN
 									</h1>
-									<h5>VƯƠN TẦM</h5>
-									<h2>GIÁ TRỊ DOANH NGHIỆP</h2>
+									<h2>
+										XÂY DỰNG <b>GIÁ TRỊ</b>
+									</h2>
+									<h2>
+										<b>DOANH NGHIỆP</b> BỀN VỮNG
+									</h2>
 								</div>
 								<div
 									className={
@@ -27,26 +31,36 @@ const Zen = () => {
 									}
 								>
 									<div className="col-6 pe-3 d-flex flex-column justify-content-between">
-										<p className={styles.ml_40}>
-											Người dẫn dắt “House of Dauntless”
-											là ông Đỗ Tuấn Bình. Sở hữu trình độ
-											chuyên môn dày dặn trong lĩnh vực
-											vốn hoá và kinh nghiệm thực tiễn
-											trên thị trường kinh doanh, ông{" "}
-											<b>ĐỖ TUẤN BÌNH</b> sẽ tạo ra một
-											“ngôi nhà” đoàn kết mà tại đây, các
-											thành viên sẽ có nhiều cơ hội kết
-											nối, giúp đỡ và chia sẻ kinh nghiệm
-											cho nhau trong hành trình phát triển
-											doanh nghiệp bức phá vươn xa, chinh
-											phục khát vọng IPO.
+										<p className={styles.ml_95 + " " + "mb-4"}>
+											Sau khoảng thời gian hoạt dòng cùng
+											với nhưng nó lạ phát hiện không
+											ngừng nghỉ cong dong Unicornverse
+											Global hơn trong giới thiệu House of
+											Zen” – một trong 5 House đầu tiên
+											được xây dựng. Định hình phương
+											hưởng hoạt động trong thời gian tới.
 										</p>
 										<Image
-											src="/images/dauntless/5_1.png"
-											alt="Dauntless_demo"
-											width={409}
-											height={432}
+											src="/images/zen/5_3.png"
+											alt="Zen_demo"
+											width={381}
+											height={316}
 										/>
+										<p className={styles.ml_95 + " " + "mt-4"}>
+											Đứng đầu House of Zen- Ông NGUYỄN
+											BẢO SƠN so là người dân dương” với
+											mong muốn xây dựng nên. một môi
+											trường chuyên nghiệp và sáng tạo cho
+											các kỳ lớn. Bàng kinh nghiệm chuyên
+											môn dày do trong lình vực có chủ vốn
+											và đầu ha ông <b>Nguyễn Bảo Sơn</b>{" "}
+											và tạo nên một không gian mà các
+											thành viên có thể kết nói chia án và
+											khát vọng hành tinh IPO, hao đại
+											kiến thức, mà rộng cơ hội đầu tư,
+											giúp các thành viên dựa doanh nghiệp
+											của mình phát triển
+										</p>
 									</div>
 									<div
 										className={
@@ -56,33 +70,34 @@ const Zen = () => {
 										}
 									>
 										<Image
-											src="/images/dauntless/member1.png"
-											alt="Dauntless_demo"
-											width={317}
-											height={268}
+											src="/images/zen/member3.png"
+											alt="Zen_demo"
+											width={315}
+											height={409}
 										/>
+										<p>thành công và bền vững</p>
 										<p>
-											Tham gia vào gia đình “House of
-											Dauntless” là những doanh nhân luôn
-											có một tinh thần chính trực, phong
-											cách làm việc vô cùng chuyên nghiệp,
-											lấy kỷ luật làm trọng tâm, sẵn sàng
-											đối mặt với những thử thách. Với tất
-											cả sự tâm huyết, các thành viên tại
-											<b>“House of Dauntless”</b> sẽ luôn
-											đồng lòng, cống hiến hết mình, cùng
-											nhau tạo ra các giá trị to lớn, giúp
-											cho doanh nghiệp Việt phát triển bền
-											vững.
+											Đặc biệt, hội tụ tai House of Zen là
+											những doanh nhân mang trong mình một
+											phong thoi điểm tính, tự tin đòi mẹ
+											với các thử thách khó khăn trên con
+											duang chinh phục mục sau PO. Xuất
+											phát từ những giá trị bên trong tâm
+											hôn bằng khả năng sáng tạo và lòng
+											nhiệt huyết các thành viên của House
+											of Zen sẽ cùng nhau nỗ lực, xới dựng
+											nên một cộng đồng bên vùng mang lại
+											nhiều giá hộ tuyệt với và phát triển
+											doanh nghiệp cham den IPO.
 										</p>
 										<p>
-											Cộng đồng Unicornverse Global sẽ
-											luôn đồng hành cùng “House of
-											Dauntless” trên mọi chặng đường. Hy
-											vọng <b>“House of Dauntless”</b> sẽ
-											luôn phát triển không ngừng và đạt
-											được nhiều thành tựu to lớn trong
-											tương lai.
+											Cộng đồng Unicomvene Global nói
+											chung và Howo of Zen nói riêng hy
+											vọng trong tương lai sẽ luôn nhận
+											được sử ủng hộ và đóng góp từ các
+											thành viên cùng nhau đông hành, mang
+											dân nhưng giá t bui pha cho doanh
+											nghiệp Việt.
 										</p>
 									</div>
 								</div>

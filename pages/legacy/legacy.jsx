@@ -16,10 +16,12 @@ const Legacy = () => {
 							<div className={styles.box_header}>
 								<div className={styles.title_header}>
 									<h1>
-										HOUSE <br /> OF <br /> DAUNTLESS
+										HOUSE <br /> OF <br /> LEGACY
 									</h1>
-									<h5>VƯƠN TẦM</h5>
-									<h2>GIÁ TRỊ DOANH NGHIỆP</h2>
+									<h2>NHIỆT HUYẾT TẠO</h2>
+									<h2>
+										NÊN <b>KHÁT VỌNG</b>
+									</h2>
 								</div>
 								<div
 									className={
@@ -27,62 +29,66 @@ const Legacy = () => {
 									}
 								>
 									<div className="col-6 pe-3 d-flex flex-column justify-content-between">
-										<p className={styles.ml_40}>
-											Người dẫn dắt “House of Dauntless”
-											là ông Đỗ Tuấn Bình. Sở hữu trình độ
-											chuyên môn dày dặn trong lĩnh vực
-											vốn hoá và kinh nghiệm thực tiễn
-											trên thị trường kinh doanh, ông{" "}
-											<b>ĐỖ TUẤN BÌNH</b> sẽ tạo ra một
-											“ngôi nhà” đoàn kết mà tại đây, các
-											thành viên sẽ có nhiều cơ hội kết
-											nối, giúp đỡ và chia sẻ kinh nghiệm
-											cho nhau trong hành trình phát triển
-											doanh nghiệp bức phá vươn xa, chinh
-											phục khát vọng IPO.
+										<p
+											className={
+												styles.ml_95 + " " + "mb-4"
+											}
+										>
+											House of Legacy là một trong 5 House
+											đầu tiên được sáng lập thuộc cộng
+											đồng Unicornverse Global Voi mong
+											muốn hướng đến mục tiêu IPO và sự
+											phát triển bán vùng cho các doanh
+											nghiệp, cong dong Unicornverse
+											Global nói chung và House of Legacy
+											nói riêng luôn nỗ lực xây dựng mở ra
+											các cơ hội cho các thành viên kết
+											nối chia sẻ và hỗ trợ đầu tư.
 										</p>
 										<Image
-											src="/images/dauntless/5_1.png"
-											alt="Dauntless_demo"
-											width={409}
-											height={432}
+											src="/images/legacy/5_2.png"
+											alt="Legacy_demo"
+											width={402}
+											height={407}
 										/>
+										<p
+											className={
+												styles.ml_95 + " " + "mt-4"
+											}
+										>
+											Tại ngôi nhà chung Legacy, các thành
+											viên mang trong mình nguồn cảm hứng
+											và ton, mot tam hon tu do, cong hiển
+											hát mình để tạo nên
+										</p>
 									</div>
 									<div
 										className={
-											styles.pl_40 +
-											" " +
 											"col-6 d-flex flex-column justify-content-between"
 										}
 									>
 										<Image
-											src="/images/dauntless/member1.png"
-											alt="Dauntless_demo"
-											width={317}
-											height={268}
+											src="/images/legacy/member2.png"
+											alt="Legacy_demo"
+											width={446}
+											height={413}
 										/>
-										<p>
-											Tham gia vào gia đình “House of
-											Dauntless” là những doanh nhân luôn
-											có một tinh thần chính trực, phong
-											cách làm việc vô cùng chuyên nghiệp,
-											lấy kỷ luật làm trọng tâm, sẵn sàng
-											đối mặt với những thử thách. Với tất
-											cả sự tâm huyết, các thành viên tại
-											<b>“House of Dauntless”</b> sẽ luôn
-											đồng lòng, cống hiến hết mình, cùng
-											nhau tạo ra các giá trị to lớn, giúp
-											cho doanh nghiệp Việt phát triển bền
-											vững.
+										<p className={styles.pl_40}>
+											những di sản quý gia làm đòn bầy cho
+											doanh nghiệp vươn đến khát vọng IPO,
+											thông qua đó, tự tạo lập giá trị cho
+											bản thân trở thành một tỷ phú về mọi
+											một trong tương lai.
 										</p>
-										<p>
-											Cộng đồng Unicornverse Global sẽ
-											luôn đồng hành cùng “House of
-											Dauntless” trên mọi chặng đường. Hy
-											vọng <b>“House of Dauntless”</b> sẽ
-											luôn phát triển không ngừng và đạt
-											được nhiều thành tựu to lớn trong
-											tương lai.
+										<p className={styles.pl_40}>
+											Hy vọng với những yếu tố cốt loi của
+											House of Legacy cũng nhu cong dong
+											Unicornverse Global các thành viên
+											so cùng nhau đồng hành và xây dựng
+											nên một vòn chơi chất lượng giúp các
+											doanh nghiệp Việt thành công trên
+											còn dường xay dung co che von, vuon
+											mình dẫn quốc tế trong tương lai.
 										</p>
 									</div>
 								</div>
