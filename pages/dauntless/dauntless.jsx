@@ -4,6 +4,7 @@ import Link from "next/link";
 import Solar from "../../components/solar/solar";
 import Image from "next/image";
 import HomeContent from "../../components/content/HomeContent";
+import ImageIcon from "../../public/images/slide/solar01.png";
 
 const Dauntless = () => {
 	return (
@@ -88,6 +89,14 @@ const Dauntless = () => {
 								</div>
 							</div>
 						</div>
+					}
+					icon={
+						<Image
+							src={ImageIcon}
+							alt="Saturn Rings"
+							width={350}
+							height={350}
+						/>
 					}
 				/>
 			</div>

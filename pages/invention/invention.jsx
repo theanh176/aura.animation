@@ -4,6 +4,7 @@ import Link from "next/link";
 import Solar from "../../components/solar/solar";
 import Image from "next/image";
 import HomeContent from "../../components/content/HomeContent";
+import ImageIcon from "../../public/images/slide/solar05.png";
 
 const Invention = () => {
 	return (
@@ -116,6 +117,14 @@ const Invention = () => {
 								</div>
 							</div>
 						</div>
+					}
+					icon={
+						<Image
+							src={ImageIcon}
+							alt="Saturn Rings"
+							width={350}
+							height={350}
+						/>
 					}
 				/>
 			</div>

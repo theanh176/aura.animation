@@ -2,14 +2,13 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { Navbar } from "react-bootstrap";
-import DauntlessImage from "../../public/images/slide/solar01.png";
 import HealthImage from "../../public/images/unicornverse/health.png";
 import InventionImage from "../../public/images/unicornverse/invention.png";
 import LegaxyImage from "../../public/images/unicornverse/legaxy.png";
 import ZenImage from "../../public/images/unicornverse/zen.png";
 import styles from "./solar.module.scss";
 
-export default function Solar({ children }) {
+export default function Solar({ children, icon }) {
 	const router = useRouter();
 	let timestamp_start = new Date("2019-01-01").getTime();
 	let timestamp_now = new Date().getTime();
@@ -161,11 +160,6 @@ export default function Solar({ children }) {
 													/>
 													<div className="box_image"></div>
 												</div>
-
-												<div className="planet__structure planet__structure--3"></div>
-												<div className="planet__structure planet__structure--4"></div>
-												<div className="planet__structure planet__structure--5"></div>
-												<div className="planet__structure planet__structure--6"></div>
 											</div>
 										</div>
 									</div>
@@ -279,7 +273,11 @@ export default function Solar({ children }) {
 								//     isTranslate ? setIsShow(1) : setIsShow(0);
 								//   }, 3200);
 								// }}
-								className="uranus-orbit sun-orbit"
+								className={
+									styles.chooseIcon +
+									" " +
+									"uranus-orbit sun-orbit"
+								}
 							>
 								<div className="ascending-node ascending-node--uranus">
 									<div className="inclination inclination--uranus">
@@ -294,14 +292,9 @@ export default function Solar({ children }) {
 											>
 												<div
 													title="House of Dauntless"
-													className="planet__structure planet__structure--2 size-solar-uranus-orbit position-solar-5 rotate_uranus-orbit"
+													className="planet__structure planet__structure--2 size-solar-uranus-orbit position-solar-5_1 rotate_uranus-orbit"
 												>
-													<Image
-														src={DauntlessImage}
-														alt="Saturn Rings"
-														width={350}
-														height={350}
-													/>
+													{icon}
 													<div className="box_image"></div>
 												</div>
 											</div>

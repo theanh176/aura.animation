@@ -224,7 +224,7 @@ function HomeContent() {
 				<h1
 					data-aos="fade-up"
 				>
-					QUYỀN LỜI HỘI VIÊN
+					QUYỀN LỢI HỘI VIÊN
 				</h1>
 				<hr
 					data-aos="fade-up"
