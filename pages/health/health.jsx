@@ -15,10 +15,8 @@ const Health = () => {
 							<div className={styles.box_header}>
 								<div className={styles.title_header}>
 									<h1>
-										HOUSE <br /> OF <br /> DAUNTLESS
+										HOUSE <br /> OF <br /> HEALTH
 									</h1>
-									<h5>VƯƠN TẦM</h5>
-									<h2>GIÁ TRỊ DOANH NGHIỆP</h2>
 								</div>
 								<div
 									className={
@@ -26,26 +24,56 @@ const Health = () => {
 									}
 								>
 									<div className="col-6 pe-3 d-flex flex-column justify-content-between">
-										<p className={styles.ml_40}>
-											Người dẫn dắt “House of Dauntless”
-											là ông Đỗ Tuấn Bình. Sở hữu trình độ
-											chuyên môn dày dặn trong lĩnh vực
-											vốn hoá và kinh nghiệm thực tiễn
-											trên thị trường kinh doanh, ông{" "}
-											<b>ĐỖ TUẤN BÌNH</b> sẽ tạo ra một
-											“ngôi nhà” đoàn kết mà tại đây, các
-											thành viên sẽ có nhiều cơ hội kết
-											nối, giúp đỡ và chia sẻ kinh nghiệm
-											cho nhau trong hành trình phát triển
-											doanh nghiệp bức phá vươn xa, chinh
-											phục khát vọng IPO.
+										<div className={styles.ml_95 + " " + "mb-3"}>
+											<h2>
+												GÌN GIỮ <b>GIÁ TRỊ</b>
+											</h2>
+											<h2>
+												<b>DOANH NGHIỆP</b> TRƯỜNG TỒN
+											</h2>
+										</div>
+										<p
+											className={
+												styles.ml_95 + " " + "mb-4"
+											}
+										>
+											Là một trong những House dành được
+											nhiều quan làm nhất của các doanh
+											nhân ngay từ trong sự kiện Ra mắt
+											cong dong Unicornverse, House of
+											Health-Noi gin giù những giá trị
+											doanh nghiệp trường tồn.
 										</p>
 										<Image
-											src="/images/dauntless/5_1.png"
-											alt="Dauntless_demo"
-											width={409}
-											height={432}
+											src="/images/health/5_5.png"
+											alt="Health_demo"
+											width={380}
+											height={316}
 										/>
+										<p
+											className={
+												styles.ml_95 + " " + "mt-4"
+											}
+										>
+											Người dùng dầu House of Health Ông{" "}
+											<b>PHÙNG VINH VUI</b> với những kinh
+											nghiệm lâu năm trên thương hưởng
+											cùng vốn kiến thức sâu rộng và Kinh
+											doanh. Đầu tư và Tài chính, ông sau
+											là người dân đường” của House of
+											Health, dong góp hết sức xây dựng
+											nên một môi trường chuyên nghiệp và
+											hòa đồng, đưa các kỳ lần đến cột mốc
+											PO thành công.
+										</p>
+										<p className={styles.ml_95}>
+											Bằng kinh nghiệm chuyên mon, dobiet
+											la vé co ché von, ông Phùng Vinh Vui
+											hưởng den xay dung House of Haalih
+											sẽ là một không gian cái mà nơi mà
+											các thành viên có thể vui và kết
+											nói, chia xù khởi vọng trao đổi kiến
+										</p>
 									</div>
 									<div
 										className={
@@ -55,33 +83,41 @@ const Health = () => {
 										}
 									>
 										<Image
-											src="/images/dauntless/member1.png"
-											alt="Dauntless_demo"
+											src="/images/health/member5.png"
+											alt="Health_demo"
 											width={317}
-											height={268}
+											height={412}
 										/>
 										<p>
-											Tham gia vào gia đình “House of
-											Dauntless” là những doanh nhân luôn
-											có một tinh thần chính trực, phong
-											cách làm việc vô cùng chuyên nghiệp,
-											lấy kỷ luật làm trọng tâm, sẵn sàng
-											đối mặt với những thử thách. Với tất
-											cả sự tâm huyết, các thành viên tại
-											<b>“House of Dauntless”</b> sẽ luôn
-											đồng lòng, cống hiến hết mình, cùng
-											nhau tạo ra các giá trị to lớn, giúp
-											cho doanh nghiệp Việt phát triển bền
-											vững.
+											thức kinh doanh, mô rộng cơ hội đầu
+											tư cũng như giúp các thành viên đưa
+											doanh nghiệp của minh phát triển
+											thành công và bền vững.
 										</p>
 										<p>
-											Cộng đồng Unicornverse Global sẽ
-											luôn đồng hành cùng “House of
-											Dauntless” trên mọi chặng đường. Hy
-											vọng <b>“House of Dauntless”</b> sẽ
-											luôn phát triển không ngừng và đạt
-											được nhiều thành tựu to lớn trong
-											tương lai.
+											Những doanh nhân phù hợp để tham gia
+											vào House of Health là những người
+											luôn giữ được tinh thần vui và hòa
+											đồng hưởng đến sự gắn kết cùng nhau
+											nâng tầm giá trị của doanh nghiệp.
+											Các thành viên của Houta of Hedih
+											bán cạnh việc cam kết tuân theo 5
+											tôn chỉ hoạt động của House là Vui
+											và . Hoa đồng - Gắn kết - Nâng tầm
+											giá trị-Phát triển mọi thành viên
+											còn cam kết sử cùng nhau nó lực, xây
+											dựng nên một cộng đồng kỳ lân” bán
+											vùng mang lại nhiều giá trị tuyệt
+											vời.
+										</p>
+										<p>
+											Trong tương lai, hy vọng House of
+											Health nói riêng và toàn bộ
+											Unicomverse Global se phat triển
+											mạnh mà bứt phá mô thành một cộng
+											đồng uy tín chất lượng hỗ trợ các
+											doanh nghiệp trên con đường chinh
+											phục có chế Vốn.
 										</p>
 									</div>
 								</div>

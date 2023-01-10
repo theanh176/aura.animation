@@ -2,6 +2,10 @@
 	background-color: aliceblue;
 	max-width: 1440px;
 	margin: 0 auto;
+	.detailpage_home {
+		z-index: 999;
+		margin-top: 40px;
+	}
 	.solar {
 		background-color: #000000;
 		color: white;

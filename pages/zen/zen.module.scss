@@ -29,7 +29,7 @@
 			color: white;
 		}
 		.title_header {
-			margin-left: 40px;
+			margin-left: 95px;
 			font-family: "Barlow Semi Condensed", sans-serif !important;
 			h1 {
 				font-size: 65px;
@@ -38,15 +38,16 @@
 			}
 			h2 {
 				font-size: 25px;
-				font-weight: 700;
+				font-weight: 400;
 			}
 		}
 		.content_header {
-			.ml_40 {
-				margin-left: 40px;
+			.ml_95 {
+				margin-left: 95px;
 			}
 			.pl_40 {
 				padding-left: 40px !important;
+				padding-right: 40px !important;	
 			}
 			p {
 				font-size: 20px;

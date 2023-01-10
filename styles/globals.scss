@@ -382,6 +382,29 @@ img {
 	transition-delay: 0.1s;
 	z-index: 8;
 	border: 0.5px solid rgb(97, 97, 97);
+	animation: border_white_venus-orbit 4s;
+}
+@keyframes border_white_venus-orbit {
+	0% {
+		border: 0.5px solid rgb(97, 97, 97);
+	}
+	55% {
+		border: 0.5px solid rgb(97, 97, 97);
+		opacity: 0;
+	}
+	65% {
+		opacity: 1;
+		border: 0.5px solid rgb(255, 255, 255);
+	}
+	85% {
+		border: 0.5px solid rgb(97, 97, 97);
+	}
+	95% {
+		border: 0.5px solid rgb(255, 255, 255);
+	}
+	100% {
+		border: 0.5px solid rgb(97, 97, 97);
+	}
 }
 #ideal-orbit-size:checked ~ .universe .venus-orbit {
 	width: 25%;
