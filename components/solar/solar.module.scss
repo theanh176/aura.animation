@@ -22,6 +22,15 @@
 			z-index: 100;
 			display: flex;
 			justify-content: flex-end;
+			&::after {
+				display: block;
+				content: "";
+				height: 100%;
+				position: absolute;
+				left: 50%;
+				background-color: black;
+				box-shadow: 50px 0px 400px 200px rgba(0, 0, 0, 1);
+			}
 		}
 		.hover_solar {
 			transition: 0.5s color ease;
@@ -66,6 +75,18 @@
 	.sun_solar {
 		width: calc(1391px * 1.2 * var(--sun-size-factor)) !important;
 		height: calc(1391px * 1.2 * var(--sun-size-factor)) !important;
+		&::before {
+			background: linear-gradient(
+				207deg,
+				rgba(0, 0, 0, 0) 4%,
+				rgba(0, 0, 0, 0.7707457983193278) 19%,
+				rgba(0, 0, 0, 0) 63%,
+				rgba(0, 0, 0, 0.804359243697479) 94%
+			);
+		}
+	}
+	.chooseIcon {
+		z-index: 9;
 	}
 }
 

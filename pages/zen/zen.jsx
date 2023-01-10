@@ -4,6 +4,7 @@ import Link from "next/link";
 import Solar from "../../components/solar/solar";
 import Image from "next/image";
 import HomeContent from "../../components/content/HomeContent";
+import ImageIcon from "../../public/images/slide/solar03.png";
 
 const Zen = () => {
 	return (
@@ -31,7 +32,11 @@ const Zen = () => {
 									}
 								>
 									<div className="col-6 pe-3 d-flex flex-column justify-content-between">
-										<p className={styles.ml_95 + " " + "mb-4"}>
+										<p
+											className={
+												styles.ml_95 + " " + "mb-4"
+											}
+										>
 											Sau khoảng thời gian hoạt dòng cùng
 											với nhưng nó lạ phát hiện không
 											ngừng nghỉ cong dong Unicornverse
@@ -46,7 +51,11 @@ const Zen = () => {
 											width={381}
 											height={316}
 										/>
-										<p className={styles.ml_95 + " " + "mt-4"}>
+										<p
+											className={
+												styles.ml_95 + " " + "mt-4"
+											}
+										>
 											Đứng đầu House of Zen- Ông NGUYỄN
 											BẢO SƠN so là người dân dương” với
 											mong muốn xây dựng nên. một môi
@@ -103,6 +112,14 @@ const Zen = () => {
 								</div>
 							</div>
 						</div>
+					}
+					icon={
+						<Image
+							src={ImageIcon}
+							alt="Saturn Rings"
+							width={350}
+							height={350}
+						/>
 					}
 				/>
 			</div>

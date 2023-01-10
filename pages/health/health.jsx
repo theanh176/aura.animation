@@ -3,6 +3,7 @@ import React from "react";
 import HomeContent from "../../components/content/HomeContent";
 import Solar from "../../components/solar/solar";
 import styles from "./health.module.scss";
+import ImageIcon from "../../public/images/slide/solar02.png";
 
 const Health = () => {
 	return (
@@ -24,7 +25,11 @@ const Health = () => {
 									}
 								>
 									<div className="col-6 pe-3 d-flex flex-column justify-content-between">
-										<div className={styles.ml_95 + " " + "mb-3"}>
+										<div
+											className={
+												styles.ml_95 + " " + "mb-3"
+											}
+										>
 											<h2>
 												GÌN GIỮ <b>GIÁ TRỊ</b>
 											</h2>
@@ -123,6 +128,14 @@ const Health = () => {
 								</div>
 							</div>
 						</div>
+					}
+					icon={
+						<Image
+							src={ImageIcon}
+							alt="Saturn Rings"
+							width={350}
+							height={350}
+						/>
 					}
 				/>
 			</div>
