@@ -12,6 +12,32 @@
 		width: 100%;
 		margin: 0 auto;
 		overflow-x: hidden !important;
+		// .fade_universe {
+		// 	&::after {
+		// 	z-index: 999;
+		// 		display: block;
+		// 		content: "";
+		// 		width: 1px;
+		// 		height: 1px;
+		// 		position: absolute;
+		// 		left: 35%;
+		// 		top: 50%;
+		// 		background-color: black;
+		// 		box-shadow: 0px 0px 400px 200px rgba(0, 0, 0, 1);
+		// 	}
+		// 	&::before {
+		// 		z-index: 999;
+		// 		display: block;
+		// 		content: "";
+		// 		width: 100px;
+		// 		height: 100px;
+		// 		position: absolute;
+		// 		right: 35%;
+		// 		top: 50%;
+		// 		background-color: rgb(211, 4, 4);
+		// 		box-shadow: 0px 0px 400px 200px rgba(0, 0, 0, 1);
+		// 	}
+		// }
 		.hover_solar {
 			transition: 0.5s color ease;
 			cursor: pointer;

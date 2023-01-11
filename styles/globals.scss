@@ -752,68 +752,83 @@ img {
 // 	transform: rotate(-135deg);
 // }
 .rotate_neptun-orbit {
-	transform: rotate(-265deg);
+	transform: rotate(-255deg);
 	animation: rotate_neptun-orbit 114.5s linear infinite;
 }
 @keyframes rotate_neptun-orbit {
 	0% {
-		transform: rotate(-265deg);
+		transform: rotate(-255deg);
 	}
 	100% {
-		transform: rotate(95deg);
+		transform: rotate(105deg);
 	}
+}
+.rotate_legacy{
+	transform: rotate(-255deg);
 }
 //Invention
 .rotate_jupiter-orbit {
-	transform: rotate(-345deg);
+	transform: rotate(-335deg);
 	animation: rotate_jupiter-orbit 114.5s linear infinite;
 }
 @keyframes rotate_jupiter-orbit {
 	0% {
-		transform: rotate(-345deg);
+		transform: rotate(-335deg);
 	}
 	100% {
-		transform: rotate(15deg);
+		transform: rotate(25deg);
 	}
+}
+.rotate_invention{
+	transform: rotate(-335deg);
 }
 //Dauntless
 .rotate_uranus-orbit {
-	transform: rotate(-80deg);
+	transform: rotate(-70deg);
 	animation: rotate_uranus-orbit 114.5s linear infinite;
 }
 @keyframes rotate_uranus-orbit {
 	0% {
-		transform: rotate(-80deg);
+		transform: rotate(-70deg);
 	}
 	100% {
-		transform: rotate(280deg);
+		transform: rotate(290deg);
 	}
+}
+.rotate_dauntless{
+	transform: rotate(-70deg);
 }
 //Zen
 .rotate_saturn-orbit {
-	transform: rotate(-125deg);
+	transform: rotate(-115deg);
 	animation: rotate_saturn-orbit 114.5s linear infinite;
 }
 @keyframes rotate_saturn-orbit {
 	0% {
-		transform: rotate(-125deg);
+		transform: rotate(-115deg);
 	}
 	100% {
-		transform: rotate(235deg);
+		transform: rotate(245deg);
 	}
+}
+.rotate_zen{
+	transform: rotate(-115deg);
 }
 //Health
 .rotate_earth-orbit {
-	transform: rotate(-35deg);
+	transform: rotate(-25deg);
 	animation: rotate_earth-orbit 114.5s linear infinite;
 }
 @keyframes rotate_earth-orbit {
 	0% {
-		transform: rotate(-35deg);
+		transform: rotate(-25deg);
 	}
 	100% {
-		transform: rotate(325deg);
+		transform: rotate(335deg);
 	}
+}
+.rotate_health{
+	transform: rotate(-25deg);
 }
 // Center
 .rotate_sun {
@@ -1108,26 +1123,29 @@ img {
 
 // position solar
 .position-solar-6 {
-	top: -65px;
+	top: -95px;
 }
 .position-solar-5 {
 	top: -55px;
 }
 //solar
 .position-solar-5_1 {
-	top: -100px;
+	top: -80px;
+}
+.position-solar-1_1 {
+	top: -40px;
 }
 .position-solar-3 {
 	top: -55px;
 }
 .position_zen {
-	top: -60px;
+	top: -45px;
 }
 .position-solar-2 {
 	top: -40px;
 }
 .position-solar-1 {
-	top: -50px;
+	top: -30px;
 }
 
 // custom slide
