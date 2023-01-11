@@ -73,8 +73,8 @@
 		}
 	}
 	.sun_solar {
-		width: calc(1391px * 1.2 * var(--sun-size-factor)) !important;
-		height: calc(1391px * 1.2 * var(--sun-size-factor)) !important;
+		width: calc(1391px * 1.16 * var(--sun-size-factor)) !important;
+		height: calc(1391px * 1.16 * var(--sun-size-factor)) !important;
 		&::before {
 			background: linear-gradient(
 				207deg,

@@ -2,20 +2,35 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { Navbar } from "react-bootstrap";
-import HealthImage from "../../public/images/unicornverse/health.png";
-import InventionImage from "../../public/images/unicornverse/invention.png";
-import LegaxyImage from "../../public/images/unicornverse/legaxy.png";
-import ZenImage from "../../public/images/unicornverse/zen.png";
+import DauntlessImage from "../../public/images/slide/solar01.png";
+import HealthImage from "../../public/images/slide/solar02.png";
+import InventionImage from "../../public/images/slide/solar05.png";
+import LegaxyImage from "../../public/images/slide/solar04.png";
+import ZenImage from "../../public/images/slide/solar03.png";
 import styles from "./solar.module.scss";
 
-export default function Solar({ children, icon }) {
+export default function Solar(props) {
+	const {
+		children,
+		SolarChoose,
+		link_solarChoose,
+		Solar_1,
+		link_solar_1,
+		Solar_2,
+		link_solar_2,
+		Solar_3,
+		link_solar_3,
+		Solar_4,
+		link_solar_4,
+	} = props;
+	console.log(link_solarChoose);
 	const router = useRouter();
 	let timestamp_start = new Date("2019-01-01").getTime();
 	let timestamp_now = new Date().getTime();
 	let secondsLeft = (timestamp_now - timestamp_start) / 1000;
 	let root = document.documentElement;
 	root.style.setProperty("--seconds-left", `${secondsLeft}s`);
-	const [isShow, setIsShow] = useState(1); // 0:stop 1:play 2:speed
+	const [isShow, setIsShow] = useState(0); // 0:stop 1:play 2:speed
 	const [isTranslate, setIsTranslate] = useState(false);
 	const [isShowBackground, setIsShowBackground] = useState(false);
 	const [isHref, setIsHref] = useState("home-aura");
@@ -53,8 +68,7 @@ export default function Solar({ children, icon }) {
 						type="radio"
 						id="real-time"
 						name="velocity"
-						// checked={isShow === 0 && "checked"}
-						checked="checked"
+						checked={isShow === 0 && "checked"}
 					/>
 					<input
 						type="radio"
@@ -126,14 +140,9 @@ export default function Solar({ children, icon }) {
 							</div>
 
 							<div
-								// onClick={() => {
-								//   setIsShow(2);
-								//   setIsTranslate(!isTranslate);
-								//   // handleClick();
-								//   setTimeout(() => {
-								//     isTranslate ? setIsShow(1) : setIsShow(0);
-								//   }, 3200);
-								// }}
+								onClick={() => {
+									router.push(link_solar_1);
+								}}
 								className="earth-orbit sun-orbit"
 							>
 								<div className="ascending-node ascending-node--earth">
@@ -150,14 +159,10 @@ export default function Solar({ children, icon }) {
 											>
 												<div
 													title="House of Health"
-													className="planet__structure planet__structure--2 size-solar-xl position-solar-1 rotate_earth-orbit"
+													className="planet__structure planet__structure--2 size-solar-xl position-solar-1_1 rotate_health"
+													//rotate_earth-orbit
 												>
-													<Image
-														src={HealthImage}
-														alt="Saturn Rings"
-														width={130}
-														height={130}
-													/>
+													{Solar_1}
 													<div className="box_image"></div>
 												</div>
 											</div>
@@ -182,14 +187,9 @@ export default function Solar({ children, icon }) {
 							<div className="mars-orbit sun-orbit w_h_mars"></div>
 
 							<div
-								// onClick={() => {
-								//   setIsShow(2);
-								//   setIsTranslate(!isTranslate);
-								//   // handleClick();
-								//   setTimeout(() => {
-								//     isTranslate ? setIsShow(1) : setIsShow(0);
-								//   }, 3200);
-								// }}
+								onClick={() => {
+									router.push(link_solar_2);
+								}}
 								className="jupiter-orbit sun-orbit"
 							>
 								<div className="ascending-node ascending-node--jupiter">
@@ -205,14 +205,10 @@ export default function Solar({ children, icon }) {
 											>
 												<div
 													title="House of Invention"
-													className="planet__structure planet__structure--2 size-solar-big position-solar-3 rotate_jupiter-orbit"
+													className="planet__structure planet__structure--2 size-solar-big position-solar-3 rotate_invention"
+													//rotate_jupiter-orbit
 												>
-													<Image
-														src={InventionImage}
-														alt="Saturn Rings"
-														width={200}
-														height={200}
-													/>
+													{Solar_2}
 													<div className="box_image"></div>
 												</div>
 											</div>
@@ -223,14 +219,9 @@ export default function Solar({ children, icon }) {
 							<div className="jupiter-orbit sun-orbit w_h_jupiter"></div>
 
 							<div
-								// onClick={() => {
-								//   setIsShow(2);
-								//   setIsTranslate(!isTranslate);
-								//   // handleClick();
-								//   setTimeout(() => {
-								//     isTranslate ? setIsShow(1) : setIsShow(0);
-								//   }, 3200);
-								// }}
+								onClick={() => {
+									router.push(link_solar_3);
+								}}
 								className="saturn-orbit sun-orbit"
 							>
 								<div className="ascending-node ascending-node--saturn">
@@ -246,14 +237,10 @@ export default function Solar({ children, icon }) {
 											>
 												<div
 													title="House of Zen"
-													className="planet__structure planet__structure--2 size-solar-big rotate_saturn-orbit position_zen"
+													className="planet__structure planet__structure--2 size-solar-big position_zen rotate_zen"
+													//rotate_saturn-orbit
 												>
-													<Image
-														src={ZenImage}
-														alt="Saturn Rings"
-														width={200}
-														height={200}
-													/>
+													{Solar_3}
 													<div className="box_image"></div>
 												</div>
 											</div>
@@ -265,14 +252,9 @@ export default function Solar({ children, icon }) {
 							<div className="saturn-orbit sun-orbit w_h_saturn"></div>
 
 							<div
-								// onClick={() => {
-								//   setIsShow(2);
-								//   setIsTranslate(!isTranslate);
-
-								//   setTimeout(() => {
-								//     isTranslate ? setIsShow(1) : setIsShow(0);
-								//   }, 3200);
-								// }}
+								onClick={() => {
+									router.push({link_solarChoose});
+								}}
 								className={
 									styles.chooseIcon +
 									" " +
@@ -292,9 +274,10 @@ export default function Solar({ children, icon }) {
 											>
 												<div
 													title="House of Dauntless"
-													className="planet__structure planet__structure--2 size-solar-uranus-orbit position-solar-5_1 rotate_uranus-orbit"
+													className="planet__structure planet__structure--2 size-solar-uranus-orbit position-solar-5_1 rotate_dauntless"
+													//rotate_uranus-orbit
 												>
-													{icon}
+													{SolarChoose}
 													<div className="box_image"></div>
 												</div>
 											</div>
@@ -305,15 +288,9 @@ export default function Solar({ children, icon }) {
 							<div className="uranus-orbit sun-orbit w_h_uranus"></div>
 
 							<div
-								// onClick={() => {
-								//   setIsShow(2);
-								//   setIsTranslate(!isTranslate);
-								//   // handleClick();
-								//   setTimeout(() => {
-								//     isTranslate ? setIsShow(1) : setIsShow(0);
-								//     router.push("/legaxy");
-								//   }, 3200);
-								// }}
+								onClick={() => {
+									router.push(link_solar_4);
+								}}
 								className="neptun-orbit sun-orbit"
 							>
 								<div className="ascending-node ascending-node--neptun">
@@ -328,15 +305,11 @@ export default function Solar({ children, icon }) {
 												}
 											>
 												<div
-													title="House of Legaxy"
-													className="planet__structure planet__structure--2 size-solar-big position-solar-6 rotate_neptun-orbit"
+													title="House of Legacy"
+													className="planet__structure planet__structure--2 size-solar-big position-solar-6 rotate_legacy"
+													//rotate_neptun-orbit
 												>
-													<Image
-														src={LegaxyImage}
-														alt="Saturn Rings"
-														width={200}
-														height={200}
-													/>
+													{Solar_4}
 													<div className="box_image"></div>
 												</div>
 											</div>

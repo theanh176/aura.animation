@@ -3,7 +3,11 @@ import React from "react";
 import HomeContent from "../../components/content/HomeContent";
 import Solar from "../../components/solar/solar";
 import styles from "./health.module.scss";
-import ImageIcon from "../../public/images/slide/solar02.png";
+import DauntlessImage from "../../public/images/slide/solar01.png";
+import HealthImage from "../../public/images/slide/solar02.png";
+import InventionImage from "../../public/images/slide/solar05.png";
+import LegaxyImage from "../../public/images/slide/solar04.png";
+import ZenImage from "../../public/images/slide/solar03.png";
 
 const Health = () => {
 	return (
@@ -129,14 +133,51 @@ const Health = () => {
 							</div>
 						</div>
 					}
-					icon={
+					SolarChoose={
 						<Image
-							src={ImageIcon}
+							src={HealthImage}
 							alt="Saturn Rings"
 							width={350}
 							height={350}
 						/>
 					}
+					link_solarChoose="/health"
+					Solar_1={
+						<Image
+							src={ZenImage}
+							alt="Saturn Rings"
+							width={100}
+							height={100}
+						/>
+					}
+					link_solar_1="/zen"
+					Solar_2={
+						<Image
+							src={InventionImage}
+							alt="Saturn Rings"
+							width={190}
+							height={190}
+						/>
+					}
+					link_solar_2="/invention"
+					Solar_3={
+						<Image
+							src={DauntlessImage}
+							alt="Saturn Rings"
+							width={180}
+							height={180}
+						/>
+					}
+					link_solar_3="/dauntless"
+					Solar_4={
+						<Image
+							src={LegaxyImage}
+							alt="Saturn Rings"
+							width={150}
+							height={150}
+						/>
+					}
+					link_solar_4="/legacy"
 				/>
 			</div>
 

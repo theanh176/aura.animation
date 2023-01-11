@@ -7,11 +7,11 @@ import MarsImage from "../../public/images/mars.png";
 import SolarImage from "../../public/images/solar.png";
 import MercuryImage from "../../public/images/mercury-planet.png";
 import CenterImage from "../../public/images/unicornverse/center.png";
-import DauntlessImage from "../../public/images/unicornverse/dauntless.png";
-import HealthImage from "../../public/images/unicornverse/health.png";
-import InventionImage from "../../public/images/unicornverse/invention.png";
-import LegaxyImage from "../../public/images/unicornverse/legaxy.png";
-import ZenImage from "../../public/images/unicornverse/zen.png";
+import DauntlessImage from "../../public/images/slide/solar01.png";
+import HealthImage from "../../public/images/slide/solar02.png";
+import InventionImage from "../../public/images/slide/solar05.png";
+import LegaxyImage from "../../public/images/slide/solar04.png";
+import ZenImage from "../../public/images/slide/solar03.png";
 import Link from "next/link";
 import { Navbar } from "react-bootstrap";
 import HomeContent from "../../components/content/HomeContent";
@@ -90,7 +90,7 @@ function HomeAura({ href }) {
 					<input type="radio" id="isometric" name="perspective" />
 					<input type="radio" id="threedee" name="perspective" />
 
-					<div className="universe">
+					<div className={styles.fade_universe + " " + "universe"}>
 						<div className="solarsystem">
 							<div className="sun rotate_sun">
 								<div
@@ -176,8 +176,8 @@ function HomeAura({ href }) {
 																	HealthImage
 																}
 																alt="Saturn Rings"
-																width={130}
-																height={130}
+																width={100}
+																height={100}
 															/>
 														</div>
 														<div className="box_image"></div>
@@ -235,8 +235,8 @@ function HomeAura({ href }) {
 														<Image
 															src={InventionImage}
 															alt="Saturn Rings"
-															width={200}
-															height={200}
+															width={190}
+															height={190}
 														/>
 													</div>
 													<div className="box_image"></div>
@@ -279,8 +279,8 @@ function HomeAura({ href }) {
 														<Image
 															src={ZenImage}
 															alt="Saturn Rings"
-															width={200}
-															height={200}
+															width={180}
+															height={180}
 														/>
 													</div>
 													<div className="box_image"></div>
@@ -365,8 +365,8 @@ function HomeAura({ href }) {
 														<Image
 															src={LegaxyImage}
 															alt="Saturn Rings"
-															width={200}
-															height={200}
+															width={170}
+															height={170}
 														/>
 													</div>
 													<div className="box_image"></div>
