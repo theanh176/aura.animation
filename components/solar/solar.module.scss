@@ -85,6 +85,12 @@
 			);
 		}
 	}
+	@media screen and (max-width: 1280px) {
+		.sun_solar {
+			width: calc(1391px * 1.12 * var(--sun-size-factor)) !important;
+			height: calc(1391px * 1.12 * var(--sun-size-factor)) !important;
+		}
+	}
 	.chooseIcon {
 		z-index: 9;
 	}
