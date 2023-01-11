@@ -763,7 +763,7 @@ img {
 		transform: rotate(105deg);
 	}
 }
-.rotate_legacy{
+.rotate_legacy {
 	transform: rotate(-255deg);
 }
 //Invention
@@ -779,7 +779,7 @@ img {
 		transform: rotate(25deg);
 	}
 }
-.rotate_invention{
+.rotate_invention {
 	transform: rotate(-335deg);
 }
 //Dauntless
@@ -795,7 +795,7 @@ img {
 		transform: rotate(290deg);
 	}
 }
-.rotate_dauntless{
+.rotate_dauntless {
 	transform: rotate(-70deg);
 }
 //Zen
@@ -811,7 +811,7 @@ img {
 		transform: rotate(245deg);
 	}
 }
-.rotate_zen{
+.rotate_zen {
 	transform: rotate(-115deg);
 }
 //Health
@@ -827,7 +827,7 @@ img {
 		transform: rotate(335deg);
 	}
 }
-.rotate_health{
+.rotate_health {
 	transform: rotate(-25deg);
 }
 // Center
@@ -970,43 +970,11 @@ img {
 	position: relative;
 	height: 100%;
 	transform-style: preserve-3d;
-	/*&--mercury
-    transform rotateZ(48.33deg)
-  &--venus
-    transform rotateZ(76.68deg)
-  &--earth
-    transform rotateZ(-11.26deg)
-  &--mars
-    transform rotateZ(49.58deg)
-  &--jupiter
-    transform rotateZ(100.55deg)
-  &--saturn
-    transform rotateZ(113.72deg)
-  &--uranus
-    transform rotateZ(74.23deg)
-  &--neptun
-    transform rotateZ(131.72deg)*/
 }
 .inclination {
 	position: relative;
 	height: 100%;
 	transform-style: preserve-3d;
-	/*&--mercury
-    transform rotateX(-7deg)
-  &--venus
-    transform rotateX(-3.5deg)
-  &--earth
-    transform rotateX(0deg)
-  &--mars
-    transform rotateX(-1.9deg)
-  &--jupiter
-    transform rotateX(-1.3deg)
-  &--saturn
-    transform rotateX(-2.5deg)
-  &--uranus
-    transform rotateX(-0.8deg)
-  &--neptun
-    transform rotateX(-1.8deg)*/
 }
 .content {
 	color: #fff;
@@ -1146,6 +1114,53 @@ img {
 }
 .position-solar-1 {
 	top: -30px;
+}
+
+@media screen and (max-width: 1280px) {
+	// Size solar
+	.size-solar-big {
+		width: 120px;
+		height: 120px;
+	}
+	.size-solar-xl {
+		width: 80px;
+		height: 80px;
+	}
+	.size-solar-small {
+		width: 50px;
+		height: 50px;
+	}
+	.size-solar-uranus-orbit {
+		width: 130px;
+		height: 130px;
+	}
+
+	// position solar
+	.position-solar-6 {
+		top: -45px;
+	}
+	.position-solar-5 {
+		top: -40px;
+	}
+	//solar
+	.position-solar-5_1 {
+		top: -40px;
+	}
+	.position-solar-1_1 {
+		top: -40px;
+	}
+	.position-solar-3 {
+		top: -15px;
+	}
+	.position_zen {
+		top: -25px;
+	}
+	.position-solar-2 {
+		top: -40px;
+	}
+	.position-solar-1 {
+		top: -30px;
+	}
 }
 
 // custom slide
