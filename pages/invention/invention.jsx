@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./invention.module.scss";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import Solar from "../../components/solar/solar";
 import Image from "next/image";
 import HomeContent from "../../components/content/HomeContent";
@@ -9,8 +10,10 @@ import HealthImage from "../../public/images/slide/solar02.png";
 import InventionImage from "../../public/images/slide/solar05.png";
 import LegaxyImage from "../../public/images/slide/solar04.png";
 import ZenImage from "../../public/images/slide/solar03.png";
+import IconArrow from "../../public/images/arrow.png";
 
 const Invention = () => {
+	const router = useRouter();
 	return (
 		<div className={styles.invention}>
 			<div className={styles.solar_load}>
@@ -118,6 +121,16 @@ const Invention = () => {
 											chinh phục có chế Vốn.
 										</p>
 									</div>
+								</div>
+								<div className={styles.button_arrow} onClick={() => {
+										router.push("/");
+									}}>
+									<Image 
+										src={IconArrow}
+										alt="IconArrow"
+										width={60}
+										height={35}
+									/>
 								</div>
 							</div>
 						</div>

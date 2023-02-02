@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./zen.module.scss";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import Solar from "../../components/solar/solar";
 import Image from "next/image";
 import HomeContent from "../../components/content/HomeContent";
@@ -9,8 +10,10 @@ import HealthImage from "../../public/images/slide/solar02.png";
 import InventionImage from "../../public/images/slide/solar05.png";
 import LegaxyImage from "../../public/images/slide/solar04.png";
 import ZenImage from "../../public/images/slide/solar03.png";
+import IconArrow from "../../public/images/arrow.png";
 
 const Zen = () => {
+	const router = useRouter();
 	return (
 		<div className={styles.zen}>
 			<div className={styles.solar_load}>
@@ -113,6 +116,19 @@ const Zen = () => {
 											nghiệp Việt.
 										</p>
 									</div>
+								</div>
+								<div
+									className={styles.button_arrow}
+									onClick={() => {
+										router.push("/");
+									}}
+								>
+									<Image
+										src={IconArrow}
+										alt="IconArrow"
+										width={60}
+										height={35}
+									/>
 								</div>
 							</div>
 						</div>

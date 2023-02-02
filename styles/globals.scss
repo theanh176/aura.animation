@@ -1196,6 +1196,18 @@ img {
 			}
 		}
 	}
+	@media screen and (max-width: 1420px) {
+		margin: 60px 0 40px;
+		li {
+			width: 120px;
+			height: 120px;
+			margin: 0 40px;
+			&:after {
+				content: "-------";
+				width: 50px;
+			}
+		}
+	}
 	.slick-active {
 		&:before {
 			content: "";
@@ -1216,6 +1228,12 @@ img {
 			left: 125%;
 			width: 70px;
 			color: #a6826c !important;
+		}
+		@media screen and (max-width: 1420px) {
+			&:after {
+				content: "-------";
+				width: 50px;
+			}
 		}
 		span {
 			transform: scale(1.4);
