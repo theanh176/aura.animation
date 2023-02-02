@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import HomeContent from "../../components/content/HomeContent";
 import Solar from "../../components/solar/solar";
 import styles from "./health.module.scss";
@@ -8,8 +10,10 @@ import HealthImage from "../../public/images/slide/solar02.png";
 import InventionImage from "../../public/images/slide/solar05.png";
 import LegaxyImage from "../../public/images/slide/solar04.png";
 import ZenImage from "../../public/images/slide/solar03.png";
+import IconArrow from "../../public/images/arrow.png";
 
 const Health = () => {
+	const router = useRouter();
 	return (
 		<div className={styles.health}>
 			<div className={styles.solar_load}>
@@ -129,6 +133,19 @@ const Health = () => {
 											phục có chế Vốn.
 										</p>
 									</div>
+								</div>
+								<div
+									className={styles.button_arrow}
+									onClick={() => {
+										router.push("/");
+									}}
+								>
+									<Image
+										src={IconArrow}
+										alt="IconArrow"
+										width={60}
+										height={35}
+									/>
 								</div>
 							</div>
 						</div>

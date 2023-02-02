@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./dauntless.module.scss";
+import { useRouter } from "next/router";
 import Link from "next/link";
 import Solar from "../../components/solar/solar";
 import Image from "next/image";
@@ -9,8 +10,10 @@ import HealthImage from "../../public/images/slide/solar02.png";
 import InventionImage from "../../public/images/slide/solar05.png";
 import LegaxyImage from "../../public/images/slide/solar04.png";
 import ZenImage from "../../public/images/slide/solar03.png";
+import IconArrow from "../../public/images/arrow.png";
 
 const Dauntless = () => {
+	const router = useRouter();
 	return (
 		<div className={styles.dauntless}>
 			<div className={styles.solar_load}>
@@ -90,6 +93,19 @@ const Dauntless = () => {
 											tương lai.
 										</p>
 									</div>
+								</div>
+								<div
+									className={styles.button_arrow}
+									onClick={() => {
+										router.push("/");
+									}}
+								>
+									<Image
+										src={IconArrow}
+										alt="IconArrow"
+										width={60}
+										height={35}
+									/>
 								</div>
 							</div>
 						</div>

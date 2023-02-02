@@ -61,6 +61,13 @@
 			}
 		}
 	}
+	.button_arrow {
+		cursor: pointer;
+		padding-right: 40px;
+		display: flex;
+		justify-content: end;
+		margin-top: 20px;
+	}
 }
 @keyframes autoload {
 	0% {
